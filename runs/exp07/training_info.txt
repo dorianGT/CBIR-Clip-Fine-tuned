@@ -1,0 +1,6 @@
+Load Method: clip+lora
+Fine-tuning: True
+Epochs: 20
+Batch Size: 64
+Patience: 5
+Learning Rate: 0.0001

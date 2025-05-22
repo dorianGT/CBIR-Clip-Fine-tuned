@@ -1,0 +1,3 @@
+Load Method: finetuned
+Fine-tuning: False
+juste projecteur image, le reste freeze

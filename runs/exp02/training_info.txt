@@ -1,0 +1,7 @@
+Load Method: clip
+Fine-tuning: True
+Epochs: 20
+Batch Size: 64
+Patience: 5
+Learning Rate: 0.0001
+param -6 pour texte et image
