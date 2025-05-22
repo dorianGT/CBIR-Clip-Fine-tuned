@@ -136,4 +136,5 @@ Ces visualisations permettent d’analyser :
 ## Auteur
 
 Projet développé dans le cadre du cours Modélisation de système de vision du master 2 VMI par Dorian GROUTEAU, supervisé par Camille KURTZ.
+
 Autres contributions : Noureddine BERTRAND (autre méthode, même objectif) et Samuel GONCALVES.
