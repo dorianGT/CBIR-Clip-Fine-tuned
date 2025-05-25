@@ -116,20 +116,20 @@ Ces visualisations permettent d’analyser :
 
 ```
 {
-    "recall@1": 0.5275,
-    "recall@5": 0.611,
-    "recall@10": 0.633,
-    "precision@1": 0.5275,
-    "precision@5": 0.3089,
-    "precision@10": 0.1921,
-    "mAP@5": 0.3466,
-    "mAP@10": 0.3793,
-    "f1@5": 0.3036,
-    "f1@10": 0.2416,
-    "threshold": 0.5281,
-    "precision_thresh": 0.4355,
-    "recall_thresh": 0.3284,
-    "f1_thresh": 0.3745
+    "recall@1": 0.5307,
+    "recall@5": 0.7545,
+    "recall@10": 0.7942,
+    "precision@1": 0.5289,
+    "precision@5": 0.3919,
+    "precision@10": 0.2502,
+    "mAP@5": 0.3856,
+    "mAP@10": 0.4338,
+    "f1@5": 0.3812,
+    "f1@10": 0.3139,
+    "threshold": 0.563,
+    "precision_thresh": 0.4228,
+    "recall_thresh": 0.3452,
+    "f1_thresh": 0.38
 }
 ```
 

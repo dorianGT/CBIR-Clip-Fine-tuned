@@ -20,6 +20,8 @@ def load_groundtruth(excel_file):
     """
     Charge les groupes de groundtruth depuis un fichier Excel.
 
+    Chaque ligne correspond à un groupe, et chaque colonne contient un nom de fichier (sans extension).
+
     Args:
         excel_file (str): Chemin vers le fichier Excel contenant les groupes d'images.
 
@@ -27,21 +29,14 @@ def load_groundtruth(excel_file):
         list: Liste de groupes, chaque groupe étant une liste de noms de fichiers (sans extension).
     """
     df = pd.read_excel(excel_file, header=None)
+    
     groups = []
-    current_group = []
+    for _, row in df.iterrows():
+        group = [str(cell) for cell in row if pd.notnull(cell)]
+        if group:
+            groups.append(group)
 
-    for val in df[3]:
-        if pd.isnull(val):
-            if current_group:
-                groups.append(current_group)
-                current_group = []
-        else:
-            current_group.append(val)
-
-    if current_group:
-        groups.append(current_group)
-
-    return [g for g in groups if g]
+    return groups
 
 def remove_accents(input_str):
     """
