@@ -1,0 +1,2 @@
+Load Method: clip
+Fine-tuning: False

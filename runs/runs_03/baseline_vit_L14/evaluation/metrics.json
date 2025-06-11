@@ -1,0 +1,16 @@
+{
+    "recall@1": 0.129,
+    "recall@5": 0.4579,
+    "recall@10": 0.5531,
+    "precision@1": 0.5162,
+    "precision@5": 0.3964,
+    "precision@10": 0.257,
+    "mAP@5": 0.3706,
+    "mAP@10": 0.4182,
+    "f1@5": 0.4249,
+    "f1@10": 0.351,
+    "threshold": 279.9062,
+    "precision_thresh": 0.2742,
+    "recall_thresh": 0.392,
+    "f1_thresh": 0.3227
+}

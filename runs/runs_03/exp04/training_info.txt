@@ -1,0 +1,7 @@
+Load Method: clip+lora
+Fine-tuning: True
+Epochs: 20
+Batch Size: 64
+Patience: 5
+Learning Rate: 5e-05
+en changeant le LR et en mettant r=32

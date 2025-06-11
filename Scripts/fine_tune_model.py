@@ -5,7 +5,6 @@ from PIL import Image
 import os
 import torch
 
-from models import load_clip_model_with_lora
 from torchvision import transforms
 
 import random
@@ -13,6 +12,7 @@ import numpy as np
 import json
 import matplotlib.pyplot as plt
 import torch.nn.functional as F
+from tqdm import tqdm
 
 def set_seed(seed=2):
     """
@@ -84,6 +84,37 @@ def clip_loss(image_embeddings, text_embeddings, temperature=0.07):
 
     return (loss_i + loss_t) / 2
 
+def progressively_unfreeze(model_clip, current_epoch, schedule):
+    """
+    Débloque progressivement les couches du modèle CLIP selon le planning donné.
+
+    Args:
+        model_clip: Modèle CLIP de base.
+        current_epoch (int): Époque actuelle.
+        schedule (dict): Dictionnaire avec epoch -> nombre de couches à débloquer.
+    """
+    # Trouver le nombre de couches à débloquer selon l'époque
+    epochs = sorted(schedule.keys())
+    nb_layers_to_unfreeze = 0
+    for e in epochs:
+        if current_epoch >= e:
+            nb_layers_to_unfreeze = schedule[e]
+        else:
+            break
+
+    # Appliquer aux blocs visuels
+    total_blocks = len(model_clip.visual.transformer.resblocks)
+    for i in range(total_blocks - nb_layers_to_unfreeze, total_blocks):
+        for param in model_clip.visual.transformer.resblocks[i].parameters():
+            param.requires_grad = True
+
+    # Appliquer aux blocs textuels
+    total_blocks = len(model_clip.transformer.resblocks)
+    for i in range(total_blocks - nb_layers_to_unfreeze, total_blocks):
+        for param in model_clip.transformer.resblocks[i].parameters():
+            param.requires_grad = True
+
+
 def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_dataset,
                    device, epochs=20, batch_size=16, lr=1e-5, patience=5):
     """
@@ -113,11 +144,21 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
     train_losses = []
     val_losses = []
 
+    # unfreeze_schedule = {
+    #     5: 1,   # à l'époque 5, on débloque 1 couche
+    #     8: 3,   # à partir de l'époque 3, 3 couches débloquées
+    #     11: 6    # à partir de l'époque 5, 6 couches débloquées
+    # }
+
     for epoch in range(epochs):
+        # progressively_unfreeze(model.clip_model, epoch, unfreeze_schedule)
+
         model.train()
         total_train_loss = 0.0
 
-        for batch_idx, (images, texts) in enumerate(train_loader):
+        # tqdm pour l'entraînement
+        train_bar = tqdm(enumerate(train_loader), total=len(train_loader), desc=f"[Train] Epoch {epoch+1}/{epochs}")
+        for batch_idx, (images, texts) in train_bar:
             images = images.to(device)
             tokenized = model.tokenize(texts).to(device)
 
@@ -130,7 +171,7 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
             optimizer.step()
 
             total_train_loss += loss.item()
-            print(f"[Train] Epoch [{epoch+1}/{epochs}], Step [{batch_idx+1}/{len(train_loader)}], Loss: {loss.item():.4f}")
+            train_bar.set_postfix(loss=loss.item())
 
         avg_train_loss = total_train_loss / len(train_loader)
         train_losses.append(avg_train_loss)
@@ -139,8 +180,10 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
         # Phase de validation
         model.eval()
         total_val_loss = 0.0
+        val_bar = tqdm(val_loader, total=len(val_loader), desc=f"[Val] Epoch {epoch+1}/{epochs}")
+
         with torch.no_grad():
-            for images, texts in val_loader:
+            for images, texts in val_bar:
                 images = images.to(device)
                 tokenized = model.tokenize(texts).to(device)
 
@@ -148,6 +191,7 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
                 loss = clip_loss(image_embeds, text_embeds)
 
                 total_val_loss += loss.item()
+                val_bar.set_postfix(loss=loss.item())
 
         avg_val_loss = total_val_loss / len(val_loader)
         scheduler.step(avg_val_loss)
@@ -166,6 +210,7 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
             if epochs_no_improve >= patience:
                 print("Early stopping triggered.")
                 break
+
 
     # Chargement du meilleur modèle
     if best_model_state:
@@ -187,7 +232,7 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
     print("Fine-tuning terminé!")
 
 def fine_tune(model_folder, model_clip, preprocess, device, seed, image_folder, ground_truth_file = "ground_truth.json",
-              epochs=20, batch_size=64, patience=3, learning_rate=1e-4, use_lora=False):
+              epochs=20, batch_size=64, patience=3, learning_rate=1e-4, use_lora=False, use_image_projector=True, use_text_projector=True):
     """
     Fonction principale de fine-tuning du modèle CLIP avec ajout d'un projecteur.
 
@@ -203,6 +248,8 @@ def fine_tune(model_folder, model_clip, preprocess, device, seed, image_folder, 
         patience (int): Patience pour early stopping.
         learning_rate (float): Taux d'apprentissage.
         use_lora (bool): Indique si LoRA est utilisé (pour sauvegarde HuggingFace).
+        use_image_projector (bool): Indique si un projecteur image est ajouté au model.
+        use_text_projector (bool): Indique si un projecteur texte est ajouté au model.
     """
     
     set_seed(seed)
@@ -214,18 +261,18 @@ def fine_tune(model_folder, model_clip, preprocess, device, seed, image_folder, 
     for param in model_clip.parameters():
         param.requires_grad = False
 
-    # Unfreeze partiel des 6 derniers blocs du Transformer visuel
-    # for block in model_clip.visual.transformer.resblocks[-3:]:
+    # # Unfreeze partiel des 6 derniers blocs du Transformer visuel
+    # for block in model_clip.visual.transformer.resblocks[-1:]:
     #     for param in block.parameters():
     #         param.requires_grad = True
 
     # # Unfreeze partiel des 6 derniers blocs du Transformer textuel
-    # for block in model_clip.transformer.resblocks[-6:]:
+    # for block in model_clip.transformer.resblocks[-1:]:
     #     for param in block.parameters():
     #         param.requires_grad = True
 
     # Création du modèle CLIP avec tête de projection
-    model = CLIPWithProjector(model_clip)
+    model = CLIPWithProjector(model_clip,use_image_projector=use_image_projector,use_text_projector=use_text_projector)
     model.to(device)
 
     # Transforms pour les datasets

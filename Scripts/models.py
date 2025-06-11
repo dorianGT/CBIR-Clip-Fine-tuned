@@ -9,21 +9,24 @@ from peft import PeftModel, PeftConfig
 class CLIPWithProjector(torch.nn.Module):
     """
     Enveloppe personnalisée autour d'un modèle CLIP avec des projecteurs (MLP) 
-    appliqué sur les embeddings d'image et de texte.
+    appliqués sur les embeddings d'image et de texte.
     """
 
-    def __init__(self, clip_model, projector_dim=512):
+    def __init__(self, clip_model, projector_dim=512, use_image_projector=True, use_text_projector=True):
         """
         Initialise l'enveloppe CLIP avec des projecteurs.
 
         Args:
             clip_model (torch.nn.Module): Modèle CLIP pré-entraîné.
             projector_dim (int): Dimension de sortie du projecteur.
+            use_image_projector (bool): Si False, désactive le projecteur image.
+            use_text_projector (bool): Si False, désactive le projecteur texte.
         """
         super(CLIPWithProjector, self).__init__()
         self.clip_model = clip_model.float()
+        self.use_image_projector = use_image_projector
+        self.use_text_projector = use_text_projector
 
-        # Projecteur pour les features image
         self.image_projector = torch.nn.Sequential(
             torch.nn.Linear(clip_model.visual.output_dim, projector_dim),
             torch.nn.ReLU(),
@@ -31,7 +34,6 @@ class CLIPWithProjector(torch.nn.Module):
             torch.nn.Linear(projector_dim, projector_dim),
         )
 
-        # Projecteur pour les features texte
         self.text_projector = torch.nn.Sequential(
             torch.nn.Linear(clip_model.text_projection.shape[1], projector_dim),
             torch.nn.ReLU(),
@@ -45,54 +47,57 @@ class CLIPWithProjector(torch.nn.Module):
 
     def encode_image(self, images):
         """
-        Encode les images en passant par CLIP puis applique un projecteur.
+        Encode les images en passant par CLIP puis applique (ou pas) un projecteur.
 
         Args:
             images (torch.Tensor): Batch d'images [B, 3, H, W].
 
         Returns:
-            torch.Tensor: Vecteurs projetés normalisés.
+            torch.Tensor: Vecteurs projetés ou bruts normalisés.
         """
         features = self.clip_model.encode_image(images)
-        features = F.normalize(features, dim=-1, p=2).to(dtype=torch.float32)
-        projected = self.image_projector(features)
-        return F.normalize(projected, dim=-1, p=2)
+        features = F.normalize(features.to(dtype=torch.float32), dim=-1, p=2)
+
+        if self.use_image_projector:
+            features = self.image_projector(features)
+            features = F.normalize(features, dim=-1, p=2)
+
+        return features
 
     def encode_text(self, tokenized_texts):
         """
-        Encode les textes à l’aide du modèle CLIP puis applique le projecteur.
+        Encode les textes à l’aide du modèle CLIP puis applique (ou pas) le projecteur.
 
         Args:
             tokenized_texts (torch.Tensor): Batch de textes tokenisés.
 
         Returns:
-            torch.Tensor: Vecteurs de texte normalisés.
+            torch.Tensor: Vecteurs projetés ou bruts normalisés.
         """
         features = self.clip_model.encode_text(tokenized_texts)
         features = F.normalize(features.to(dtype=torch.float32), dim=-1, p=2)
-        projected = self.text_projector(features)
-        return F.normalize(projected, dim=-1, p=2)
+
+        if self.use_text_projector:
+            features = self.text_projector(features)
+            features = F.normalize(features, dim=-1, p=2)
+
+        return features
 
     def forward(self, images, texts):
         """
-        Applique les encodeurs image et texte pour obtenir des représentations projetées.
+        Applique les encodeurs image et texte pour obtenir des représentations projetées ou brutes.
 
         Args:
             images (torch.Tensor): Batch d'images.
             texts (torch.Tensor): Batch de textes tokenisés.
 
         Returns:
-            Tuple[torch.Tensor, torch.Tensor]: Features projetés d'image et texte.
+            Tuple[torch.Tensor, torch.Tensor]: Features d'image et de texte.
         """
         image_features = self.encode_image(images)
         text_features = self.encode_text(texts)
-
-        # # Sanity check pour éviter les NaNs
-        # assert not torch.isnan(images).any(), "Images contain NaNs"
-        # assert not torch.isnan(image_features).any(), "Image features contain NaNs"
-        # assert not torch.isnan(text_features).any(), "Text features contain NaNs"
-
         return image_features, text_features
+
 
 
 def load_clip_model_with_lora():
@@ -107,6 +112,9 @@ def load_clip_model_with_lora():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, preprocess = clip.load("ViT-B/32", device=device)
 
+    for param in model.parameters():
+        param.requires_grad = False
+
     # Définition de la configuration LoRA
     config = LoraConfig(
         r=8,
@@ -116,6 +124,9 @@ def load_clip_model_with_lora():
         bias="none",
         task_type=TaskType.FEATURE_EXTRACTION
     )
+    # "attn.out_proj" (attention output projection)
+    # "mlp.c_fc" (MLP fully connected input)
+    # "mlp.c_proj" (MLP fully connected output)
 
     # Ajout des adaptateurs LoRA au modèle
     model = get_peft_model(model, config)
@@ -137,6 +148,7 @@ def load_clip_model():
         device (str): Appareil utilisé.
     """
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    #ViT-L/14
     model, preprocess = clip.load("ViT-B/32", device=device)
 
     # Permet de mettre à jour tous les poids pendant le fine-tuning

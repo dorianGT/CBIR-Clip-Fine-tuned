@@ -7,50 +7,66 @@ from projection_and_metrics import (save_projection, save_histogram_distance, sa
                                     recall_at_k,precision_at_k,mean_average_precision,f1_score_at_k,
                                     evaluate_with_distance_threshold)
 
-def evaluate(model_folder):
+def get_groups_image_only(groups):
     """
-    Évalue les performances du modèle en utilisant plusieurs métriques et visualisations.
+    Extrait uniquement les chemins d'images des groupes.
+
+    Args:
+        groups (list): Liste de groupes, chaque groupe étant une liste de dictionnaires contenant au moins une clé "image".
+
+    Returns:
+        list: Liste de groupes d'images (liste de listes de chemins d'images).
+    """
+    image_groups = []
+    for group in groups:
+        images = [item["image"] for item in group]
+        image_groups.append(images)
+    return image_groups
+
+def eval_with_faiss(model_folder,embeddings_name,faiss_name,groups,label):
+    """
+    Évalue les performances d'un index FAISS sur un ensemble d'embeddings.
 
     Cette fonction :
-    - Charge les embeddings, l'index FAISS et les groupes ground-truth.
-    - Génère des visualisations (projections t-SNE/UMAP, projections colorées, histogramme de distances).
+    - Charge les embeddings et l'index FAISS.
+    - Génère des visualisations (projections t-SNE/UMAP, projections colorées, histogramme des distances).
     - Calcule les métriques suivantes :
         - Recall@1, @5, @10
         - Precision@1, @5, @10
-        - mean Average Precision (mAP@10)
-        - F1-score@5
-        - Seuil optimal basé sur la distance moyenne pour F1-score, précision et rappel
-
-    Les résultats sont sauvegardés dans `model_folder/evaluation/metrics.json`
-    et les visualisations sont également sauvegardées dans ce dossier.
+        - mean Average Precision (mAP@5, @10)
+        - F1-score@5, @10
+        - Évaluation à seuil basé sur la distance moyenne
 
     Args:
-        model_folder (str): Chemin vers le dossier contenant les fichiers du modèle, embeddings et index.
+        model_folder (str): Chemin vers le dossier contenant les fichiers du modèle.
+        embeddings_name (str): Nom du fichier .npz contenant les embeddings.
+        faiss_name (str): Nom du fichier FAISS contenant l'index.
+        groups (list): Liste de groupes d'images pour le ground-truth.
+        label (str): Label utilisé pour nommer les fichiers de sortie (ex: "image", "text", "combined").
 
     Returns:
-        dict: Un dictionnaire contenant toutes les métriques calculées, avec les clés :
-              "recall@1", "recall@5", "recall@10",
-              "precision@1", "precision@5", "precision@10",
-              "mAP@10", "f1@5",
-              "threshold", "precision_thresh", "recall_thresh", "f1_thresh"
+        dict: Résultats d'évaluation avec les clés :
+            - "recall@1", "recall@5", "recall@10"
+            - "precision@1", "precision@5", "precision@10"
+            - "mAP@5", "mAP@10"
+            - "f1@5", "f1@10"
+            - "threshold" (valeur seuil)
+            - "precision_thresh", "recall_thresh", "f1_thresh"
     """
-    os.makedirs(os.path.join(model_folder, "evaluation"), exist_ok=True)
-    
     # Chargement
-    embeddings, paths = load_embeddings(os.path.join(model_folder, "embeddings.npz"))
-    index = load_index_faiss(os.path.join(model_folder, "faiss.index"))
-    groups, _, _, _, _  = load_groundtruth_json("ground_truth.json")
+    embeddings, paths = load_embeddings(os.path.join(model_folder, embeddings_name))
+    index = load_index_faiss(os.path.join(model_folder, faiss_name))
 
     # Projections visuelles
-    save_projection(embeddings, os.path.join(model_folder, "evaluation/tsne_projection.png"), method="tsne")
-    save_projection(embeddings, os.path.join(model_folder, "evaluation/umap_projection.png"), method="umap")
+    save_projection(embeddings, os.path.join(model_folder, f"evaluation/tsne_projection_{label}.png"), method="tsne")
+    save_projection(embeddings, os.path.join(model_folder, f"evaluation/umap_projection_{label}.png"), method="umap")
 
-    save_colored_projection(embeddings, paths, groups, os.path.join(model_folder, "evaluation/tsne_colored.png"), method="tsne")
-    save_colored_projection(embeddings, paths, groups, os.path.join(model_folder, "evaluation/umap_colored.png"), method="umap")
+    save_colored_projection(embeddings, paths, groups, os.path.join(model_folder, f"evaluation/tsne_colored_{label}.png"), method="tsne")
+    save_colored_projection(embeddings, paths, groups, os.path.join(model_folder, f"evaluation/umap_colored_{label}.png"), method="umap")
 
     # Distances histogram
     D, _ = index.search(embeddings.astype(np.float32), 6)
-    save_histogram_distance(D, os.path.join(model_folder, "evaluation/distance_histogram.png"))
+    save_histogram_distance(D, os.path.join(model_folder, f"evaluation/distance_histogram_{label}.png"))
 
     # Évaluation Recall@K
     recall_k1 = recall_at_k(index, embeddings, paths, groups, k=1)
@@ -89,6 +105,43 @@ def evaluate(model_folder):
         "precision_thresh": round(precision, 4),
         "recall_thresh": round(recall, 4),
         "f1_thresh": round(f1, 4)
+    }
+
+    return results
+
+def evaluate(model_folder):
+    """
+    Évalue globalement les performances du modèle (image, texte, combinaison).
+
+    Cette fonction :
+    - Charge les ground-truths.
+    - Effectue les évaluations individuelles pour les embeddings image, texte et combinés.
+    - Sauvegarde les résultats dans un fichier JSON.
+    - Génère toutes les visualisations associées.
+
+    Args:
+        model_folder (str): Chemin vers le dossier contenant les fichiers embeddings, index FAISS et le sous-dossier `evaluation/`.
+
+    Returns:
+        dict: Résultats complets contenant trois sous-ensembles :
+            - "results_image": Résultats pour embeddings image.
+            - "results_text": Résultats pour embeddings texte.
+            - "results_combined": Résultats pour embeddings combinés.
+    """
+    os.makedirs(os.path.join(model_folder, "evaluation"), exist_ok=True)
+    
+    groups, _, _, _, _  = load_groundtruth_json("ground_truth.json")
+    groups = get_groups_image_only(groups)
+
+    results_image = eval_with_faiss(model_folder,"embeddings_image.npz","faiss_image.index",groups,"image")
+    results_text = eval_with_faiss(model_folder,"embeddings_text.npz","faiss_text.index",groups,"text")
+    results_combined = eval_with_faiss(model_folder,"embeddings_combined.npz","faiss_combined.index",groups,"combined")
+
+    # Résultats
+    results = {
+        "results_image": results_image,
+        "results_text": results_text,
+        "results_combined": results_combined,
     }
 
     with open(os.path.join(model_folder, "evaluation/metrics.json"), "w") as f:

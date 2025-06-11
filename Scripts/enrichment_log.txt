@@ -1,0 +1,3000 @@
+2025-06-11 09:31:42,521 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-11 09:31:48,619 - WARNING - Some parameters are on the meta device because they were offloaded to the cpu.
+2025-06-11 09:31:49,238 - INFO - 
+Traitement de l'image : pho_2K24793_47_01
+2025-06-11 09:31:49,238 - INFO - Caption initiale : a large crowd of people at a market
+2025-06-11 09:31:49,238 - INFO - Métadonnées utilisées :
+2025-06-11 09:31:49,239 - INFO -    - name: pho_2K24793_47_01.jpg
+2025-06-11 09:31:49,239 - INFO -    - origin: forbin
+2025-06-11 09:31:49,239 - INFO -    - num_page: 47.0
+2025-06-11 09:31:49,239 - INFO -    - num_photo: 1.0
+2025-06-11 09:31:49,239 - INFO -    - description: nan
+2025-06-11 09:31:49,239 - INFO -    - legende: Forbin
+Le camp des aviateurs français à Salonique
+2025-06-11 09:31:49,239 - INFO -    - legende_2: nan
+2025-06-11 09:31:49,239 - INFO -    - type: nan
+2025-06-11 09:31:49,239 - INFO -    - dimensions: nan
+2025-06-11 09:31:49,239 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:31:49,239 - INFO -    - date: nan
+2025-06-11 09:31:49,239 - INFO -    - conflit: nan
+2025-06-11 09:31:49,239 - INFO -    - sensible: nan
+2025-06-11 09:32:00,169 - INFO - Caption enrichie : A large crowd of people at a market in Salonique.
+2025-06-11 09:32:00,169 - INFO - 
+Traitement de l'image : pho_2K24792_04_01
+2025-06-11 09:32:00,169 - INFO - Caption initiale : a group of men and horses at a camp
+2025-06-11 09:32:00,169 - INFO - Métadonnées utilisées :
+2025-06-11 09:32:00,169 - INFO -    - name: pho_2K24792_04_01.jpg
+2025-06-11 09:32:00,169 - INFO -    - origin: forbin
+2025-06-11 09:32:00,169 - INFO -    - num_page: 4.0
+2025-06-11 09:32:00,170 - INFO -    - num_photo: 1.0
+2025-06-11 09:32:00,170 - INFO -    - description: nan
+2025-06-11 09:32:00,170 - INFO -    - legende: Macédoine
+2025-06-11 09:32:00,170 - INFO -    - legende_2: nan
+2025-06-11 09:32:00,170 - INFO -    - type: nan
+2025-06-11 09:32:00,170 - INFO -    - dimensions: nan
+2025-06-11 09:32:00,170 - INFO -    - xml: forbin/2K24792.xml
+2025-06-11 09:32:00,170 - INFO -    - date: nan
+2025-06-11 09:32:00,170 - INFO -    - conflit: nan
+2025-06-11 09:32:00,170 - INFO -    - sensible: nan
+2025-06-11 09:32:12,213 - INFO - Caption enrichie : A group of men and horses at a camp in Macédoine.
+2025-06-11 09:32:12,213 - INFO - 
+Traitement de l'image : pho_2K24788_82_01
+2025-06-11 09:32:12,213 - INFO - Caption initiale : a group of people preparing to dig a grave
+2025-06-11 09:32:12,213 - INFO - Métadonnées utilisées :
+2025-06-11 09:32:12,213 - INFO -    - name: pho_2K24788_82_01.jpg
+2025-06-11 09:32:12,213 - INFO -    - origin: forbin
+2025-06-11 09:32:12,213 - INFO -    - num_page: 82.0
+2025-06-11 09:32:12,213 - INFO -    - num_photo: 1.0
+2025-06-11 09:32:12,213 - INFO -    - description: nan
+2025-06-11 09:32:12,213 - INFO -    - legende: Réfugiés Serbes en Grèce
+2025-06-11 09:32:12,213 - INFO -    - legende_2: nan
+2025-06-11 09:32:12,213 - INFO -    - type: nan
+2025-06-11 09:32:12,214 - INFO -    - dimensions: nan
+2025-06-11 09:32:12,214 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:32:12,214 - INFO -    - date: nan
+2025-06-11 09:32:12,214 - INFO -    - conflit: nan
+2025-06-11 09:32:12,214 - INFO -    - sensible: nan
+2025-06-11 09:32:27,813 - INFO - Caption enrichie : In this image, a group of Serbian refugees in Greece are seen preparing to dig a grave.
+2025-06-11 09:32:27,813 - INFO - 
+Traitement de l'image : pho_2K24789_16_01
+2025-06-11 09:32:27,813 - INFO - Caption initiale : a group of men riding horses
+2025-06-11 09:32:27,813 - INFO - Métadonnées utilisées :
+2025-06-11 09:32:27,813 - INFO -    - name: pho_2K24789_16_01.jpg
+2025-06-11 09:32:27,813 - INFO -    - origin: forbin
+2025-06-11 09:32:27,813 - INFO -    - num_page: 16.0
+2025-06-11 09:32:27,813 - INFO -    - num_photo: 1.0
+2025-06-11 09:32:27,813 - INFO -    - description: nan
+2025-06-11 09:32:27,813 - INFO -    - legende: Kavadar
+2025-06-11 09:32:27,813 - INFO -    - legende_2: nan
+2025-06-11 09:32:27,814 - INFO -    - type: nan
+2025-06-11 09:32:27,814 - INFO -    - dimensions: 12x9
+2025-06-11 09:32:27,814 - INFO -    - xml: forbin/2K24789.xml
+2025-06-11 09:32:27,814 - INFO -    - date: nan
+2025-06-11 09:32:27,814 - INFO -    - conflit: nan
+2025-06-11 09:32:27,814 - INFO -    - sensible: nan
+2025-06-11 09:32:42,502 - INFO - Caption enrichie : In the image, a group of men can be seen riding horses through a picturesque landscape.
+2025-06-11 09:32:42,503 - INFO - 
+Traitement de l'image : pho_2K2476_22_01
+2025-06-11 09:32:42,503 - INFO - Caption initiale : a train carrying christmas trees
+2025-06-11 09:32:42,503 - INFO - Métadonnées utilisées :
+2025-06-11 09:32:42,503 - INFO -    - name: pho_2K2476_22_01.jpg
+2025-06-11 09:32:42,503 - INFO -    - origin: forbin
+2025-06-11 09:32:42,503 - INFO -    - num_page: 22.0
+2025-06-11 09:32:42,503 - INFO -    - num_photo: 1.0
+2025-06-11 09:32:42,503 - INFO -    - description: nan
+2025-06-11 09:32:42,503 - INFO -    - legende: BRITISH CAVALRY CAPTURE A TRAIN. 
+Photo shows. Engine and coaches disguised with branches about to leave Duala, in the Camerrons
+2025-06-11 09:32:42,503 - INFO -    - legende_2: nan
+2025-06-11 09:32:42,503 - INFO -    - type: nan
+2025-06-11 09:32:42,504 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:32:42,504 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 09:32:42,504 - INFO -    - date: nan
+2025-06-11 09:32:42,504 - INFO -    - conflit: nan
+2025-06-11 09:32:42,504 - INFO -    - sensible: nan
+2025-06-11 09:32:59,319 - INFO - Caption enrichie : A British cavalry captures a train carrying Christmas trees in the Camerrons, disguised with branches.
+2025-06-11 09:32:59,320 - INFO - 
+Traitement de l'image : pho_2K24780_14_01
+2025-06-11 09:32:59,320 - INFO - Caption initiale : a group of men in the ruins of a city
+2025-06-11 09:32:59,320 - INFO - Métadonnées utilisées :
+2025-06-11 09:32:59,320 - INFO -    - name: pho_2K24780_14_01.jpg
+2025-06-11 09:32:59,320 - INFO -    - origin: forbin
+2025-06-11 09:32:59,320 - INFO -    - num_page: 14.0
+2025-06-11 09:32:59,320 - INFO -    - num_photo: 1.0
+2025-06-11 09:32:59,320 - INFO -    - description: nan
+2025-06-11 09:32:59,320 - INFO -    - legende: With the British troops in Italy
+Canove Village
+2025-06-11 09:32:59,320 - INFO -    - legende_2: nan
+2025-06-11 09:32:59,320 - INFO -    - type: nan
+2025-06-11 09:32:59,320 - INFO -    - dimensions: nan
+2025-06-11 09:32:59,320 - INFO -    - xml: forbin/2K24780.xml
+2025-06-11 09:32:59,320 - INFO -    - date: nan
+2025-06-11 09:32:59,320 - INFO -    - conflit: nan
+2025-06-11 09:32:59,320 - INFO -    - sensible: nan
+2025-06-11 09:33:17,789 - INFO - Caption enrichie : In the ruins of a city, a group of men in British military uniforms are seen in Canove Village.
+2025-06-11 09:33:17,790 - INFO - 
+Traitement de l'image : pho_2K24788_01_01
+2025-06-11 09:33:17,790 - INFO - Caption initiale : a group of soldiers in the mountains
+2025-06-11 09:33:17,790 - INFO - Métadonnées utilisées :
+2025-06-11 09:33:17,790 - INFO -    - name: pho_2K24788_01_01.jpg
+2025-06-11 09:33:17,790 - INFO -    - origin: forbin
+2025-06-11 09:33:17,790 - INFO -    - num_page: 1.0
+2025-06-11 09:33:17,790 - INFO -    - num_photo: 1.0
+2025-06-11 09:33:17,790 - INFO -    - description: Front d'Orient
+Vie militaire
+2025-06-11 09:33:17,790 - INFO -    - legende: Les Russes en Macédoine
+2025-06-11 09:33:17,790 - INFO -    - legende_2: nan
+2025-06-11 09:33:17,790 - INFO -    - type: nan
+2025-06-11 09:33:17,790 - INFO -    - dimensions: 12x9,5
+2025-06-11 09:33:17,790 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:33:17,790 - INFO -    - date: nan
+2025-06-11 09:33:17,790 - INFO -    - conflit: nan
+2025-06-11 09:33:17,790 - INFO -    - sensible: nan
+2025-06-11 09:33:34,737 - INFO - Caption enrichie : A group of soldiers in the mountains, as seen in a photo from the Russian military in Macedonia.
+2025-06-11 09:33:34,738 - INFO - 
+Traitement de l'image : pho_2K2475_37_01
+2025-06-11 09:33:34,739 - INFO - Caption initiale : a group of soldiers in a trench
+2025-06-11 09:33:34,739 - INFO - Métadonnées utilisées :
+2025-06-11 09:33:34,739 - INFO -    - name: pho_2K2475_37_01.jpg
+2025-06-11 09:33:34,739 - INFO -    - origin: forbin
+2025-06-11 09:33:34,739 - INFO -    - num_page: 37.0
+2025-06-11 09:33:34,739 - INFO -    - num_photo: 1.0
+2025-06-11 09:33:34,739 - INFO -    - description: nan
+2025-06-11 09:33:34,739 - INFO -    - legende: ACROSS THEDESERT TO CONQUEST. BOTHAS MEN FIGHT THE GERMANS FOR THE POSSESSION OF A WELL.
+Resting after a hard day in theheat.
+2025-06-11 09:33:34,739 - INFO -    - legende_2: nan
+2025-06-11 09:33:34,739 - INFO -    - type: nan
+2025-06-11 09:33:34,739 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:33:34,739 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:33:34,740 - INFO -    - date: nan
+2025-06-11 09:33:34,740 - INFO -    - conflit: nan
+2025-06-11 09:33:34,740 - INFO -    - sensible: nan
+2025-06-11 09:34:11,761 - INFO - Caption enrichie : (Alt-text) ACROSS THEDESERT, THE GERMANS FIGHT FOR THE WELL'S POSSESSION, AS A GROUP OF SOLDIERS REST IN A TRENCH.
+2025-06-11 09:34:11,761 - INFO - 
+Traitement de l'image : pho_2K2479_29_01
+2025-06-11 09:34:11,761 - INFO - Caption initiale : a group of men in a field
+2025-06-11 09:34:11,761 - INFO - Métadonnées utilisées :
+2025-06-11 09:34:11,761 - INFO -    - name: pho_2K2479_29_01.jpg
+2025-06-11 09:34:11,761 - INFO -    - origin: forbin
+2025-06-11 09:34:11,761 - INFO -    - num_page: 29.0
+2025-06-11 09:34:11,761 - INFO -    - num_photo: 1.0
+2025-06-11 09:34:11,761 - INFO -    - description: nan
+2025-06-11 09:34:11,762 - INFO -    - legende: IN THE BYWAYS OF EMPIRE. - An interesting picture showing a recent scene at Sinkat in the Sudan. British officers are making presentations to chiefs who are loyal to Britian in her great struggle for the freedom of small peoples and races.
+2025-06-11 09:34:11,762 - INFO -    - legende_2: OFFICIAL PRESS BUREAU
+PASSED FOR TRANSMISSION ABROAD
+
+PLEASE ACKNOWLEDGE 
+LONDON DAILY MAIL COPYRIGHT.
+2025-06-11 09:34:11,762 - INFO -    - type: nan
+2025-06-11 09:34:11,762 - INFO -    - dimensions: 13,3x8,7
+2025-06-11 09:34:11,762 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:34:11,762 - INFO -    - date: nan
+2025-06-11 09:34:11,762 - INFO -    - conflit: nan
+2025-06-11 09:34:11,762 - INFO -    - sensible: nan
+2025-06-11 09:34:52,144 - INFO - Caption enrichie : In the byways of Empire, a group of men gather in a field in a recent scene at Sinkat in the Sudan, where British officers are making presentations to loyal chiefs in the great struggle for the freedom of small peoples and
+2025-06-11 09:34:52,145 - INFO - 
+Traitement de l'image : pho_2K2475_67_01
+2025-06-11 09:34:52,145 - INFO - Caption initiale : a group of men in turbans sitting around a fire
+2025-06-11 09:34:52,145 - INFO - Métadonnées utilisées :
+2025-06-11 09:34:52,145 - INFO -    - name: pho_2K2475_67_01.jpg
+2025-06-11 09:34:52,145 - INFO -    - origin: forbin
+2025-06-11 09:34:52,145 - INFO -    - num_page: 67.0
+2025-06-11 09:34:52,145 - INFO -    - num_photo: 1.0
+2025-06-11 09:34:52,145 - INFO -    - description: nan
+2025-06-11 09:34:52,145 - INFO -    - legende: INDIANS HOLDING A "JIGGER" PARADE.
+The "Jigger" is a tiny insect which causes great annoyance to ou men
+It can work its ay through thick socks and having down this, buries itself in the sole of the foot and then dies.
+2025-06-11 09:34:52,145 - INFO -    - legende_2: nan
+2025-06-11 09:34:52,145 - INFO -    - type: nan
+2025-06-11 09:34:52,145 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:34:52,145 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:34:52,145 - INFO -    - date: nan
+2025-06-11 09:34:52,145 - INFO -    - conflit: nan
+2025-06-11 09:34:52,145 - INFO -    - sensible: nan
+2025-06-11 09:35:15,732 - INFO - Caption enrichie : "A group of men in turbans sit around a fire, holding the tiny insect known as a 'jigger' and discussing its annoyance."
+2025-06-11 09:35:15,732 - INFO - 
+Traitement de l'image : pho_2K24793_47_04
+2025-06-11 09:35:15,732 - INFO - Caption initiale : a camp for displaced workers in san francisco
+2025-06-11 09:35:15,732 - INFO - Métadonnées utilisées :
+2025-06-11 09:35:15,732 - INFO -    - name: pho_2K24793_47_04.jpg
+2025-06-11 09:35:15,732 - INFO -    - origin: forbin
+2025-06-11 09:35:15,732 - INFO -    - num_page: 47.0
+2025-06-11 09:35:15,732 - INFO -    - num_photo: 4.0
+2025-06-11 09:35:15,732 - INFO -    - description: nan
+2025-06-11 09:35:15,732 - INFO -    - legende: Forbin
+Le camp des aviateurs français à Salonique
+2025-06-11 09:35:15,732 - INFO -    - legende_2: nan
+2025-06-11 09:35:15,732 - INFO -    - type: nan
+2025-06-11 09:35:15,733 - INFO -    - dimensions: nan
+2025-06-11 09:35:15,733 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:35:15,733 - INFO -    - date: nan
+2025-06-11 09:35:15,733 - INFO -    - conflit: nan
+2025-06-11 09:35:15,733 - INFO -    - sensible: nan
+2025-06-11 09:35:30,025 - INFO - Caption enrichie : A camp for displaced workers, located in San Francisco, is shown in the image.
+2025-06-11 09:35:30,026 - INFO - 
+Traitement de l'image : pho_2K247178_04_01
+2025-06-11 09:35:30,026 - INFO - Caption initiale : a group of men carrying a load of wood
+2025-06-11 09:35:30,026 - INFO - Métadonnées utilisées :
+2025-06-11 09:35:30,026 - INFO -    - name: pho_2K247178_04_01.jpg
+2025-06-11 09:35:30,026 - INFO -    - origin: forbin
+2025-06-11 09:35:30,026 - INFO -    - num_page: 4.0
+2025-06-11 09:35:30,026 - INFO -    - num_photo: 1.0
+2025-06-11 09:35:30,026 - INFO -    - description: nan
+2025-06-11 09:35:30,026 - INFO -    - legende: Touareg
+2025-06-11 09:35:30,026 - INFO -    - legende_2: nan
+2025-06-11 09:35:30,026 - INFO -    - type: nan
+2025-06-11 09:35:30,026 - INFO -    - dimensions: 13,5x11,5
+2025-06-11 09:35:30,026 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 09:35:30,026 - INFO -    - date: nan
+2025-06-11 09:35:30,026 - INFO -    - conflit: nan
+2025-06-11 09:35:30,026 - INFO -    - sensible: nan
+2025-06-11 09:35:41,493 - INFO - Caption enrichie : A group of Touareg men carrying a load of wood.
+2025-06-11 09:35:41,493 - INFO - 
+Traitement de l'image : pho_2K24791_02_01
+2025-06-11 09:35:41,493 - INFO - Caption initiale : a group of men riding horses in the mountains
+2025-06-11 09:35:41,493 - INFO - Métadonnées utilisées :
+2025-06-11 09:35:41,493 - INFO -    - name: pho_2K24791_02_01.jpg
+2025-06-11 09:35:41,493 - INFO -    - origin: forbin
+2025-06-11 09:35:41,493 - INFO -    - num_page: 2.0
+2025-06-11 09:35:41,493 - INFO -    - num_photo: 1.0
+2025-06-11 09:35:41,494 - INFO -    - description: nan
+2025-06-11 09:35:41,494 - INFO -    - legende: The British Camp at Doiran on the eve of the retreat. Officers crossing an ice river.
+
+Forbin
+
+pour 26 1915
+
+914
+2025-06-11 09:35:41,494 - INFO -    - legende_2: nan
+2025-06-11 09:35:41,494 - INFO -    - type: nan
+2025-06-11 09:35:41,494 - INFO -    - dimensions: 18x13
+2025-06-11 09:35:41,494 - INFO -    - xml: forbin/2K24791.xml
+2025-06-11 09:35:41,494 - INFO -    - date: nan
+2025-06-11 09:35:41,494 - INFO -    - conflit: nan
+2025-06-11 09:35:41,494 - INFO -    - sensible: nan
+2025-06-11 09:36:04,638 - INFO - Caption enrichie : A group of officers crossing an ice river on the eve of the retreat at the British Camp at Doiran in 1915.
+2025-06-11 09:36:04,638 - INFO - 
+Traitement de l'image : pho_2K24780_34_01
+2025-06-11 09:36:04,638 - INFO - Caption initiale : a tower in the middle of a field
+2025-06-11 09:36:04,638 - INFO - Métadonnées utilisées :
+2025-06-11 09:36:04,639 - INFO -    - name: pho_2K24780_34_01.jpg
+2025-06-11 09:36:04,639 - INFO -    - origin: forbin
+2025-06-11 09:36:04,639 - INFO -    - num_page: 34.0
+2025-06-11 09:36:04,639 - INFO -    - num_photo: 1.0
+2025-06-11 09:36:04,639 - INFO -    - description: nan
+2025-06-11 09:36:04,639 - INFO -    - legende: Official photograph taken on the British Western Front in France
+Concrete German observation Post in La Bassee
+2025-06-11 09:36:04,639 - INFO -    - legende_2: nan
+2025-06-11 09:36:04,639 - INFO -    - type: nan
+2025-06-11 09:36:04,639 - INFO -    - dimensions: nan
+2025-06-11 09:36:04,639 - INFO -    - xml: forbin/2K24780.xml
+2025-06-11 09:36:04,640 - INFO -    - date: nan
+2025-06-11 09:36:04,640 - INFO -    - conflit: nan
+2025-06-11 09:36:04,640 - INFO -    - sensible: nan
+2025-06-11 09:36:23,351 - INFO - Caption enrichie : This official photograph depicts a concrete German observation post in the middle of a field on the British Western Front in France.
+2025-06-11 09:36:23,352 - INFO - 
+Traitement de l'image : pho_2K247178_11_01
+2025-06-11 09:36:23,352 - INFO - Caption initiale : a photo of the st john's hospital in sydney
+2025-06-11 09:36:23,352 - INFO - Métadonnées utilisées :
+2025-06-11 09:36:23,352 - INFO -    - name: pho_2K247178_11_01.jpg
+2025-06-11 09:36:23,352 - INFO -    - origin: forbin
+2025-06-11 09:36:23,352 - INFO -    - num_page: 11.0
+2025-06-11 09:36:23,352 - INFO -    - num_photo: 1.0
+2025-06-11 09:36:23,352 - INFO -    - description: nan
+2025-06-11 09:36:23,352 - INFO -    - legende: Casernes de Dakar
+Colonies
+Forbin
+2025-06-11 09:36:23,353 - INFO -    - legende_2: nan
+2025-06-11 09:36:23,353 - INFO -    - type: nan
+2025-06-11 09:36:23,353 - INFO -    - dimensions: 16,5x11,5
+2025-06-11 09:36:23,353 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 09:36:23,353 - INFO -    - date: nan
+2025-06-11 09:36:23,353 - INFO -    - conflit: nan
+2025-06-11 09:36:23,353 - INFO -    - sensible: nan
+2025-06-11 09:36:40,627 - INFO - Caption enrichie : A photo of St John's Hospital in Sydney, located in the Forbin colonies of Dakar.
+2025-06-11 09:36:40,627 - INFO - 
+Traitement de l'image : pho_2K247157_57_01
+2025-06-11 09:36:40,627 - INFO - Caption initiale : a group of soldiers riding horses
+2025-06-11 09:36:40,627 - INFO - Métadonnées utilisées :
+2025-06-11 09:36:40,627 - INFO -    - name: pho_2K247157_57_01.jpg
+2025-06-11 09:36:40,627 - INFO -    - origin: forbin
+2025-06-11 09:36:40,628 - INFO -    - num_page: 57.0
+2025-06-11 09:36:40,628 - INFO -    - num_photo: 1.0
+2025-06-11 09:36:40,628 - INFO -    - description: nan
+2025-06-11 09:36:40,628 - INFO -    - legende: PALESTINE OFFICIAL PHOTOGRAPH. C, C..48. British Yeomanry passing through Damascus
+2025-06-11 09:36:40,628 - INFO -    - legende_2: nan
+2025-06-11 09:36:40,628 - INFO -    - type: nan
+2025-06-11 09:36:40,628 - INFO -    - dimensions: 20,5x15
+2025-06-11 09:36:40,628 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:36:40,628 - INFO -    - date: nan
+2025-06-11 09:36:40,628 - INFO -    - conflit: nan
+2025-06-11 09:36:40,628 - INFO -    - sensible: nan
+2025-06-11 09:36:58,652 - INFO - Caption enrichie : "A group of British Yeomanry soldiers riding horses through Damascus, captured in an official Palestinian photograph."
+2025-06-11 09:36:58,653 - INFO - 
+Traitement de l'image : pho_2K247157_29_01
+2025-06-11 09:36:58,653 - INFO - Caption initiale : a group of people gathered around a wagon
+2025-06-11 09:36:58,653 - INFO - Métadonnées utilisées :
+2025-06-11 09:36:58,653 - INFO -    - name: pho_2K247157_29_01.jpg
+2025-06-11 09:36:58,653 - INFO -    - origin: forbin
+2025-06-11 09:36:58,653 - INFO -    - num_page: 29.0
+2025-06-11 09:36:58,653 - INFO -    - num_photo: 1.0
+2025-06-11 09:36:58,653 - INFO -    - description: nan
+2025-06-11 09:36:58,653 - INFO -    - legende: The War
+French African troops with their baggage in France
+2025-06-11 09:36:58,653 - INFO -    - legende_2: nan
+2025-06-11 09:36:58,653 - INFO -    - type: nan
+2025-06-11 09:36:58,653 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:36:58,653 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:36:58,654 - INFO -    - date: nan
+2025-06-11 09:36:58,654 - INFO -    - conflit: nan
+2025-06-11 09:36:58,654 - INFO -    - sensible: nan
+2025-06-11 09:37:11,427 - INFO - Caption enrichie : A group of French African troops gathered around a wagon in France during The War.
+2025-06-11 09:37:11,427 - INFO - 
+Traitement de l'image : pho_2K24793_15_01
+2025-06-11 09:37:11,427 - INFO - Caption initiale : a sand dike in the middle of a field
+2025-06-11 09:37:11,427 - INFO - Métadonnées utilisées :
+2025-06-11 09:37:11,427 - INFO -    - name: pho_2K24793_15_01.jpg
+2025-06-11 09:37:11,427 - INFO -    - origin: forbin
+2025-06-11 09:37:11,427 - INFO -    - num_page: 15.0
+2025-06-11 09:37:11,427 - INFO -    - num_photo: 1.0
+2025-06-11 09:37:11,427 - INFO -    - description: nan
+2025-06-11 09:37:11,428 - INFO -    - legende: Forbin
+Ce dirigeable était l'un des plus puissants en existence. On peut juger de ses dimensions par cet instantané.
+2025-06-11 09:37:11,428 - INFO -    - legende_2: nan
+2025-06-11 09:37:11,428 - INFO -    - type: nan
+2025-06-11 09:37:11,428 - INFO -    - dimensions: nan
+2025-06-11 09:37:11,428 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:37:11,428 - INFO -    - date: nan
+2025-06-11 09:37:11,428 - INFO -    - conflit: nan
+2025-06-11 09:37:11,428 - INFO -    - sensible: nan
+2025-06-11 09:37:28,415 - INFO - Caption enrichie : This powerful blimp, as seen in this snapshot, stands tall in a field surrounded by sand dikes.
+2025-06-11 09:37:28,416 - INFO - 
+Traitement de l'image : pho_2K24793_40_01
+2025-06-11 09:37:28,416 - INFO - Caption initiale : a view of the san francisco bay area
+2025-06-11 09:37:28,416 - INFO - Métadonnées utilisées :
+2025-06-11 09:37:28,416 - INFO -    - name: pho_2K24793_40_01.jpg
+2025-06-11 09:37:28,416 - INFO -    - origin: forbin
+2025-06-11 09:37:28,416 - INFO -    - num_page: 40.0
+2025-06-11 09:37:28,416 - INFO -    - num_photo: 1.0
+2025-06-11 09:37:28,416 - INFO -    - description: nan
+2025-06-11 09:37:28,416 - INFO -    - legende: Salonique
+2025-06-11 09:37:28,416 - INFO -    - legende_2: nan
+2025-06-11 09:37:28,416 - INFO -    - type: nan
+2025-06-11 09:37:28,416 - INFO -    - dimensions: nan
+2025-06-11 09:37:28,416 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:37:28,416 - INFO -    - date: nan
+2025-06-11 09:37:28,416 - INFO -    - conflit: nan
+2025-06-11 09:37:28,416 - INFO -    - sensible: nan
+2025-06-11 09:37:39,369 - INFO - Caption enrichie : A view of the San Francisco Bay Area from Salonique.
+2025-06-11 09:37:39,369 - INFO - 
+Traitement de l'image : np_surlevif_19151204_06_04
+2025-06-11 09:37:39,369 - INFO - Caption initiale : a group of men selling a variety of items
+2025-06-11 09:37:39,369 - INFO - Métadonnées utilisées :
+2025-06-11 09:37:39,369 - INFO -    - name: np_surlevif_19151204_06_04.jpg
+2025-06-11 09:37:39,369 - INFO -    - origin: sur le vif
+2025-06-11 09:37:39,370 - INFO -    - num_page: 6.0
+2025-06-11 09:37:39,370 - INFO -    - num_photo: 4.0
+2025-06-11 09:37:39,370 - INFO -    - description: nan
+2025-06-11 09:37:39,370 - INFO -    - legende: Nos soldats ont ramassé sur le champ de bataille avec la victorieuse offensive de septembre un nombre considérable de fusils allemand.
+2025-06-11 09:37:39,370 - INFO -    - legende_2: nan
+2025-06-11 09:37:39,370 - INFO -    - type: nan
+2025-06-11 09:37:39,370 - INFO -    - dimensions: nan
+2025-06-11 09:37:39,370 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 09:37:39,370 - INFO -    - date: 19151204
+2025-06-11 09:37:39,370 - INFO -    - conflit: nan
+2025-06-11 09:37:39,370 - INFO -    - sensible: nan
+2025-06-11 09:38:05,518 - INFO - Caption enrichie : A group of men selling a variety of items on the battlefield during the September 1915 offensive, captured with a considerable number of German rifles.
+2025-06-11 09:38:05,518 - INFO - 
+Traitement de l'image : pho_2K247_01_01
+2025-06-11 09:38:05,518 - INFO - Caption initiale : a group of men on a roof
+2025-06-11 09:38:05,518 - INFO - Métadonnées utilisées :
+2025-06-11 09:38:05,518 - INFO -    - name: pho_2K247_01_01.jpg
+2025-06-11 09:38:05,519 - INFO -    - origin: forbin
+2025-06-11 09:38:05,519 - INFO -    - num_page: 1.0
+2025-06-11 09:38:05,519 - INFO -    - num_photo: 1.0
+2025-06-11 09:38:05,519 - INFO -    - description: nan
+2025-06-11 09:38:05,519 - INFO -    - legende: Forbin
+Sur le toit-terrasse du port
+2025-06-11 09:38:05,519 - INFO -    - legende_2: nan
+2025-06-11 09:38:05,519 - INFO -    - type: nan
+2025-06-11 09:38:05,519 - INFO -    - dimensions: nan
+2025-06-11 09:38:05,519 - INFO -    - xml: forbin/2K2473.xml
+2025-06-11 09:38:05,519 - INFO -    - date: nan
+2025-06-11 09:38:05,519 - INFO -    - conflit: nan
+2025-06-11 09:38:05,519 - INFO -    - sensible: nan
+2025-06-11 09:38:16,945 - INFO - Caption enrichie : A group of men are on the rooftop of a port.
+2025-06-11 09:38:16,945 - INFO - 
+Traitement de l'image : pho_2K2476_28_01
+2025-06-11 09:38:16,945 - INFO - Caption initiale : a group of men in uniforms
+2025-06-11 09:38:16,946 - INFO - Métadonnées utilisées :
+2025-06-11 09:38:16,946 - INFO -    - name: pho_2K2476_28_01.jpg
+2025-06-11 09:38:16,946 - INFO -    - origin: forbin
+2025-06-11 09:38:16,946 - INFO -    - num_page: 28.0
+2025-06-11 09:38:16,946 - INFO -    - num_photo: 1.0
+2025-06-11 09:38:16,946 - INFO -    - description: nan
+2025-06-11 09:38:16,946 - INFO -    - legende: NATIVES WHO HEPED TO WREST A COLONY FROM THE GERMANS.
+Nigerian troops landing at Calabar. They took a gallant part in the fighting of the Cameroons, and thus helped to deprive the Kaiser of a portion of his much-cherished African Empire.
+Photo shows. The native band. 
+2025-06-11 09:38:16,946 - INFO -    - legende_2: nan
+2025-06-11 09:38:16,946 - INFO -    - type: nan
+2025-06-11 09:38:16,946 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:38:16,946 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 09:38:16,946 - INFO -    - date: nan
+2025-06-11 09:38:16,946 - INFO -    - conflit: nan
+2025-06-11 09:38:16,946 - INFO -    - sensible: nan
+2025-06-11 09:38:34,224 - INFO - Caption enrichie : A group of native men in uniforms bravely fought against the Germans to wrest a colony from them.
+2025-06-11 09:38:34,224 - INFO - 
+Traitement de l'image : pho_2K247157_102_01
+2025-06-11 09:38:34,224 - INFO - Caption initiale : a car parked in front of a building
+2025-06-11 09:38:34,224 - INFO - Métadonnées utilisées :
+2025-06-11 09:38:34,224 - INFO -    - name: pho_2K247157_102_01.jpg
+2025-06-11 09:38:34,224 - INFO -    - origin: forbin
+2025-06-11 09:38:34,224 - INFO -    - num_page: 102.0
+2025-06-11 09:38:34,224 - INFO -    - num_photo: 1.0
+2025-06-11 09:38:34,225 - INFO -    - description: nan
+2025-06-11 09:38:34,225 - INFO -    - legende: CREDIT ARTING OVE.
+
+PHOTOGRAPH BY UNDERWOOD & UNDERWOOD, N.Y.
+SCENES IN JERUSALE CV ER VEICE FIGLAND IS MANDATORY?
+PHOTO OF -Duke of Sonnaught and General Allenby, in front, latter wearing the K-G..G. leaving the Military barracks on Lount Zion after the investitures. Jerusalem guardsmen are seen on the Extreme left. PHOTO VERIFIED AND FOUND CORRECT BY A.PK. TO AVOID LISTAKES NUMBER ON CAPTION SEEET MUST CORRESPOND WITE NUMBER ON PHOTOGRAP.
+
+2025-06-11 09:38:34,225 - INFO -    - legende_2: nan
+2025-06-11 09:38:34,225 - INFO -    - type: nan
+2025-06-11 09:38:34,225 - INFO -    - dimensions: nan
+2025-06-11 09:38:34,225 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:38:34,225 - INFO -    - date: nan
+2025-06-11 09:38:34,225 - INFO -    - conflit: nan
+2025-06-11 09:38:34,225 - INFO -    - sensible: nan
+2025-06-11 09:39:11,668 - INFO - Caption enrichie : A photo of Duke of Sonnaught and General Allenby, in front, wearing the K-G., leaving the Military barracks on Lount Zion after the investitures in Jerusalem, with guardsmen on the extreme left, verified and
+2025-06-11 09:39:11,669 - INFO - 
+Traitement de l'image : pho_2K47160_09_03
+2025-06-11 09:39:11,669 - INFO - Caption initiale : a woman in a hat and a man in a suit
+2025-06-11 09:39:11,669 - INFO - Métadonnées utilisées :
+2025-06-11 09:39:11,669 - INFO -    - name: pho_2K47160_09_03.jpg
+2025-06-11 09:39:11,669 - INFO -    - origin: forbin
+2025-06-11 09:39:11,669 - INFO -    - num_page: 9.0
+2025-06-11 09:39:11,669 - INFO -    - num_photo: 3.0
+2025-06-11 09:39:11,669 - INFO -    - description: nan
+2025-06-11 09:39:11,669 - INFO -    - legende: Bringing prisonniers into the towers
+2025-06-11 09:39:11,669 - INFO -    - legende_2: nan
+2025-06-11 09:39:11,669 - INFO -    - type: nan
+2025-06-11 09:39:11,669 - INFO -    - dimensions: nan
+2025-06-11 09:39:11,669 - INFO -    - xml: forbin/2K147160.xml
+2025-06-11 09:39:11,669 - INFO -    - date: nan
+2025-06-11 09:39:11,669 - INFO -    - conflit: nan
+2025-06-11 09:39:11,669 - INFO -    - sensible: nan
+2025-06-11 09:39:26,485 - INFO - Caption enrichie : In the towers, a woman in a hat and a man in a suit bring prisoners.
+2025-06-11 09:39:26,485 - INFO - 
+Traitement de l'image : pho_2K24788_57_01
+2025-06-11 09:39:26,485 - INFO - Caption initiale : a group of people and horses in a field
+2025-06-11 09:39:26,485 - INFO - Métadonnées utilisées :
+2025-06-11 09:39:26,485 - INFO -    - name: pho_2K24788_57_01.jpg
+2025-06-11 09:39:26,485 - INFO -    - origin: forbin
+2025-06-11 09:39:26,485 - INFO -    - num_page: 57.0
+2025-06-11 09:39:26,485 - INFO -    - num_photo: 1.0
+2025-06-11 09:39:26,485 - INFO -    - description: nan
+2025-06-11 09:39:26,486 - INFO -    - legende: A Greek convoy crossing an old cemetery towards Stroummitza.
+
+Forbin
+2025-06-11 09:39:26,486 - INFO -    - legende_2: nan
+2025-06-11 09:39:26,486 - INFO -    - type: nan
+2025-06-11 09:39:26,486 - INFO -    - dimensions: 18x13
+2025-06-11 09:39:26,486 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:39:26,486 - INFO -    - date: nan
+2025-06-11 09:39:26,486 - INFO -    - conflit: nan
+2025-06-11 09:39:26,486 - INFO -    - sensible: nan
+2025-06-11 09:39:47,076 - INFO - Caption enrichie : A group of people and horses in a field, with a Greek convoy crossing an old cemetery towards Stroummitza.
+2025-06-11 09:39:47,077 - INFO - 
+Traitement de l'image : pho_2K2479_42_01
+2025-06-11 09:39:47,077 - INFO - Caption initiale : a horse race in a desert
+2025-06-11 09:39:47,077 - INFO - Métadonnées utilisées :
+2025-06-11 09:39:47,077 - INFO -    - name: pho_2K2479_42_01.jpg
+2025-06-11 09:39:47,077 - INFO -    - origin: forbin
+2025-06-11 09:39:47,077 - INFO -    - num_page: 42.0
+2025-06-11 09:39:47,077 - INFO -    - num_photo: 1.0
+2025-06-11 09:39:47,077 - INFO -    - description: nan
+2025-06-11 09:39:47,077 - INFO -    - legende: Soudan
+
+Forbin
+2025-06-11 09:39:47,077 - INFO -    - legende_2: COPYRIGHT
+GRAPHIC PHOTO UNION,
+TALLIS STREET, EC.
+2025-06-11 09:39:47,077 - INFO -    - type: nan
+2025-06-11 09:39:47,077 - INFO -    - dimensions: 14,5x9
+2025-06-11 09:39:47,077 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:39:47,077 - INFO -    - date: nan
+2025-06-11 09:39:47,077 - INFO -    - conflit: nan
+2025-06-11 09:39:47,077 - INFO -    - sensible: nan
+2025-06-11 09:39:56,719 - INFO - Caption enrichie : A horse race in a desert, captured by Forbin.
+2025-06-11 09:39:56,719 - INFO - 
+Traitement de l'image : pho_2K24791_08_01
+2025-06-11 09:39:56,719 - INFO - Caption initiale : a group of men working in a tobacco field
+2025-06-11 09:39:56,719 - INFO - Métadonnées utilisées :
+2025-06-11 09:39:56,719 - INFO -    - name: pho_2K24791_08_01.jpg
+2025-06-11 09:39:56,719 - INFO -    - origin: forbin
+2025-06-11 09:39:56,719 - INFO -    - num_page: 8.0
+2025-06-11 09:39:56,719 - INFO -    - num_photo: 1.0
+2025-06-11 09:39:56,720 - INFO -    - description: nan
+2025-06-11 09:39:56,720 - INFO -    - legende: 6072
+2025-06-11 09:39:56,720 - INFO -    - legende_2: nan
+2025-06-11 09:39:56,720 - INFO -    - type: nan
+2025-06-11 09:39:56,720 - INFO -    - dimensions: 18x13
+2025-06-11 09:39:56,720 - INFO -    - xml: forbin/2K24791.xml
+2025-06-11 09:39:56,720 - INFO -    - date: nan
+2025-06-11 09:39:56,720 - INFO -    - conflit: nan
+2025-06-11 09:39:56,720 - INFO -    - sensible: nan
+2025-06-11 09:40:04,892 - INFO - Caption enrichie : A group of men working in a tobacco field.
+2025-06-11 09:40:04,893 - INFO - 
+Traitement de l'image : pho_2K247134_01_01
+2025-06-11 09:40:04,893 - INFO - Caption initiale : a group of soldiers eating a meal
+2025-06-11 09:40:04,893 - INFO - Métadonnées utilisées :
+2025-06-11 09:40:04,893 - INFO -    - name: pho_2K247134_01_01.jpg
+2025-06-11 09:40:04,893 - INFO -    - origin: forbin
+2025-06-11 09:40:04,893 - INFO -    - num_page: 1.0
+2025-06-11 09:40:04,893 - INFO -    - num_photo: 1.0
+2025-06-11 09:40:04,893 - INFO -    - description: Inde
+2025-06-11 09:40:04,893 - INFO -    - legende: nan
+2025-06-11 09:40:04,893 - INFO -    - legende_2: nan
+2025-06-11 09:40:04,893 - INFO -    - type: nan
+2025-06-11 09:40:04,893 - INFO -    - dimensions: nan
+2025-06-11 09:40:04,893 - INFO -    - xml: forbin/2K247134.xml
+2025-06-11 09:40:04,893 - INFO -    - date: nan
+2025-06-11 09:40:04,894 - INFO -    - conflit: nan
+2025-06-11 09:40:04,894 - INFO -    - sensible: nan
+2025-06-11 09:40:12,459 - INFO - Caption enrichie : "A group of soldiers eating a meal."
+2025-06-11 09:40:12,460 - INFO - 
+Traitement de l'image : pho_2K247157_16_01
+2025-06-11 09:40:12,460 - INFO - Caption initiale : a group of men outside a syrian tavern
+2025-06-11 09:40:12,460 - INFO - Métadonnées utilisées :
+2025-06-11 09:40:12,460 - INFO -    - name: pho_2K247157_16_01.jpg
+2025-06-11 09:40:12,460 - INFO -    - origin: forbin
+2025-06-11 09:40:12,460 - INFO -    - num_page: 16.0
+2025-06-11 09:40:12,460 - INFO -    - num_photo: 1.0
+2025-06-11 09:40:12,460 - INFO -    - description: nan
+2025-06-11 09:40:12,460 - INFO -    - legende: The war
+2025-06-11 09:40:12,460 - INFO -    - legende_2:  Zouaves or Turcos in a billet in Northern France
+2025-06-11 09:40:12,460 - INFO -    - type: nan
+2025-06-11 09:40:12,460 - INFO -    - dimensions: nan
+2025-06-11 09:40:12,460 - INFO -    - xml: 21,5x16,5
+2025-06-11 09:40:12,460 - INFO -    - date: forbin/2K247157.xml
+2025-06-11 09:40:12,460 - INFO -    - conflit: nan
+2025-06-11 09:40:12,460 - INFO -    - sensible: nan
+2025-06-11 09:40:48,608 - INFO - Caption enrichie : A group of men in war attire, possibly a group of Zouaves or Turcos, are seen outside a tavern in Northern France in a photo dated forbin/2K247157.xml.
+2025-06-11 09:40:48,608 - INFO - 
+Traitement de l'image : pho_2K24711_02_01
+2025-06-11 09:40:48,609 - INFO - Caption initiale : a group of soldiers in a savannah
+2025-06-11 09:40:48,609 - INFO - Métadonnées utilisées :
+2025-06-11 09:40:48,609 - INFO -    - name: pho_2K24711_02_01.jpg
+2025-06-11 09:40:48,609 - INFO -    - origin: forbin
+2025-06-11 09:40:48,609 - INFO -    - num_page: 2.0
+2025-06-11 09:40:48,609 - INFO -    - num_photo: 1.0
+2025-06-11 09:40:48,609 - INFO -    - description: nan
+2025-06-11 09:40:48,609 - INFO -    - legende: Durban (Port Nalcef) water Police
+2025-06-11 09:40:48,609 - INFO -    - legende_2: nan
+2025-06-11 09:40:48,609 - INFO -    - type: nan
+2025-06-11 09:40:48,609 - INFO -    - dimensions: nan
+2025-06-11 09:40:48,609 - INFO -    - xml: forbin/2K24711.xml
+2025-06-11 09:40:48,609 - INFO -    - date: nan
+2025-06-11 09:40:48,609 - INFO -    - conflit: nan
+2025-06-11 09:40:48,609 - INFO -    - sensible: nan
+2025-06-11 09:41:01,470 - INFO - Caption enrichie : A group of soldiers in a savannah, Durban, water Police.
+2025-06-11 09:41:01,470 - INFO - 
+Traitement de l'image : pho_2K24793_01_01
+2025-06-11 09:41:01,470 - INFO - Caption initiale : a crashed plane on a train
+2025-06-11 09:41:01,470 - INFO - Métadonnées utilisées :
+2025-06-11 09:41:01,470 - INFO -    - name: pho_2K24793_01_01.jpg
+2025-06-11 09:41:01,470 - INFO -    - origin: forbin
+2025-06-11 09:41:01,470 - INFO -    - num_page: 1.0
+2025-06-11 09:41:01,471 - INFO -    - num_photo: 1.0
+2025-06-11 09:41:01,471 - INFO -    - description: nan
+2025-06-11 09:41:01,471 - INFO -    - legende: Capture d'un Amarite - Salonique
+almost brand new, captured by the French N of Salonica waiting for its transportation to the town. It is the third German aeroplane captured in Salonica camp in a month
+2025-06-11 09:41:01,471 - INFO -    - legende_2: nan
+2025-06-11 09:41:01,471 - INFO -    - type: nan
+2025-06-11 09:41:01,471 - INFO -    - dimensions: nan
+2025-06-11 09:41:01,471 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:41:01,471 - INFO -    - date: nan
+2025-06-11 09:41:01,471 - INFO -    - conflit: nan
+2025-06-11 09:41:01,471 - INFO -    - sensible: nan
+2025-06-11 09:41:34,526 - INFO - Caption enrichie : This almost brand new German aeroplane, captured by the French N in Salonica, awaits transportation to the town and is the third to be seized in a month. It was found crashed on a train.
+2025-06-11 09:41:34,527 - INFO - 
+Traitement de l'image : np_surlevif_19160101_08_02
+2025-06-11 09:41:34,527 - INFO - Caption initiale : a suitcase full of items from the samoan culture
+2025-06-11 09:41:34,527 - INFO - Métadonnées utilisées :
+2025-06-11 09:41:34,527 - INFO -    - name: np_surlevif_19160101_08_02.jpg
+2025-06-11 09:41:34,527 - INFO -    - origin: sur le vif
+2025-06-11 09:41:34,527 - INFO -    - num_page: 8.0
+2025-06-11 09:41:34,527 - INFO -    - num_photo: 2.0
+2025-06-11 09:41:34,527 - INFO -    - description: nan
+2025-06-11 09:41:34,527 - INFO -    - legende: Les valises trouvées chez les espions allemands bondées de  pièces à conviction. Elles renfermaient des machines infernales prêtes à être cachées dans des soutes  de navires, des cartouches de dynamite, des fausses barbes, etc.
+2025-06-11 09:41:34,527 - INFO -    - legende_2: nan
+2025-06-11 09:41:34,527 - INFO -    - type: nan
+2025-06-11 09:41:34,527 - INFO -    - dimensions: nan
+2025-06-11 09:41:34,527 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 09:41:34,527 - INFO -    - date: 19160101
+2025-06-11 09:41:34,527 - INFO -    - conflit: nan
+2025-06-11 09:41:34,528 - INFO -    - sensible: nan
+2025-06-11 09:42:07,885 - INFO - Caption enrichie : On January 1st, 1916, during World War I, German spies found a suitcase full of items from Samoan culture hidden in a cellar in a secret underground bunker.
+2025-06-11 09:42:07,886 - INFO - 
+Traitement de l'image : pho_2K247178_21_01
+2025-06-11 09:42:07,886 - INFO - Caption initiale : a group of nguni warriors in a savannah
+2025-06-11 09:42:07,886 - INFO - Métadonnées utilisées :
+2025-06-11 09:42:07,886 - INFO -    - name: pho_2K247178_21_01.jpg
+2025-06-11 09:42:07,886 - INFO -    - origin: forbin
+2025-06-11 09:42:07,886 - INFO -    - num_page: 21.0
+2025-06-11 09:42:07,886 - INFO -    - num_photo: 1.0
+2025-06-11 09:42:07,886 - INFO -    - description: nan
+2025-06-11 09:42:07,886 - INFO -    - legende: Lion hunt a Stowy Atli
+Two minutes after actual kill
+2025-06-11 09:42:07,886 - INFO -    - legende_2: nan
+2025-06-11 09:42:07,886 - INFO -    - type: nan
+2025-06-11 09:42:07,886 - INFO -    - dimensions: 23x18
+2025-06-11 09:42:07,886 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 09:42:07,886 - INFO -    - date: nan
+2025-06-11 09:42:07,886 - INFO -    - conflit: nan
+2025-06-11 09:42:07,887 - INFO -    - sensible: nan
+2025-06-11 09:42:27,009 - INFO - Caption enrichie : A group of Nguni warriors in a savannah hunts a Stowy Atli two minutes after the kill.
+2025-06-11 09:42:27,009 - INFO - 
+Traitement de l'image : pho_2K4716_07_01
+2025-06-11 09:42:27,009 - INFO - Caption initiale : a group of men marching in a field
+2025-06-11 09:42:27,009 - INFO - Métadonnées utilisées :
+2025-06-11 09:42:27,009 - INFO -    - name: pho_2K4716_07_01.jpg
+2025-06-11 09:42:27,009 - INFO -    - origin: forbin
+2025-06-11 09:42:27,009 - INFO -    - num_page: 7.0
+2025-06-11 09:42:27,009 - INFO -    - num_photo: 1.0
+2025-06-11 09:42:27,009 - INFO -    - description: nan
+2025-06-11 09:42:27,009 - INFO -    - legende: Tripoli
+Italian soliders spit and jeer to prisoners
+2025-06-11 09:42:27,009 - INFO -    - legende_2: nan
+2025-06-11 09:42:27,010 - INFO -    - type: nan
+2025-06-11 09:42:27,010 - INFO -    - dimensions: nan
+2025-06-11 09:42:27,010 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 09:42:27,010 - INFO -    - date: nan
+2025-06-11 09:42:27,010 - INFO -    - conflit: nan
+2025-06-11 09:42:27,010 - INFO -    - sensible: nan
+2025-06-11 09:42:44,428 - INFO - Caption enrichie : In a field, a group of men march, with Italian soldiers spitting and jeering at prisoners nearby.
+2025-06-11 09:42:44,429 - INFO - 
+Traitement de l'image : pho_2K24791_30_01
+2025-06-11 09:42:44,429 - INFO - Caption initiale : a group of camels and men
+2025-06-11 09:42:44,429 - INFO - Métadonnées utilisées :
+2025-06-11 09:42:44,429 - INFO -    - name: pho_2K24791_30_01.jpg
+2025-06-11 09:42:44,430 - INFO -    - origin: forbin
+2025-06-11 09:42:44,430 - INFO -    - num_page: 30.0
+2025-06-11 09:42:44,430 - INFO -    - num_photo: 1.0
+2025-06-11 09:42:44,430 - INFO -    - description: nan
+2025-06-11 09:42:44,430 - INFO -    - legende: Forbin
+2025-06-11 09:42:44,430 - INFO -    - legende_2: nan
+2025-06-11 09:42:44,430 - INFO -    - type: nan
+2025-06-11 09:42:44,431 - INFO -    - dimensions: 18x13
+2025-06-11 09:42:44,431 - INFO -    - xml: forbin/2K24791.xml
+2025-06-11 09:42:44,431 - INFO -    - date: nan
+2025-06-11 09:42:44,431 - INFO -    - conflit: nan
+2025-06-11 09:42:44,431 - INFO -    - sensible: nan
+2025-06-11 09:42:55,538 - INFO - Caption enrichie : "A group of camels and men are seen in the image."
+2025-06-11 09:42:55,538 - INFO - 
+Traitement de l'image : pho_2K2475_41_01
+2025-06-11 09:42:55,538 - INFO - Caption initiale : a man repairing a cannon
+2025-06-11 09:42:55,538 - INFO - Métadonnées utilisées :
+2025-06-11 09:42:55,538 - INFO -    - name: pho_2K2475_41_01.jpg
+2025-06-11 09:42:55,538 - INFO -    - origin: forbin
+2025-06-11 09:42:55,539 - INFO -    - num_page: 41.0
+2025-06-11 09:42:55,539 - INFO -    - num_photo: 1.0
+2025-06-11 09:42:55,539 - INFO -    - description: nan
+2025-06-11 09:42:55,539 - INFO -    - legende: THE LANDING OF A GUN. Landing an Indian battery. thanks to sea power, Great Britain can safely convey men or guns to any part of the globe.
+2025-06-11 09:42:55,539 - INFO -    - legende_2: nan
+2025-06-11 09:42:55,539 - INFO -    - type: nan
+2025-06-11 09:42:55,539 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:42:55,539 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:42:55,539 - INFO -    - date: nan
+2025-06-11 09:42:55,539 - INFO -    - conflit: nan
+2025-06-11 09:42:55,539 - INFO -    - sensible: nan
+2025-06-11 09:43:22,001 - INFO - Caption enrichie : A man is repairing a cannon on an Indian battery thanks to sea power, enabling Great Britain to safely convey men or guns to any part of the globe.
+2025-06-11 09:43:22,002 - INFO - 
+Traitement de l'image : pho_2K2479_22_01
+2025-06-11 09:43:22,002 - INFO - Caption initiale : a man in a saharan desert
+2025-06-11 09:43:22,002 - INFO - Métadonnées utilisées :
+2025-06-11 09:43:22,002 - INFO -    - name: pho_2K2479_22_01.jpg
+2025-06-11 09:43:22,002 - INFO -    - origin: forbin
+2025-06-11 09:43:22,002 - INFO -    - num_page: 22.0
+2025-06-11 09:43:22,002 - INFO -    - num_photo: 1.0
+2025-06-11 09:43:22,002 - INFO -    - description: nan
+2025-06-11 09:43:22,002 - INFO -    - legende: A winner at a military Tournament
+2025-06-11 09:43:22,002 - INFO -    - legende_2: tampon coupé : COPYRIGHT
+GRAPHIC PHOTO UNION,
+TALLIS STREET, EC.
+2025-06-11 09:43:22,002 - INFO -    - type: nan
+2025-06-11 09:43:22,002 - INFO -    - dimensions: 14,5x9
+2025-06-11 09:43:22,003 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:43:22,003 - INFO -    - date: nan
+2025-06-11 09:43:22,003 - INFO -    - conflit: nan
+2025-06-11 09:43:22,003 - INFO -    - sensible: nan
+2025-06-11 09:43:35,377 - INFO - Caption enrichie : A man in a Saharan desert, a winner at a military tournament.
+2025-06-11 09:43:35,378 - INFO - 
+Traitement de l'image : pho_2K2475_19_01
+2025-06-11 09:43:35,378 - INFO - Caption initiale : a group of men on a muddy road
+2025-06-11 09:43:35,378 - INFO - Métadonnées utilisées :
+2025-06-11 09:43:35,378 - INFO -    - name: pho_2K2475_19_01.jpg
+2025-06-11 09:43:35,378 - INFO -    - origin: forbin
+2025-06-11 09:43:35,378 - INFO -    - num_page: 19.0
+2025-06-11 09:43:35,378 - INFO -    - num_photo: 1.0
+2025-06-11 09:43:35,378 - INFO -    - description: nan
+2025-06-11 09:43:35,378 - INFO -    - legende: WITH THE FORCES IN GERMAN EAST AFRICA
+Motor lorrie crossing a bridge built of timber by the East African Pioneers.
+2025-06-11 09:43:35,378 - INFO -    - legende_2: nan
+2025-06-11 09:43:35,378 - INFO -    - type: nan
+2025-06-11 09:43:35,378 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:43:35,378 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:43:35,378 - INFO -    - date: nan
+2025-06-11 09:43:35,378 - INFO -    - conflit: nan
+2025-06-11 09:43:35,378 - INFO -    - sensible: nan
+2025-06-11 09:43:57,800 - INFO - Caption enrichie : A group of men on a muddy road in German East Africa, crossing a timber bridge with a motor lorrie in the background.
+2025-06-11 09:43:57,800 - INFO - 
+Traitement de l'image : pho_2K2475_33_01
+2025-06-11 09:43:57,800 - INFO - Caption initiale : a man sitting on a rock wall
+2025-06-11 09:43:57,800 - INFO - Métadonnées utilisées :
+2025-06-11 09:43:57,800 - INFO -    - name: pho_2K2475_33_01.jpg
+2025-06-11 09:43:57,800 - INFO -    - origin: forbin
+2025-06-11 09:43:57,800 - INFO -    - num_page: 33.0
+2025-06-11 09:43:57,800 - INFO -    - num_photo: 1.0
+2025-06-11 09:43:57,800 - INFO -    - description: nan
+2025-06-11 09:43:57,800 - INFO -    - legende: THE CAMPAIGN IN GERMAN EAST AFRICA
+Our Photo shows an (outpont??) of the Empire.
+2025-06-11 09:43:57,800 - INFO -    - legende_2: nan
+2025-06-11 09:43:57,801 - INFO -    - type: nan
+2025-06-11 09:43:57,801 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:43:57,801 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:43:57,801 - INFO -    - date: nan
+2025-06-11 09:43:57,801 - INFO -    - conflit: nan
+2025-06-11 09:43:57,801 - INFO -    - sensible: nan
+2025-06-11 09:44:11,265 - INFO - Caption enrichie : In this photo of German East Africa, a man is sitting on a rock wall.
+2025-06-11 09:44:11,266 - INFO - 
+Traitement de l'image : pho_2K2475_50_01
+2025-06-11 09:44:11,266 - INFO - Caption initiale : a man and a cannon
+2025-06-11 09:44:11,266 - INFO - Métadonnées utilisées :
+2025-06-11 09:44:11,266 - INFO -    - name: pho_2K2475_50_01.jpg
+2025-06-11 09:44:11,266 - INFO -    - origin: forbin
+2025-06-11 09:44:11,266 - INFO -    - num_page: 50.0
+2025-06-11 09:44:11,266 - INFO -    - num_photo: 1.0
+2025-06-11 09:44:11,266 - INFO -    - description: nan
+2025-06-11 09:44:11,266 - INFO -    - legende: THE FIRST THREE INCH DYNAMITE GUN MADE IN BRITISH EAST AFRICA.
+DESIGNED BY LIEUT A.H. REED AND CONSTRUCTED UNDER W.E. NEVILL.
+
+British Lieutenant A. H. Reed
+Gun constructor W. E. Nevill
+2025-06-11 09:44:11,266 - INFO -    - legende_2: nan
+2025-06-11 09:44:11,266 - INFO -    - type: nan
+2025-06-11 09:44:11,266 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:44:11,266 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:44:11,266 - INFO -    - date: nan
+2025-06-11 09:44:11,266 - INFO -    - conflit: nan
+2025-06-11 09:44:11,266 - INFO -    - sensible: nan
+2025-06-11 09:44:48,888 - INFO - Caption enrichie : British Lieutenant A. H. Reed, the designer, constructed this first three-inch dynamite gun in British East Africa under the guidance of W. E. Nevill, the gun constructor, as seen in this image of a man and a can
+2025-06-11 09:44:48,889 - INFO - 
+Traitement de l'image : pho_2K2475_79_01
+2025-06-11 09:44:48,889 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 09:44:48,889 - INFO - Métadonnées utilisées :
+2025-06-11 09:44:48,889 - INFO -    - name: pho_2K2475_79_01.jpg
+2025-06-11 09:44:48,889 - INFO -    - origin: forbin
+2025-06-11 09:44:48,889 - INFO -    - num_page: 79.0
+2025-06-11 09:44:48,889 - INFO -    - num_photo: 1.0
+2025-06-11 09:44:48,889 - INFO -    - description: nan
+2025-06-11 09:44:48,889 - INFO -    - legende: THE WAR: :THE MEN WHO ARE KEEPING THEIR END UP IN THE OUTPOSTS OF THE EMPIRE: People are apt to forget the men who are fighting in the remote coners of the Empire; Photographs show the fighting in British East Africa
+In the trenches; The men are wearing sun helmets, and are so warm that they have discarded their coats;
+2025-06-11 09:44:48,889 - INFO -    - legende_2: nan
+2025-06-11 09:44:48,889 - INFO -    - type: nan
+2025-06-11 09:44:48,889 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:44:48,889 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:44:48,889 - INFO -    - date: nan
+2025-06-11 09:44:48,889 - INFO -    - conflit: nan
+2025-06-11 09:44:48,889 - INFO -    - sensible: nan
+2025-06-11 09:45:11,351 - INFO - Caption enrichie : A group of soldiers in uniform are shown in the trenches, wearing sun helmets and warm clothing, fighting in British East Africa.
+2025-06-11 09:45:11,352 - INFO - 
+Traitement de l'image : pho_2K247157_49_01
+2025-06-11 09:45:11,352 - INFO - Caption initiale : a tent city near the san juan river
+2025-06-11 09:45:11,352 - INFO - Métadonnées utilisées :
+2025-06-11 09:45:11,352 - INFO -    - name: pho_2K247157_49_01.jpg
+2025-06-11 09:45:11,352 - INFO -    - origin: forbin
+2025-06-11 09:45:11,352 - INFO -    - num_page: 49.0
+2025-06-11 09:45:11,352 - INFO -    - num_photo: 1.0
+2025-06-11 09:45:11,353 - INFO -    - description: nan
+2025-06-11 09:45:11,353 - INFO -    - legende: EGYPTIAN OFFICIAL PHOTOGRAPH. Sheikh KALRAWANY. This is one of the many interesting buildings erected near the spot where famous local sheikhs have been buried. It lies nearly two miles north of Bir Es Zeit and war the scene of very heavy fighting during thr advance of the Irish troops on March 9th.
+2025-06-11 09:45:11,353 - INFO -    - legende_2: nan
+2025-06-11 09:45:11,353 - INFO -    - type: nan
+2025-06-11 09:45:11,353 - INFO -    - dimensions: 20,5x15
+2025-06-11 09:45:11,353 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:45:11,353 - INFO -    - date: nan
+2025-06-11 09:45:11,353 - INFO -    - conflit: nan
+2025-06-11 09:45:11,353 - INFO -    - sensible: nan
+2025-06-11 09:45:49,629 - INFO - Caption enrichie : This tent city near the San Juan River is one of many interesting buildings erected near the spot where famous local sheikhs have been buried, nearly two miles north of Bir Es Zeit, and was the scene of very heavy fighting during the advance of
+2025-06-11 09:45:49,629 - INFO - 
+Traitement de l'image : pho_2K2475_80_01
+2025-06-11 09:45:49,629 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 09:45:49,630 - INFO - Métadonnées utilisées :
+2025-06-11 09:45:49,630 - INFO -    - name: pho_2K2475_80_01.jpg
+2025-06-11 09:45:49,630 - INFO -    - origin: forbin
+2025-06-11 09:45:49,630 - INFO -    - num_page: 80.0
+2025-06-11 09:45:49,630 - INFO -    - num_photo: 1.0
+2025-06-11 09:45:49,630 - INFO -    - description: nan
+2025-06-11 09:45:49,630 - INFO -    - legende: UNIQUE PHOTOGRA PHS
+
+UNIQUE PHOTOGRAPHS OF THE EAST AFRICAN CAMPAIGN.
+(For stroy see general caption.)
+Photo shows. German Native troops (Askaris).
+
+Forbin
+2025-06-11 09:45:49,630 - INFO -    - legende_2: nan
+2025-06-11 09:45:49,630 - INFO -    - type: nan
+2025-06-11 09:45:49,630 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:45:49,630 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:45:49,630 - INFO -    - date: nan
+2025-06-11 09:45:49,630 - INFO -    - conflit: nan
+2025-06-11 09:45:49,630 - INFO -    - sensible: nan
+2025-06-11 09:46:08,154 - INFO - Caption enrichie : A group of German Native troops (Askaris) in uniform, photographed during the East African campaign.
+2025-06-11 09:46:08,155 - INFO - 
+Traitement de l'image : pho_2K24793_48_01
+2025-06-11 09:46:08,155 - INFO - Caption initiale : a group of soldiers boarding a ship
+2025-06-11 09:46:08,155 - INFO - Métadonnées utilisées :
+2025-06-11 09:46:08,155 - INFO -    - name: pho_2K24793_48_01.jpg
+2025-06-11 09:46:08,155 - INFO -    - origin: forbin
+2025-06-11 09:46:08,155 - INFO -    - num_page: 48.0
+2025-06-11 09:46:08,155 - INFO -    - num_photo: 1.0
+2025-06-11 09:46:08,155 - INFO -    - description: nan
+2025-06-11 09:46:08,156 - INFO -    - legende: Forbin
+The end of the journey
+2025-06-11 09:46:08,156 - INFO -    - legende_2: nan
+2025-06-11 09:46:08,156 - INFO -    - type: nan
+2025-06-11 09:46:08,156 - INFO -    - dimensions: nan
+2025-06-11 09:46:08,156 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:46:08,156 - INFO -    - date: nan
+2025-06-11 09:46:08,156 - INFO -    - conflit: nan
+2025-06-11 09:46:08,156 - INFO -    - sensible: nan
+2025-06-11 09:46:21,872 - INFO - Caption enrichie : A group of soldiers boarding a ship, signaling the end of their journey.
+2025-06-11 09:46:21,872 - INFO - 
+Traitement de l'image : pho_2K4716_14_01
+2025-06-11 09:46:21,872 - INFO - Caption initiale : a group of men pulling a cart
+2025-06-11 09:46:21,872 - INFO - Métadonnées utilisées :
+2025-06-11 09:46:21,872 - INFO -    - name: pho_2K4716_14_01.jpg
+2025-06-11 09:46:21,872 - INFO -    - origin: forbin
+2025-06-11 09:46:21,872 - INFO -    - num_page: 14.0
+2025-06-11 09:46:21,872 - INFO -    - num_photo: 1.0
+2025-06-11 09:46:21,872 - INFO -    - description: nan
+2025-06-11 09:46:21,872 - INFO -    - legende: Malte transport
+2025-06-11 09:46:21,872 - INFO -    - legende_2: nan
+2025-06-11 09:46:21,873 - INFO -    - type: nan
+2025-06-11 09:46:21,873 - INFO -    - dimensions: nan
+2025-06-11 09:46:21,873 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 09:46:21,873 - INFO -    - date: nan
+2025-06-11 09:46:21,873 - INFO -    - conflit: nan
+2025-06-11 09:46:21,873 - INFO -    - sensible: nan
+2025-06-11 09:46:30,274 - INFO - Caption enrichie : A group of men are transporting a cart.
+2025-06-11 09:46:30,275 - INFO - 
+Traitement de l'image : pho_2K24711_08_01
+2025-06-11 09:46:30,275 - INFO - Caption initiale : a hut with two men in front of it
+2025-06-11 09:46:30,275 - INFO - Métadonnées utilisées :
+2025-06-11 09:46:30,275 - INFO -    - name: pho_2K24711_08_01.jpg
+2025-06-11 09:46:30,275 - INFO -    - origin: forbin
+2025-06-11 09:46:30,275 - INFO -    - num_page: 8.0
+2025-06-11 09:46:30,275 - INFO -    - num_photo: 1.0
+2025-06-11 09:46:30,275 - INFO -    - description: nan
+2025-06-11 09:46:30,275 - INFO -    - legende: Native policemen
+La police indigène du Transvaal
+Forbin
+2025-06-11 09:46:30,275 - INFO -    - legende_2: nan
+2025-06-11 09:46:30,275 - INFO -    - type: nan
+2025-06-11 09:46:30,275 - INFO -    - dimensions: nan
+2025-06-11 09:46:30,275 - INFO -    - xml: forbin/2K24711.xml
+2025-06-11 09:46:30,276 - INFO -    - date: nan
+2025-06-11 09:46:30,276 - INFO -    - conflit: nan
+2025-06-11 09:46:30,276 - INFO -    - sensible: nan
+2025-06-11 09:46:51,519 - INFO - Caption enrichie : Forbin's image shows a hut with two native policemen in front of it, taken in the Transvaal region.
+2025-06-11 09:46:51,520 - INFO - 
+Traitement de l'image : pho_2K247157_55_01
+2025-06-11 09:46:51,520 - INFO - Caption initiale : a group of men in a field
+2025-06-11 09:46:51,520 - INFO - Métadonnées utilisées :
+2025-06-11 09:46:51,520 - INFO -    - name: pho_2K247157_55_01.jpg
+2025-06-11 09:46:51,520 - INFO -    - origin: forbin
+2025-06-11 09:46:51,520 - INFO -    - num_page: 55.0
+2025-06-11 09:46:51,520 - INFO -    - num_photo: 1.0
+2025-06-11 09:46:51,520 - INFO -    - description: nan
+2025-06-11 09:46:51,520 - INFO -    - legende: From the Uplands cart of the Jordan, to Jerusalem. Caravane trabsportant du ?? Les ouvriers de la ?
+2025-06-11 09:46:51,520 - INFO -    - legende_2: nan
+2025-06-11 09:46:51,520 - INFO -    - type: nan
+2025-06-11 09:46:51,520 - INFO -    - dimensions: 27x4
+2025-06-11 09:46:51,521 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:46:51,521 - INFO -    - date: nan
+2025-06-11 09:46:51,521 - INFO -    - conflit: nan
+2025-06-11 09:46:51,521 - INFO -    - sensible: nan
+2025-06-11 09:47:10,137 - INFO - Caption enrichie : A group of men in a field, transporting caravans from the Uplands of Jordan to Jerusalem.
+2025-06-11 09:47:10,138 - INFO - 
+Traitement de l'image : pho_2K47160_23_02
+2025-06-11 09:47:10,138 - INFO - Caption initiale : a woman in a hat and a man in a suit
+2025-06-11 09:47:10,138 - INFO - Métadonnées utilisées :
+2025-06-11 09:47:10,138 - INFO -    - name: pho_2K47160_23_02.jpg
+2025-06-11 09:47:10,138 - INFO -    - origin: forbin
+2025-06-11 09:47:10,138 - INFO -    - num_page: 23.0
+2025-06-11 09:47:10,138 - INFO -    - num_photo: 2.0
+2025-06-11 09:47:10,138 - INFO -    - description: nan
+2025-06-11 09:47:10,138 - INFO -    - legende: Taking prisoners to execution place
+2025-06-11 09:47:10,138 - INFO -    - legende_2: nan
+2025-06-11 09:47:10,138 - INFO -    - type: nan
+2025-06-11 09:47:10,138 - INFO -    - dimensions: nan
+2025-06-11 09:47:10,138 - INFO -    - xml: forbin/2K147160.xml
+2025-06-11 09:47:10,138 - INFO -    - date: nan
+2025-06-11 09:47:10,139 - INFO -    - conflit: nan
+2025-06-11 09:47:10,139 - INFO -    - sensible: nan
+2025-06-11 09:47:29,441 - INFO - Caption enrichie : A woman in a hat, accompanied by a man in a suit, is leading a group of prisoners towards an execution place.
+2025-06-11 09:47:29,442 - INFO - 
+Traitement de l'image : np_surlevif_19151204_08_01
+2025-06-11 09:47:29,442 - INFO - Caption initiale : a street scene with people and vehicles
+2025-06-11 09:47:29,442 - INFO - Métadonnées utilisées :
+2025-06-11 09:47:29,442 - INFO -    - name: np_surlevif_19151204_08_01.jpg
+2025-06-11 09:47:29,442 - INFO -    - origin: sur le vif
+2025-06-11 09:47:29,442 - INFO -    - num_page: 8.0
+2025-06-11 09:47:29,442 - INFO -    - num_photo: 1.0
+2025-06-11 09:47:29,442 - INFO -    - description: nan
+2025-06-11 09:47:29,442 - INFO -    - legende: 500 millions d'or anglais arrivent à New-York. Les autos contenant le précieux métal passent dans la 35e rue, escortés par la police à cheval, en allant au port de la Trésorerie
+2025-06-11 09:47:29,442 - INFO -    - legende_2: nan
+2025-06-11 09:47:29,442 - INFO -    - type: nan
+2025-06-11 09:47:29,442 - INFO -    - dimensions: nan
+2025-06-11 09:47:29,442 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 09:47:29,443 - INFO -    - date: 19151204
+2025-06-11 09:47:29,443 - INFO -    - conflit: nan
+2025-06-11 09:47:29,443 - INFO -    - sensible: nan
+2025-06-11 09:48:06,358 - INFO - Caption enrichie : On December 4, 1915, 500 million dollars of English gold arrived in New York, with the vehicles carrying the precious metal passing through the 35th street and being escorted by horse-mounted police
+2025-06-11 09:48:06,359 - INFO - 
+Traitement de l'image : pho_2K2479_10_01
+2025-06-11 09:48:06,359 - INFO - Caption initiale : a group of men riding horses
+2025-06-11 09:48:06,359 - INFO - Métadonnées utilisées :
+2025-06-11 09:48:06,359 - INFO -    - name: pho_2K2479_10_01.jpg
+2025-06-11 09:48:06,359 - INFO -    - origin: forbin
+2025-06-11 09:48:06,359 - INFO -    - num_page: 10.0
+2025-06-11 09:48:06,359 - INFO -    - num_photo: 1.0
+2025-06-11 09:48:06,359 - INFO -    - description: nan
+2025-06-11 09:48:06,359 - INFO -    - legende: A battery trotting part
+2025-06-11 09:48:06,359 - INFO -    - legende_2: COPYRIGHT
+GRAPHIC PHOTO UNION,
+TALLIS STREET, EC.
+2025-06-11 09:48:06,359 - INFO -    - type: nan
+2025-06-11 09:48:06,359 - INFO -    - dimensions: 10,5x6,5
+2025-06-11 09:48:06,359 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:48:06,359 - INFO -    - date: nan
+2025-06-11 09:48:06,359 - INFO -    - conflit: nan
+2025-06-11 09:48:06,359 - INFO -    - sensible: nan
+2025-06-11 09:48:21,918 - INFO - Caption enrichie : A group of men riding horses in the Tallis Street, EC, with a copyright graphic photo.
+2025-06-11 09:48:21,918 - INFO - 
+Traitement de l'image : np_surlevif_19160101_02_05
+2025-06-11 09:48:21,918 - INFO - Caption initiale : a group of men in a village
+2025-06-11 09:48:21,918 - INFO - Métadonnées utilisées :
+2025-06-11 09:48:21,918 - INFO -    - name: np_surlevif_19160101_02_05.jpg
+2025-06-11 09:48:21,918 - INFO -    - origin: sur le vif
+2025-06-11 09:48:21,918 - INFO -    - num_page: 2.0
+2025-06-11 09:48:21,918 - INFO -    - num_photo: 5.0
+2025-06-11 09:48:21,919 - INFO -    - description: nan
+2025-06-11 09:48:21,919 - INFO -    - legende: La seule femme-soldat de l'armée française et une Marocaine, Mme Fatima, qui, armée, suit au combat les intrépides tirailleurs marocains
+2025-06-11 09:48:21,919 - INFO -    - legende_2: nan
+2025-06-11 09:48:21,919 - INFO -    - type: nan
+2025-06-11 09:48:21,919 - INFO -    - dimensions: nan
+2025-06-11 09:48:21,919 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 09:48:21,919 - INFO -    - date: 19160101
+2025-06-11 09:48:21,919 - INFO -    - conflit: nan
+2025-06-11 09:48:21,919 - INFO -    - sensible: nan
+2025-06-11 09:48:58,191 - INFO - Caption enrichie : Mme Fatima, a Moroccan woman soldier who bravely fought alongside the French army during World War I, is seen in this photo dated January 1916, taken in a village with a group of men.
+2025-06-11 09:48:58,191 - INFO - 
+Traitement de l'image : pho_2K247157_87_01
+2025-06-11 09:48:58,191 - INFO - Caption initiale : a group of men riding horses across a bridge
+2025-06-11 09:48:58,191 - INFO - Métadonnées utilisées :
+2025-06-11 09:48:58,191 - INFO -    - name: pho_2K247157_87_01.jpg
+2025-06-11 09:48:58,191 - INFO -    - origin: forbin
+2025-06-11 09:48:58,191 - INFO -    - num_page: 87.0
+2025-06-11 09:48:58,191 - INFO -    - num_photo: 1.0
+2025-06-11 09:48:58,192 - INFO -    - description: nan
+2025-06-11 09:48:58,192 - INFO -    - legende: PHOTOGRAPHS TAKEN BY THE OFFICIAL PHOTOGRAPHER ON THE ROAD TO BEYROUT AND TRIPOLI, AND IN BEYROUT AND TRIPOLI. 
+Part of the 7th Divisional Trabsport watering in the Nahr Beyrout (River of Beyrout)
+2025-06-11 09:48:58,192 - INFO -    - legende_2: nan
+2025-06-11 09:48:58,192 - INFO -    - type: nan
+2025-06-11 09:48:58,192 - INFO -    - dimensions: 25,5x20,5
+2025-06-11 09:48:58,192 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:48:58,192 - INFO -    - date: nan
+2025-06-11 09:48:58,192 - INFO -    - conflit: nan
+2025-06-11 09:48:58,192 - INFO -    - sensible: nan
+2025-06-11 09:49:21,291 - INFO - Caption enrichie : A group of men riding horses across a bridge in Beyrout and Tripoli, captured by the official photographer on the road to these cities.
+2025-06-11 09:49:21,292 - INFO - 
+Traitement de l'image : pho_2K247178_10_01
+2025-06-11 09:49:21,292 - INFO - Caption initiale : a group of soldiers marching in the desert
+2025-06-11 09:49:21,292 - INFO - Métadonnées utilisées :
+2025-06-11 09:49:21,292 - INFO -    - name: pho_2K247178_10_01.jpg
+2025-06-11 09:49:21,292 - INFO -    - origin: forbin
+2025-06-11 09:49:21,292 - INFO -    - num_page: 10.0
+2025-06-11 09:49:21,292 - INFO -    - num_photo: 1.0
+2025-06-11 09:49:21,292 - INFO -    - description: nan
+2025-06-11 09:49:21,292 - INFO -    - legende: The French columnb en route to Oualata
+2025-06-11 09:49:21,292 - INFO -    - legende_2: nan
+2025-06-11 09:49:21,292 - INFO -    - type: nan
+2025-06-11 09:49:21,293 - INFO -    - dimensions: 17,8x12,8
+2025-06-11 09:49:21,293 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 09:49:21,293 - INFO -    - date: nan
+2025-06-11 09:49:21,293 - INFO -    - conflit: nan
+2025-06-11 09:49:21,293 - INFO -    - sensible: nan
+2025-06-11 09:49:36,879 - INFO - Caption enrichie : A group of soldiers marching in the desert, en route to Oualata with French columns.
+2025-06-11 09:49:36,880 - INFO - 
+Traitement de l'image : pho_2K24793_21_02
+2025-06-11 09:49:36,880 - INFO - Caption initiale : a group of people in uniforms standing in a circle
+2025-06-11 09:49:36,880 - INFO - Métadonnées utilisées :
+2025-06-11 09:49:36,880 - INFO -    - name: pho_2K24793_21_02.jpg
+2025-06-11 09:49:36,880 - INFO -    - origin: forbin
+2025-06-11 09:49:36,880 - INFO -    - num_page: 21.0
+2025-06-11 09:49:36,880 - INFO -    - num_photo: 2.0
+2025-06-11 09:49:36,880 - INFO -    - description: nan
+2025-06-11 09:49:36,880 - INFO -    - legende: Gal Sarrail reviewing troops in frame of the Zepp', Salonica
+Salonique
+Forbin
+2025-06-11 09:49:36,880 - INFO -    - legende_2: nan
+2025-06-11 09:49:36,880 - INFO -    - type: nan
+2025-06-11 09:49:36,880 - INFO -    - dimensions: nan
+2025-06-11 09:49:36,880 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 09:49:36,880 - INFO -    - date: nan
+2025-06-11 09:49:36,880 - INFO -    - conflit: nan
+2025-06-11 09:49:36,880 - INFO -    - sensible: nan
+2025-06-11 09:50:02,886 - INFO - Caption enrichie : A group of people in uniforms, including Gal Sarrail, are standing in a circle in front of the Zepp, Salonique during World War I.
+2025-06-11 09:50:02,887 - INFO - 
+Traitement de l'image : pho_2K2479_25_01
+2025-06-11 09:50:02,887 - INFO - Caption initiale : a group of men riding camels
+2025-06-11 09:50:02,887 - INFO - Métadonnées utilisées :
+2025-06-11 09:50:02,887 - INFO -    - name: pho_2K2479_25_01.jpg
+2025-06-11 09:50:02,887 - INFO -    - origin: forbin
+2025-06-11 09:50:02,887 - INFO -    - num_page: 25.0
+2025-06-11 09:50:02,887 - INFO -    - num_photo: 1.0
+2025-06-11 09:50:02,887 - INFO -    - description: nan
+2025-06-11 09:50:02,887 - INFO -    - legende: Colonel Roulet with his native escort about to enter Oualatta
+
+(Soudan Occidental)
+2025-06-11 09:50:02,887 - INFO -    - legende_2: V. FORBIN
+12, Rue du Croissant
+PARIS
+2025-06-11 09:50:02,887 - INFO -    - type: nan
+2025-06-11 09:50:02,887 - INFO -    - dimensions: 14x8,2
+2025-06-11 09:50:02,888 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:50:02,888 - INFO -    - date: nan
+2025-06-11 09:50:02,888 - INFO -    - conflit: nan
+2025-06-11 09:50:02,888 - INFO -    - sensible: nan
+2025-06-11 09:50:21,474 - INFO - Caption enrichie : A group of men, including Colonel Roulet, ride camels into Oualatta (Soudan Occidental).
+2025-06-11 09:50:21,475 - INFO - 
+Traitement de l'image : pho_2K24789_38_01
+2025-06-11 09:50:21,475 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 09:50:21,475 - INFO - Métadonnées utilisées :
+2025-06-11 09:50:21,475 - INFO -    - name: pho_2K24789_38_01.jpg
+2025-06-11 09:50:21,475 - INFO -    - origin: forbin
+2025-06-11 09:50:21,475 - INFO -    - num_page: 38.0
+2025-06-11 09:50:21,475 - INFO -    - num_photo: 1.0
+2025-06-11 09:50:21,475 - INFO -    - description: nan
+2025-06-11 09:50:21,475 - INFO -    - legende: Salonica 
+Two of the many soldiers from Constantin's Army who have passed into the rank and file of the Revolution... They wear the armlet (brassard) of Venizelists.
+2025-06-11 09:50:21,475 - INFO -    - legende_2: nan
+2025-06-11 09:50:21,475 - INFO -    - type: nan
+2025-06-11 09:50:21,475 - INFO -    - dimensions: 18x13
+2025-06-11 09:50:21,475 - INFO -    - xml: forbin/2K24789.xml
+2025-06-11 09:50:21,475 - INFO -    - date: nan
+2025-06-11 09:50:21,475 - INFO -    - conflit: nan
+2025-06-11 09:50:21,475 - INFO -    - sensible: nan
+2025-06-11 09:50:44,504 - INFO - Caption enrichie : In Salonica, two soldiers in uniform from Constantin's Army who have joined the Revolution wear the Armlet of Venizelists.
+2025-06-11 09:50:44,504 - INFO - 
+Traitement de l'image : pho_2K247157_04_01
+2025-06-11 09:50:44,504 - INFO - Caption initiale : a group of soldiers marching down a street
+2025-06-11 09:50:44,504 - INFO - Métadonnées utilisées :
+2025-06-11 09:50:44,505 - INFO -    - name: pho_2K247157_04_01.jpg
+2025-06-11 09:50:44,505 - INFO -    - origin: forbin
+2025-06-11 09:50:44,505 - INFO -    - num_page: 4.0
+2025-06-11 09:50:44,505 - INFO -    - num_photo: 1.0
+2025-06-11 09:50:44,505 - INFO -    - description: nan
+2025-06-11 09:50:44,505 - INFO -    - legende: Le drapeau du premier zouave se rendant aux tranchées
+2025-06-11 09:50:44,505 - INFO -    - legende_2: nan
+2025-06-11 09:50:44,505 - INFO -    - type: nan
+2025-06-11 09:50:44,505 - INFO -    - dimensions: 14x11
+2025-06-11 09:50:44,505 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:50:44,505 - INFO -    - date: nan
+2025-06-11 09:50:44,505 - INFO -    - conflit: nan
+2025-06-11 09:50:44,505 - INFO -    - sensible: nan
+2025-06-11 09:51:00,071 - INFO - Caption enrichie : A group of soldiers marching down a street hoist the flag of the first zouave.
+2025-06-11 09:51:00,071 - INFO - 
+Traitement de l'image : pho_2K247157_62_01
+2025-06-11 09:51:00,071 - INFO - Caption initiale : a hawaiian voyaging canoe
+2025-06-11 09:51:00,071 - INFO - Métadonnées utilisées :
+2025-06-11 09:51:00,071 - INFO -    - name: pho_2K247157_62_01.jpg
+2025-06-11 09:51:00,072 - INFO -    - origin: forbin
+2025-06-11 09:51:00,072 - INFO -    - num_page: 62.0
+2025-06-11 09:51:00,072 - INFO -    - num_photo: 1.0
+2025-06-11 09:51:00,072 - INFO -    - description: nan
+2025-06-11 09:51:00,072 - INFO -    - legende: Naufrage  de "La Cigale"
+2 rescapés, un indigène et le frère Jean sur leur radeau de fortune
+2025-06-11 09:51:00,072 - INFO -    - legende_2: nan
+2025-06-11 09:51:00,072 - INFO -    - type: nan
+2025-06-11 09:51:00,072 - INFO -    - dimensions: 17,5x12,5
+2025-06-11 09:51:00,072 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:51:00,072 - INFO -    - date: nan
+2025-06-11 09:51:00,072 - INFO -    - conflit: nan
+2025-06-11 09:51:00,072 - INFO -    - sensible: nan
+2025-06-11 09:51:26,623 - INFO - Caption enrichie : A Hawaiian voyaging canoe, with two survivors, an indigenous person, and brother Jean, was rescued after the sinking of "La Cigale."
+2025-06-11 09:51:26,624 - INFO - 
+Traitement de l'image : pho_2K24792_65_01
+2025-06-11 09:51:26,624 - INFO - Caption initiale : a group of men waiting to be drafted
+2025-06-11 09:51:26,624 - INFO - Métadonnées utilisées :
+2025-06-11 09:51:26,624 - INFO -    - name: pho_2K24792_65_01.jpg
+2025-06-11 09:51:26,624 - INFO -    - origin: forbin
+2025-06-11 09:51:26,624 - INFO -    - num_page: 65.0
+2025-06-11 09:51:26,624 - INFO -    - num_photo: 1.0
+2025-06-11 09:51:26,624 - INFO -    - description: nan
+2025-06-11 09:51:26,624 - INFO -    - legende: Temps très gris
+Petit pluie fine - comme à Paris!
+2025-06-11 09:51:26,624 - INFO -    - legende_2: nan
+2025-06-11 09:51:26,624 - INFO -    - type: nan
+2025-06-11 09:51:26,624 - INFO -    - dimensions: nan
+2025-06-11 09:51:26,624 - INFO -    - xml: forbin/2K24792.xml
+2025-06-11 09:51:26,624 - INFO -    - date: nan
+2025-06-11 09:51:26,624 - INFO -    - conflit: nan
+2025-06-11 09:51:26,624 - INFO -    - sensible: nan
+2025-06-11 09:51:40,010 - INFO - Caption enrichie : A group of men waiting to be drafted in the rainy city of Paris.
+2025-06-11 09:51:40,010 - INFO - 
+Traitement de l'image : pho_2K2475_36_01
+2025-06-11 09:51:40,010 - INFO - Caption initiale : a group of soldiers in the field
+2025-06-11 09:51:40,011 - INFO - Métadonnées utilisées :
+2025-06-11 09:51:40,011 - INFO -    - name: pho_2K2475_36_01.jpg
+2025-06-11 09:51:40,011 - INFO -    - origin: forbin
+2025-06-11 09:51:40,011 - INFO -    - num_page: 36.0
+2025-06-11 09:51:40,011 - INFO -    - num_photo: 1.0
+2025-06-11 09:51:40,011 - INFO -    - description: nan
+2025-06-11 09:51:40,011 - INFO -    - legende: WITH THE FORCES IN GERMAN EAST AFRICA
+Supports King's African Rifles waiting to go into action.
+2025-06-11 09:51:40,011 - INFO -    - legende_2: nan
+2025-06-11 09:51:40,011 - INFO -    - type: nan
+2025-06-11 09:51:40,011 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:51:40,011 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:51:40,011 - INFO -    - date: nan
+2025-06-11 09:51:40,011 - INFO -    - conflit: nan
+2025-06-11 09:51:40,011 - INFO -    - sensible: nan
+2025-06-11 09:51:58,780 - INFO - Caption enrichie : A group of soldiers in German East Africa, supporting King's African Rifles, wait to go into action.
+2025-06-11 09:51:58,780 - INFO - 
+Traitement de l'image : pho_2K247157_36_01
+2025-06-11 09:51:58,781 - INFO - Caption initiale : a group of men in white masks digging a well
+2025-06-11 09:51:58,781 - INFO - Métadonnées utilisées :
+2025-06-11 09:51:58,781 - INFO -    - name: pho_2K247157_36_01.jpg
+2025-06-11 09:51:58,781 - INFO -    - origin: forbin
+2025-06-11 09:51:58,781 - INFO -    - num_page: 36.0
+2025-06-11 09:51:58,781 - INFO -    - num_photo: 1.0
+2025-06-11 09:51:58,781 - INFO -    - description: nan
+2025-06-11 09:51:58,781 - INFO -    - legende: MASK FOR NAVAL DOCTORS
+Two naval doctors attending to a wounded Arab. They are wearing white disinfectal masks, as the injuries have long lacked attention
+2025-06-11 09:51:58,781 - INFO -    - legende_2: nan
+2025-06-11 09:51:58,781 - INFO -    - type: nan
+2025-06-11 09:51:58,781 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:51:58,781 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:51:58,781 - INFO -    - date: nan
+2025-06-11 09:51:58,781 - INFO -    - conflit: nan
+2025-06-11 09:51:58,781 - INFO -    - sensible: 1.6.B
+2025-06-11 09:52:21,329 - INFO - Caption enrichie : A group of men in white masks are digging a well, while two naval doctors attend to a wounded Arab with white disinfectal masks.
+2025-06-11 09:52:21,330 - INFO - 
+Traitement de l'image : pho_2K2475_89_01
+2025-06-11 09:52:21,330 - INFO - Caption initiale : a group of men walking down a dirt road
+2025-06-11 09:52:21,330 - INFO - Métadonnées utilisées :
+2025-06-11 09:52:21,330 - INFO -    - name: pho_2K2475_89_01.jpg
+2025-06-11 09:52:21,330 - INFO -    - origin: forbin
+2025-06-11 09:52:21,330 - INFO -    - num_page: 89.0
+2025-06-11 09:52:21,330 - INFO -    - num_photo: 1.0
+2025-06-11 09:52:21,330 - INFO -    - description: nan
+2025-06-11 09:52:21,330 - INFO -    - legende: TWO HUNDRED MILES TRAMP TO SAFETY -- BRITISH PRISONERS LONG MARCH TO CAMP THROUGH AFRICAN WILDS.
+This column of Britishers and natives were captured by the Germans in German East Africa. Soon however, the captors had to flee themselves, and they abandoned their prisoners some two hundred miles from the nearest British camp. Many of them were ill and wounded, but they managed the long tramp, despite terrible hardships and difficlties. On the march they were assisted and accompanied by a number of loyal and friendly natives. The Union Jack was carried all the way, and a pet dog marched bravely at the head of the column.
+2025-06-11 09:52:21,330 - INFO -    - legende_2: nan
+2025-06-11 09:52:21,330 - INFO -    - type: nan
+2025-06-11 09:52:21,330 - INFO -    - dimensions: 25,5x15
+2025-06-11 09:52:21,330 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:52:21,330 - INFO -    - date: nan
+2025-06-11 09:52:21,330 - INFO -    - conflit: nan
+2025-06-11 09:52:21,330 - INFO -    - sensible: nan
+2025-06-11 09:52:58,436 - INFO - Caption enrichie : A group of men walking down a dirt road, carrying the Union Jack and accompanied by loyal and friendly natives, successfully navigated the arduous journey of two hundred miles to safety after being captured by the Germans in German East Africa.
+2025-06-11 09:52:58,437 - INFO - 
+Traitement de l'image : pho_2K2475_51_01
+2025-06-11 09:52:58,437 - INFO - Caption initiale : a wagon carrying a load of hay
+2025-06-11 09:52:58,437 - INFO - Métadonnées utilisées :
+2025-06-11 09:52:58,437 - INFO -    - name: pho_2K2475_51_01.jpg
+2025-06-11 09:52:58,437 - INFO -    - origin: forbin
+2025-06-11 09:52:58,437 - INFO -    - num_page: 51.0
+2025-06-11 09:52:58,437 - INFO -    - num_photo: 1.0
+2025-06-11 09:52:58,437 - INFO -    - description: nan
+2025-06-11 09:52:58,437 - INFO -    - legende: TRANSPORT WAGON DRAWN BY OXEN.
+The difficulties of transport, in British East Africa are considerable, as can be seen from the photograph.
+2025-06-11 09:52:58,437 - INFO -    - legende_2: nan
+2025-06-11 09:52:58,437 - INFO -    - type: nan
+2025-06-11 09:52:58,437 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:52:58,437 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:52:58,438 - INFO -    - date: nan
+2025-06-11 09:52:58,438 - INFO -    - conflit: nan
+2025-06-11 09:52:58,438 - INFO -    - sensible: nan
+2025-06-11 09:53:21,916 - INFO - Caption enrichie : A wagon carrying a load of hay, drawn by oxen, poses considerable challenges during transport in British East Africa, as seen in the photograph.
+2025-06-11 09:53:21,917 - INFO - 
+Traitement de l'image : pho_2K24788_37_01
+2025-06-11 09:53:21,917 - INFO - Caption initiale : a hay barn in a village in slovenia
+2025-06-11 09:53:21,917 - INFO - Métadonnées utilisées :
+2025-06-11 09:53:21,917 - INFO -    - name: pho_2K24788_37_01.jpg
+2025-06-11 09:53:21,917 - INFO -    - origin: forbin
+2025-06-11 09:53:21,917 - INFO -    - num_page: 37.0
+2025-06-11 09:53:21,917 - INFO -    - num_photo: 1.0
+2025-06-11 09:53:21,917 - INFO -    - description: nan
+2025-06-11 09:53:21,917 - INFO -    - legende: Serrès
+2025-06-11 09:53:21,917 - INFO -    - legende_2: nan
+2025-06-11 09:53:21,917 - INFO -    - type: nan
+2025-06-11 09:53:21,917 - INFO -    - dimensions: 18x13,5
+2025-06-11 09:53:21,917 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:53:21,917 - INFO -    - date: nan
+2025-06-11 09:53:21,917 - INFO -    - conflit: nan
+2025-06-11 09:53:21,917 - INFO -    - sensible: nan
+2025-06-11 09:53:34,810 - INFO - Caption enrichie : In a village in Slovenia, this image depicts a hay barn.
+2025-06-11 09:53:34,810 - INFO - 
+Traitement de l'image : pho_2K2475_63_01
+2025-06-11 09:53:34,810 - INFO - Caption initiale : a man sitting on a rock near a monument
+2025-06-11 09:53:34,810 - INFO - Métadonnées utilisées :
+2025-06-11 09:53:34,810 - INFO -    - name: pho_2K2475_63_01.jpg
+2025-06-11 09:53:34,810 - INFO -    - origin: forbin
+2025-06-11 09:53:34,810 - INFO -    - num_page: 63.0
+2025-06-11 09:53:34,810 - INFO -    - num_photo: 1.0
+2025-06-11 09:53:34,810 - INFO -    - description: nan
+2025-06-11 09:53:34,810 - INFO -    - legende: BISMARCK BLOWN UP
+A statue of Bismarck in "German" East Africa just before being blown up by the British. It was a likely place for concealed arms
+2025-06-11 09:53:34,811 - INFO -    - legende_2: nan
+2025-06-11 09:53:34,811 - INFO -    - type: nan
+2025-06-11 09:53:34,811 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:53:34,811 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:53:34,811 - INFO -    - date: nan
+2025-06-11 09:53:34,811 - INFO -    - conflit: nan
+2025-06-11 09:53:34,811 - INFO -    - sensible: nan
+2025-06-11 09:54:04,171 - INFO - Caption enrichie : A man sitting on a rock near a statue of Bismarck in "German" East Africa, just before being blown up by the British, likely a concealed arms cache.
+2025-06-11 09:54:04,172 - INFO - 
+Traitement de l'image : pho_2K247_02_01
+2025-06-11 09:54:04,172 - INFO - Caption initiale : a group of people in a village
+2025-06-11 09:54:04,172 - INFO - Métadonnées utilisées :
+2025-06-11 09:54:04,172 - INFO -    - name: pho_2K247_02_01.jpg
+2025-06-11 09:54:04,172 - INFO -    - origin: forbin
+2025-06-11 09:54:04,172 - INFO -    - num_page: 2.0
+2025-06-11 09:54:04,172 - INFO -    - num_photo: 1.0
+2025-06-11 09:54:04,172 - INFO -    - description: nan
+2025-06-11 09:54:04,172 - INFO -    - legende: Fort Archambranlt (Forbin)
+2025-06-11 09:54:04,172 - INFO -    - legende_2: nan
+2025-06-11 09:54:04,172 - INFO -    - type: nan
+2025-06-11 09:54:04,172 - INFO -    - dimensions: nan
+2025-06-11 09:54:04,172 - INFO -    - xml: forbin/2K2473.xml
+2025-06-11 09:54:04,172 - INFO -    - date: nan
+2025-06-11 09:54:04,173 - INFO -    - conflit: nan
+2025-06-11 09:54:04,173 - INFO -    - sensible: nan
+2025-06-11 09:54:17,702 - INFO - Caption enrichie : A group of people in a village gathered around Fort Archambrant (Forbin).
+2025-06-11 09:54:17,702 - INFO - 
+Traitement de l'image : np_surlevif_19151204_08_02
+2025-06-11 09:54:17,702 - INFO - Caption initiale : a truck full of beer
+2025-06-11 09:54:17,702 - INFO - Métadonnées utilisées :
+2025-06-11 09:54:17,702 - INFO -    - name: np_surlevif_19151204_08_02.jpg
+2025-06-11 09:54:17,702 - INFO -    - origin: sur le vif
+2025-06-11 09:54:17,703 - INFO -    - num_page: 8.0
+2025-06-11 09:54:17,703 - INFO -    - num_photo: 2.0
+2025-06-11 09:54:17,703 - INFO -    - description: nan
+2025-06-11 09:54:17,703 - INFO -    - legende: La police, carabine chargée en main surveillait le déchargement des caisses d'or des camions automobiles sur des lorrys, d'où on les transportait dans les caves de la banque, au compte de P.-J. Morgan et Cie.
+2025-06-11 09:54:17,703 - INFO -    - legende_2: nan
+2025-06-11 09:54:17,703 - INFO -    - type: nan
+2025-06-11 09:54:17,703 - INFO -    - dimensions: nan
+2025-06-11 09:54:17,703 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 09:54:17,703 - INFO -    - date: 19151204
+2025-06-11 09:54:17,703 - INFO -    - conflit: nan
+2025-06-11 09:54:17,703 - INFO -    - sensible: nan
+2025-06-11 09:54:53,998 - INFO - Caption enrichie : "On December 4, 1915, a truck full of beer was transported from the loading docks of an automobile to the bank vault, where it was stored for P.-J. Morgan and Company."
+2025-06-11 09:54:53,999 - INFO - 
+Traitement de l'image : pho_2K247157_54_01
+2025-06-11 09:54:53,999 - INFO - Caption initiale : a group of children in a parade
+2025-06-11 09:54:53,999 - INFO - Métadonnées utilisées :
+2025-06-11 09:54:53,999 - INFO -    - name: pho_2K247157_54_01.jpg
+2025-06-11 09:54:53,999 - INFO -    - origin: forbin
+2025-06-11 09:54:53,999 - INFO -    - num_page: 54.0
+2025-06-11 09:54:53,999 - INFO -    - num_photo: 1.0
+2025-06-11 09:54:53,999 - INFO -    - description: nan
+2025-06-11 09:54:53,999 - INFO -    - legende: Les écoliers musulmans ?? À s'enrôler pour la guerre sainte
+2025-06-11 09:54:53,999 - INFO -    - legende_2: nan
+2025-06-11 09:54:53,999 - INFO -    - type: nan
+2025-06-11 09:54:53,999 - INFO -    - dimensions: 13x8,5
+2025-06-11 09:54:53,999 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:54:54,000 - INFO -    - date: nan
+2025-06-11 09:54:54,000 - INFO -    - conflit: nan
+2025-06-11 09:54:54,000 - INFO -    - sensible: nan
+2025-06-11 09:55:11,128 - INFO - Caption enrichie : A group of children in a parade, with a description of them enrolling for the jihad.
+2025-06-11 09:55:11,128 - INFO - 
+Traitement de l'image : pho_2K2476_05_01
+2025-06-11 09:55:11,128 - INFO - Caption initiale : a group of men and women in a village
+2025-06-11 09:55:11,128 - INFO - Métadonnées utilisées :
+2025-06-11 09:55:11,129 - INFO -    - name: pho_2K2476_05_01.jpg
+2025-06-11 09:55:11,129 - INFO -    - origin: forbin
+2025-06-11 09:55:11,129 - INFO -    - num_page: 5.0
+2025-06-11 09:55:11,129 - INFO -    - num_photo: 1.0
+2025-06-11 09:55:11,129 - INFO -    - description: nan
+2025-06-11 09:55:11,129 - INFO -    - legende: A Cameroons snapshot. British solider with two fine baboons.
+2025-06-11 09:55:11,129 - INFO -    - legende_2: nan
+2025-06-11 09:55:11,129 - INFO -    - type: nan
+2025-06-11 09:55:11,129 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:55:11,129 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 09:55:11,129 - INFO -    - date: nan
+2025-06-11 09:55:11,129 - INFO -    - conflit: nan
+2025-06-11 09:55:11,129 - INFO -    - sensible: nan
+2025-06-11 09:55:30,327 - INFO - Caption enrichie : A Cameroons snapshot of a group of men and women in a village with a British soldier holding two fine baboons.
+2025-06-11 09:55:30,328 - INFO - 
+Traitement de l'image : pho_2K24790_15_01
+2025-06-11 09:55:30,328 - INFO - Caption initiale : a group of men sitting around a table
+2025-06-11 09:55:30,328 - INFO - Métadonnées utilisées :
+2025-06-11 09:55:30,328 - INFO -    - name: pho_2K24790_15_01.jpg
+2025-06-11 09:55:30,328 - INFO -    - origin: forbin
+2025-06-11 09:55:30,328 - INFO -    - num_page: 15.0
+2025-06-11 09:55:30,328 - INFO -    - num_photo: 1.0
+2025-06-11 09:55:30,328 - INFO -    - description: nan
+2025-06-11 09:55:30,328 - INFO -    - legende: C 
+2025-06-11 09:55:30,328 - INFO -    - legende_2: nan
+2025-06-11 09:55:30,328 - INFO -    - type: nan
+2025-06-11 09:55:30,328 - INFO -    - dimensions: 12x9
+2025-06-11 09:55:30,328 - INFO -    - xml: forbin/2K24790.xml
+2025-06-11 09:55:30,328 - INFO -    - date: nan
+2025-06-11 09:55:30,328 - INFO -    - conflit: nan
+2025-06-11 09:55:30,329 - INFO -    - sensible: nan
+2025-06-11 09:55:37,818 - INFO - Caption enrichie : A group of men sitting around a table.
+2025-06-11 09:55:37,818 - INFO - 
+Traitement de l'image : pho_2K247157_08_01
+2025-06-11 09:55:37,818 - INFO - Caption initiale : a crowd of people on a street
+2025-06-11 09:55:37,818 - INFO - Métadonnées utilisées :
+2025-06-11 09:55:37,819 - INFO -    - name: pho_2K247157_08_01.jpg
+2025-06-11 09:55:37,819 - INFO -    - origin: forbin
+2025-06-11 09:55:37,819 - INFO -    - num_page: 8.0
+2025-06-11 09:55:37,819 - INFO -    - num_photo: 1.0
+2025-06-11 09:55:37,819 - INFO -    - description: nan
+2025-06-11 09:55:37,819 - INFO -    - legende: Debarquement des Tirailleurs Algériens ayant fait le Combat de Gaza et Kamfra
+?? Renand???
+Aout 1915
+2025-06-11 09:55:37,819 - INFO -    - legende_2: nan
+2025-06-11 09:55:37,819 - INFO -    - type: nan
+2025-06-11 09:55:37,819 - INFO -    - dimensions: 18x13
+2025-06-11 09:55:37,819 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 09:55:37,819 - INFO -    - date: nan
+2025-06-11 09:55:37,819 - INFO -    - conflit: nan
+2025-06-11 09:55:37,819 - INFO -    - sensible: nan
+2025-06-11 09:56:09,570 - INFO - Caption enrichie : In August 1915, a crowd of people gathered on a street during the debarquement of Algerian riflemen who had fought in the Battle of Gaza and Kufra.
+2025-06-11 09:56:09,570 - INFO - 
+Traitement de l'image : pho_2K24788_29_01
+2025-06-11 09:56:09,570 - INFO - Caption initiale : a view of the san fernando valley
+2025-06-11 09:56:09,571 - INFO - Métadonnées utilisées :
+2025-06-11 09:56:09,571 - INFO -    - name: pho_2K24788_29_01.jpg
+2025-06-11 09:56:09,571 - INFO -    - origin: forbin
+2025-06-11 09:56:09,571 - INFO -    - num_page: 29.0
+2025-06-11 09:56:09,571 - INFO -    - num_photo: 1.0
+2025-06-11 09:56:09,571 - INFO -    - description: nan
+2025-06-11 09:56:09,571 - INFO -    - legende: Camp près de Sergova, au fond le Beler Dagh
+
+Forbin
+
+Serbie 
+Près du lac Doiran
+2025-06-11 09:56:09,571 - INFO -    - legende_2: nan
+2025-06-11 09:56:09,571 - INFO -    - type: nan
+2025-06-11 09:56:09,571 - INFO -    - dimensions: 18x13
+2025-06-11 09:56:09,571 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:56:09,571 - INFO -    - date: nan
+2025-06-11 09:56:09,571 - INFO -    - conflit: nan
+2025-06-11 09:56:09,571 - INFO -    - sensible: nan
+2025-06-11 09:56:34,045 - INFO - Caption enrichie : "A stunning view of the San Fernando Valley from a camp near Sergova, Beler Dagh, Serbia, located near Lake Doiran."
+2025-06-11 09:56:34,045 - INFO - 
+Traitement de l'image : pho_2K2475_07_01
+2025-06-11 09:56:34,045 - INFO - Caption initiale : a group of natives posing with a biplane
+2025-06-11 09:56:34,045 - INFO - Métadonnées utilisées :
+2025-06-11 09:56:34,045 - INFO -    - name: pho_2K2475_07_01.jpg
+2025-06-11 09:56:34,045 - INFO -    - origin: forbin
+2025-06-11 09:56:34,045 - INFO -    - num_page: 7.0
+2025-06-11 09:56:34,046 - INFO -    - num_photo: 1.0
+2025-06-11 09:56:34,046 - INFO -    - description: nan
+2025-06-11 09:56:34,046 - INFO -    - legende: WATERPLANES TAKE PART IN A NAVAL FIGHT IN AN AFRICAN JUNGLE.
+When the British monitors Severn and Mersey battered the Konigsberg into a total wreck, waterplanes were used to watch the effect of the shell-fire, as the German cruiser has taken refuge uo the Rufiji River and was cunningly hidden in a thick jungle.   which
+Natives gazing in wonderment at the strange device ? could fly like a bird.
+
+N°266 p. 5 -N°2
+16 /2 x 9
+2025-06-11 09:56:34,046 - INFO -    - legende_2: nan
+2025-06-11 09:56:34,046 - INFO -    - type: nan
+2025-06-11 09:56:34,046 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:56:34,046 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:56:34,046 - INFO -    - date: nan
+2025-06-11 09:56:34,046 - INFO -    - conflit: nan
+2025-06-11 09:56:34,046 - INFO -    - sensible: nan
+2025-06-11 09:57:01,581 - INFO - Caption enrichie : In an African jungle, a group of natives posed with a biplane used to monitor the effect of shell-fire on a German cruiser hidden in the region.
+2025-06-11 09:57:01,582 - INFO - 
+Traitement de l'image : np_surlevif_19151204_09_02
+2025-06-11 09:57:01,582 - INFO - Caption initiale : a crowd of people waiting for a bus
+2025-06-11 09:57:01,582 - INFO - Métadonnées utilisées :
+2025-06-11 09:57:01,582 - INFO -    - name: np_surlevif_19151204_09_02.jpg
+2025-06-11 09:57:01,582 - INFO -    - origin: sur le vif
+2025-06-11 09:57:01,582 - INFO -    - num_page: 9.0
+2025-06-11 09:57:01,582 - INFO -    - num_photo: 2.0
+2025-06-11 09:57:01,582 - INFO -    - description: nan
+2025-06-11 09:57:01,582 - INFO -    - legende: On sait que tout cet or a été transporté d'Angleterre en Amérique pour pouvoir parer aux nombreux achats de matériel de guerre et munitions faits par la Quadruple-Entente à l'industrie américaine
+2025-06-11 09:57:01,582 - INFO -    - legende_2: nan
+2025-06-11 09:57:01,582 - INFO -    - type: nan
+2025-06-11 09:57:01,582 - INFO -    - dimensions: nan
+2025-06-11 09:57:01,582 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 09:57:01,582 - INFO -    - date: 19151204
+2025-06-11 09:57:01,582 - INFO -    - conflit: nan
+2025-06-11 09:57:01,582 - INFO -    - sensible: nan
+2025-06-11 09:57:28,299 - INFO - Caption enrichie : A crowd of people waited for a bus in the UK in 1915, as part of the Allies' efforts to transport material for the war in America.
+2025-06-11 09:57:28,300 - INFO - 
+Traitement de l'image : pho_2K24791_34_01
+2025-06-11 09:57:28,300 - INFO - Caption initiale : a horse and cart in a city
+2025-06-11 09:57:28,300 - INFO - Métadonnées utilisées :
+2025-06-11 09:57:28,300 - INFO -    - name: pho_2K24791_34_01.jpg
+2025-06-11 09:57:28,300 - INFO -    - origin: forbin
+2025-06-11 09:57:28,300 - INFO -    - num_page: 34.0
+2025-06-11 09:57:28,300 - INFO -    - num_photo: 1.0
+2025-06-11 09:57:28,300 - INFO -    - description: nan
+2025-06-11 09:57:28,300 - INFO -    - legende: Cretian soldiers transporting military equipments - Salonique
+2025-06-11 09:57:28,300 - INFO -    - legende_2: nan
+2025-06-11 09:57:28,300 - INFO -    - type: nan
+2025-06-11 09:57:28,300 - INFO -    - dimensions: 18x13
+2025-06-11 09:57:28,300 - INFO -    - xml: forbin/2K24791.xml
+2025-06-11 09:57:28,300 - INFO -    - date: nan
+2025-06-11 09:57:28,300 - INFO -    - conflit: nan
+2025-06-11 09:57:28,300 - INFO -    - sensible: nan
+2025-06-11 09:57:37,244 - INFO - Caption enrichie : A horse and cart carrying military equipment through a city.
+2025-06-11 09:57:37,245 - INFO - 
+Traitement de l'image : pho_2K2475_53_01
+2025-06-11 09:57:37,245 - INFO - Caption initiale : a train crossing a bridge
+2025-06-11 09:57:37,245 - INFO - Métadonnées utilisées :
+2025-06-11 09:57:37,245 - INFO -    - name: pho_2K2475_53_01.jpg
+2025-06-11 09:57:37,245 - INFO -    - origin: forbin
+2025-06-11 09:57:37,245 - INFO -    - num_page: 53.0
+2025-06-11 09:57:37,245 - INFO -    - num_photo: 1.0
+2025-06-11 09:57:37,245 - INFO -    - description: nan
+2025-06-11 09:57:37,245 - INFO -    - legende: THE WAR: :MOTOR TRANSPORTS IN EAST AFRICA: Transport car crossing the River Voi in British East Africa. The attention of the public has been fixed on thef fighting in Europe and they are therefore apt to forget the fine work that is being done by the men on the Empires outposts.
+2025-06-11 09:57:37,245 - INFO -    - legende_2: nan
+2025-06-11 09:57:37,245 - INFO -    - type: nan
+2025-06-11 09:57:37,245 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:57:37,245 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 09:57:37,245 - INFO -    - date: nan
+2025-06-11 09:57:37,245 - INFO -    - conflit: nan
+2025-06-11 09:57:37,246 - INFO -    - sensible: nan
+2025-06-11 09:58:02,565 - INFO - Caption enrichie : During World War I, a train crosses a bridge in British East Africa, showcasing the important role of motor transportation in the Empire's outposts.
+2025-06-11 09:58:02,566 - INFO - 
+Traitement de l'image : pho_2K24788_24_01
+2025-06-11 09:58:02,566 - INFO - Caption initiale : a group of men walking in a field
+2025-06-11 09:58:02,566 - INFO - Métadonnées utilisées :
+2025-06-11 09:58:02,566 - INFO -    - name: pho_2K24788_24_01.jpg
+2025-06-11 09:58:02,566 - INFO -    - origin: forbin
+2025-06-11 09:58:02,566 - INFO -    - num_page: 24.0
+2025-06-11 09:58:02,566 - INFO -    - num_photo: 1.0
+2025-06-11 09:58:02,566 - INFO -    - description: nan
+2025-06-11 09:58:02,566 - INFO -    - legende: Dom Forbin
+Vue du camp français à Mourdos (Dardanelles)
+2025-06-11 09:58:02,566 - INFO -    - legende_2: nan
+2025-06-11 09:58:02,566 - INFO -    - type: nan
+2025-06-11 09:58:02,566 - INFO -    - dimensions: 12,5x9
+2025-06-11 09:58:02,566 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:58:02,567 - INFO -    - date: nan
+2025-06-11 09:58:02,567 - INFO -    - conflit: nan
+2025-06-11 09:58:02,567 - INFO -    - sensible: nan
+2025-06-11 09:58:21,282 - INFO - Caption enrichie : A group of men walk in a field in a French camp at Mourdos in the Dardanelles.
+2025-06-11 09:58:21,283 - INFO - 
+Traitement de l'image : pho_2K2476_18_01
+2025-06-11 09:58:21,283 - INFO - Caption initiale : a group of men building a wall
+2025-06-11 09:58:21,283 - INFO - Métadonnées utilisées :
+2025-06-11 09:58:21,283 - INFO -    - name: pho_2K2476_18_01.jpg
+2025-06-11 09:58:21,283 - INFO -    - origin: forbin
+2025-06-11 09:58:21,283 - INFO -    - num_page: 18.0
+2025-06-11 09:58:21,283 - INFO -    - num_photo: 1.0
+2025-06-11 09:58:21,283 - INFO -    - description: nan
+2025-06-11 09:58:21,283 - INFO -    - legende: THE WAR. Native troops in action at Garua, in the Cameroons. They are fighting for the Empire agaisnt the Germans.
+2025-06-11 09:58:21,283 - INFO -    - legende_2: nan
+2025-06-11 09:58:21,283 - INFO -    - type: nan
+2025-06-11 09:58:21,284 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:58:21,284 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 09:58:21,284 - INFO -    - date: nan
+2025-06-11 09:58:21,284 - INFO -    - conflit: nan
+2025-06-11 09:58:21,284 - INFO -    - sensible: nan
+2025-06-11 09:58:42,769 - INFO - Caption enrichie : A group of native troops at Garua in the Cameroons are seen building a wall in this image from the war against the Germans.
+2025-06-11 09:58:42,769 - INFO - 
+Traitement de l'image : 2K2476_20_01
+2025-06-11 09:58:42,769 - INFO - Caption initiale : a group of soldiers in a trench
+2025-06-11 09:58:42,769 - INFO - Métadonnées utilisées :
+2025-06-11 09:58:42,769 - INFO -    - name: 2K2476_20_01.jpg
+2025-06-11 09:58:42,769 - INFO -    - origin: forbin
+2025-06-11 09:58:42,769 - INFO -    - num_page: 20.0
+2025-06-11 09:58:42,769 - INFO -    - num_photo: 1.0
+2025-06-11 09:58:42,769 - INFO -    - description: nan
+2025-06-11 09:58:42,770 - INFO -    - legende: EMPIRES OUTPOST. Men of the Nigerian Regiment fighting in the German Cameroons. These men have served themselves excellent trenches soldiers against the Germans and first rate marksmen.
+
+2025-06-11 09:58:42,770 - INFO -    - legende_2: nan
+2025-06-11 09:58:42,770 - INFO -    - type: nan
+2025-06-11 09:58:42,770 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 09:58:42,770 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 09:58:42,770 - INFO -    - date: nan
+2025-06-11 09:58:42,770 - INFO -    - conflit: nan
+2025-06-11 09:58:42,770 - INFO -    - sensible: nan
+2025-06-11 09:59:12,496 - INFO - Caption enrichie : A group of soldiers in a trench during the Nigerian Regiment's fight against the Germans in the German Cameroons, displaying their expertise as excellent trenches soldiers and marksmen.
+2025-06-11 09:59:12,497 - INFO - 
+Traitement de l'image : pho_2K24788_23_01
+2025-06-11 09:59:12,497 - INFO - Caption initiale : a group of men in uniform posing for a photo
+2025-06-11 09:59:12,497 - INFO - Métadonnées utilisées :
+2025-06-11 09:59:12,497 - INFO -    - name: pho_2K24788_23_01.jpg
+2025-06-11 09:59:12,497 - INFO -    - origin: forbin
+2025-06-11 09:59:12,497 - INFO -    - num_page: 23.0
+2025-06-11 09:59:12,497 - INFO -    - num_photo: 1.0
+2025-06-11 09:59:12,497 - INFO -    - description: nan
+2025-06-11 09:59:12,497 - INFO -    - legende: Forbin
+2025-06-11 09:59:12,497 - INFO -    - legende_2: nan
+2025-06-11 09:59:12,497 - INFO -    - type: nan
+2025-06-11 09:59:12,497 - INFO -    - dimensions: 6,5x4,5
+2025-06-11 09:59:12,498 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 09:59:12,498 - INFO -    - date: nan
+2025-06-11 09:59:12,498 - INFO -    - conflit: nan
+2025-06-11 09:59:12,498 - INFO -    - sensible: nan
+2025-06-11 09:59:25,113 - INFO - Caption enrichie : Forbin, a group of men in uniform, posing for a photo.
+2025-06-11 09:59:25,114 - INFO - 
+Traitement de l'image : pho_2K2479_17_01
+2025-06-11 09:59:25,114 - INFO - Caption initiale : a man in uniform standing in front of a hut
+2025-06-11 09:59:25,114 - INFO - Métadonnées utilisées :
+2025-06-11 09:59:25,114 - INFO -    - name: pho_2K2479_17_01.jpg
+2025-06-11 09:59:25,114 - INFO -    - origin: forbin
+2025-06-11 09:59:25,114 - INFO -    - num_page: 17.0
+2025-06-11 09:59:25,114 - INFO -    - num_photo: 1.0
+2025-06-11 09:59:25,114 - INFO -    - description: nan
+2025-06-11 09:59:25,114 - INFO -    - legende: Type of Sudan Soldiers
+
+Field service Kit
+2025-06-11 09:59:25,114 - INFO -    - legende_2: nan
+2025-06-11 09:59:25,114 - INFO -    - type: nan
+2025-06-11 09:59:25,114 - INFO -    - dimensions: 10,7x8
+2025-06-11 09:59:25,114 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:59:25,114 - INFO -    - date: nan
+2025-06-11 09:59:25,114 - INFO -    - conflit: nan
+2025-06-11 09:59:25,115 - INFO -    - sensible: nan
+2025-06-11 09:59:42,165 - INFO - Caption enrichie : A man in uniform is standing in front of a hut with a field service kit (Alt-text).
+2025-06-11 09:59:42,165 - INFO - 
+Traitement de l'image : pho_2K2479_08_01
+2025-06-11 09:59:42,165 - INFO - Caption initiale : a group of men on horses with flags
+2025-06-11 09:59:42,166 - INFO - Métadonnées utilisées :
+2025-06-11 09:59:42,166 - INFO -    - name: pho_2K2479_08_01.jpg
+2025-06-11 09:59:42,166 - INFO -    - origin: forbin
+2025-06-11 09:59:42,166 - INFO -    - num_page: 8.0
+2025-06-11 09:59:42,166 - INFO -    - num_photo: 1.0
+2025-06-11 09:59:42,166 - INFO -    - description: nan
+2025-06-11 09:59:42,166 - INFO -    - legende: The Sirdar's escort behind the solutions. Review at Khartoum
+2025-06-11 09:59:42,166 - INFO -    - legende_2: COPYRIGHT
+GRAPHIC PHOTO UNION,
+TALLIS STREET, EC.
+2025-06-11 09:59:42,166 - INFO -    - type: nan
+2025-06-11 09:59:42,166 - INFO -    - dimensions: 10,5x6,5
+2025-06-11 09:59:42,166 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 09:59:42,166 - INFO -    - date: nan
+2025-06-11 09:59:42,166 - INFO -    - conflit: nan
+2025-06-11 09:59:42,166 - INFO -    - sensible: nan
+2025-06-11 10:00:05,180 - INFO - Caption enrichie : A group of men on horses with flags behind the Sirdar's escort, copyright by Graphic Photo Union, Tallis Street, EC.
+2025-06-11 10:00:05,180 - INFO - 
+Traitement de l'image : pho_2K2475_64_01
+2025-06-11 10:00:05,180 - INFO - Caption initiale : a boat in the water
+2025-06-11 10:00:05,180 - INFO - Métadonnées utilisées :
+2025-06-11 10:00:05,181 - INFO -    - name: pho_2K2475_64_01.jpg
+2025-06-11 10:00:05,181 - INFO -    - origin: forbin
+2025-06-11 10:00:05,181 - INFO -    - num_page: 64.0
+2025-06-11 10:00:05,181 - INFO -    - num_photo: 1.0
+2025-06-11 10:00:05,181 - INFO -    - description: nan
+2025-06-11 10:00:05,181 - INFO -    - legende: NOT A BURNING SHIP -- A FLY CLOUD.
+This photograph was taken on Lake Nyassa. The smokelike mass in the photograph is really a swarm of flies.
+
+Forbin
+2025-06-11 10:00:05,181 - INFO -    - legende_2: nan
+2025-06-11 10:00:05,181 - INFO -    - type: nan
+2025-06-11 10:00:05,181 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:00:05,181 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:00:05,181 - INFO -    - date: nan
+2025-06-11 10:00:05,181 - INFO -    - conflit: nan
+2025-06-11 10:00:05,181 - INFO -    - sensible: nan
+2025-06-11 10:00:20,031 - INFO - Caption enrichie : A boat in the water, surrounded by a swarm of flies on Lake Nyassa.
+2025-06-11 10:00:20,032 - INFO - 
+Traitement de l'image : pho_2K24780_05_01
+2025-06-11 10:00:20,032 - INFO - Caption initiale : a man walking down a street in a city
+2025-06-11 10:00:20,032 - INFO - Métadonnées utilisées :
+2025-06-11 10:00:20,032 - INFO -    - name: pho_2K24780_05_01.jpg
+2025-06-11 10:00:20,032 - INFO -    - origin: forbin
+2025-06-11 10:00:20,032 - INFO -    - num_page: 5.0
+2025-06-11 10:00:20,032 - INFO -    - num_photo: 1.0
+2025-06-11 10:00:20,032 - INFO -    - description: nan
+2025-06-11 10:00:20,032 - INFO -    - legende: Official photograph taken on the British Western Front in France
+First pictures of Cambrai. A street in flames on the same morning as the German were driven out
+2025-06-11 10:00:20,032 - INFO -    - legende_2: nan
+2025-06-11 10:00:20,032 - INFO -    - type: nan
+2025-06-11 10:00:20,032 - INFO -    - dimensions: nan
+2025-06-11 10:00:20,032 - INFO -    - xml: forbin/2K24780.xml
+2025-06-11 10:00:20,032 - INFO -    - date: nan
+2025-06-11 10:00:20,032 - INFO -    - conflit: nan
+2025-06-11 10:00:20,032 - INFO -    - sensible: nan
+2025-06-11 10:00:52,423 - INFO - Caption enrichie : An official photograph captures a man walking down a street in a city on the British Western Front in France, showcasing the first pictures of Cambrai on the same morning as the German forces were driven out.
+2025-06-11 10:00:52,423 - INFO - 
+Traitement de l'image : pho_2K247157_100_01
+2025-06-11 10:00:52,423 - INFO - Caption initiale : a man riding a horse in front of a building
+2025-06-11 10:00:52,423 - INFO - Métadonnées utilisées :
+2025-06-11 10:00:52,423 - INFO -    - name: pho_2K247157_100_01.jpg
+2025-06-11 10:00:52,423 - INFO -    - origin: forbin
+2025-06-11 10:00:52,423 - INFO -    - num_page: 100.0
+2025-06-11 10:00:52,423 - INFO -    - num_photo: 1.0
+2025-06-11 10:00:52,424 - INFO -    - description: nan
+2025-06-11 10:00:52,424 - INFO -    - legende: OUR HIGH COMMAND IN PALESTINE - An interesting photograph taken in Jerusalem some days after the British occupation. General Allenby riding to the Joppa Gate
+2025-06-11 10:00:52,424 - INFO -    - legende_2: nan
+2025-06-11 10:00:52,424 - INFO -    - type: nan
+2025-06-11 10:00:52,424 - INFO -    - dimensions: nan
+2025-06-11 10:00:52,424 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:00:52,424 - INFO -    - date: nan
+2025-06-11 10:00:52,424 - INFO -    - conflit: nan
+2025-06-11 10:00:52,424 - INFO -    - sensible: nan
+2025-06-11 10:01:25,000 - INFO - Caption enrichie : An interesting photograph depicting General Allenby riding to the Joppa Gate in Jerusalem, taken some days after the British occupation, while a man rides a horse in front of a building in the background.
+2025-06-11 10:01:25,000 - INFO - 
+Traitement de l'image : pho_2K247157_79_01
+2025-06-11 10:01:25,000 - INFO - Caption initiale : a camel market in a city
+2025-06-11 10:01:25,000 - INFO - Métadonnées utilisées :
+2025-06-11 10:01:25,000 - INFO -    - name: pho_2K247157_79_01.jpg
+2025-06-11 10:01:25,000 - INFO -    - origin: forbin
+2025-06-11 10:01:25,000 - INFO -    - num_page: 79.0
+2025-06-11 10:01:25,000 - INFO -    - num_photo: 1.0
+2025-06-11 10:01:25,000 - INFO -    - description: nan
+2025-06-11 10:01:25,000 - INFO -    - legende: PHOTOGRAPHS TAKEN BY THE OFFICIAL PHOTOGRAPHER ON THE ROAD TO BEYROUT AND TRIPOLI, AND IN BEYROUT AND TRIPOLI. 
+Camel transport waiting to be loaded outside the Dock Buildings at Beyrout
+2025-06-11 10:01:25,000 - INFO -    - legende_2: nan
+2025-06-11 10:01:25,000 - INFO -    - type: nan
+2025-06-11 10:01:25,001 - INFO -    - dimensions: 25,5x20
+2025-06-11 10:01:25,001 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:01:25,001 - INFO -    - date: nan
+2025-06-11 10:01:25,001 - INFO -    - conflit: nan
+2025-06-11 10:01:25,001 - INFO -    - sensible: nan
+2025-06-11 10:01:38,620 - INFO - Caption enrichie : A photograph captured by an official photographer depicts a camel market in a city.
+2025-06-11 10:01:38,621 - INFO - 
+Traitement de l'image : pho_2K247157_13_01
+2025-06-11 10:01:38,621 - INFO - Caption initiale : a soldier handing out food to a woman
+2025-06-11 10:01:38,621 - INFO - Métadonnées utilisées :
+2025-06-11 10:01:38,621 - INFO -    - name: pho_2K247157_13_01.jpg
+2025-06-11 10:01:38,621 - INFO -    - origin: forbin
+2025-06-11 10:01:38,621 - INFO -    - num_page: 13.0
+2025-06-11 10:01:38,621 - INFO -    - num_photo: 1.0
+2025-06-11 10:01:38,621 - INFO -    - description: nan
+2025-06-11 10:01:38,621 - INFO -    - legende: The War
+New clothes for the wounded
+
+Giving new clothes to a French Colonial soldiers who has been wounded.
+2025-06-11 10:01:38,621 - INFO -    - legende_2: COPYRIGHT PHOTO BY 
+DAILY MIRROR 
+23-29, BOUVERIE ST., LONDON, E.C.
+
+2025-06-11 10:01:38,621 - INFO -    - type: nan
+2025-06-11 10:01:38,621 - INFO -    - dimensions: nan
+2025-06-11 10:01:38,622 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:01:38,622 - INFO -    - date: nan
+2025-06-11 10:01:38,622 - INFO -    - conflit: nan
+2025-06-11 10:01:38,622 - INFO -    - sensible: nan
+2025-06-11 10:01:56,465 - INFO - Caption enrichie : A soldier in a French Colonial uniform handing out food to a woman who has been wounded during the War.
+2025-06-11 10:01:56,465 - INFO - 
+Traitement de l'image : np_surlevif_19160101_10_03
+2025-06-11 10:01:56,465 - INFO - Caption initiale : a group of men and horses on the road
+2025-06-11 10:01:56,466 - INFO - Métadonnées utilisées :
+2025-06-11 10:01:56,466 - INFO -    - name: np_surlevif_19160101_10_03.jpg
+2025-06-11 10:01:56,466 - INFO -    - origin: sur le vif
+2025-06-11 10:01:56,466 - INFO -    - num_page: 10.0
+2025-06-11 10:01:56,466 - INFO -    - num_photo: 3.0
+2025-06-11 10:01:56,466 - INFO -    - description: nan
+2025-06-11 10:01:56,466 - INFO -    - legende: Artilleurs ravitaillant à dos de mulet les pièces de 65 de montagne en position sur la Main de Massiges
+2025-06-11 10:01:56,466 - INFO -    - legende_2: nan
+2025-06-11 10:01:56,466 - INFO -    - type: nan
+2025-06-11 10:01:56,466 - INFO -    - dimensions: nan
+2025-06-11 10:01:56,466 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:01:56,466 - INFO -    - date: 19160101
+2025-06-11 10:01:56,466 - INFO -    - conflit: nan
+2025-06-11 10:01:56,466 - INFO -    - sensible: nan
+2025-06-11 10:02:28,362 - INFO - Caption enrichie : In this image, taken on January 1, 1916, a group of men are seen leading horses carrying artillery pieces of 65mm on the road in the region of Massiges.
+2025-06-11 10:02:28,363 - INFO - 
+Traitement de l'image : np_surlevif_19160101_10_04
+2025-06-11 10:02:28,363 - INFO - Caption initiale : a road in a rural area
+2025-06-11 10:02:28,363 - INFO - Métadonnées utilisées :
+2025-06-11 10:02:28,363 - INFO -    - name: np_surlevif_19160101_10_04.jpg
+2025-06-11 10:02:28,363 - INFO -    - origin: sur le vif
+2025-06-11 10:02:28,363 - INFO -    - num_page: 10.0
+2025-06-11 10:02:28,363 - INFO -    - num_photo: 4.0
+2025-06-11 10:02:28,363 - INFO -    - description: nan
+2025-06-11 10:02:28,363 - INFO -    - legende: Cadavres de chevaux sur la route, devant l Main de Massiges, le lendemain du combat
+2025-06-11 10:02:28,363 - INFO -    - legende_2: nan
+2025-06-11 10:02:28,363 - INFO -    - type: nan
+2025-06-11 10:02:28,363 - INFO -    - dimensions: nan
+2025-06-11 10:02:28,363 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:02:28,363 - INFO -    - date: 19160101
+2025-06-11 10:02:28,363 - INFO -    - conflit: nan
+2025-06-11 10:02:28,363 - INFO -    - sensible: nan
+2025-06-11 10:02:50,578 - INFO - Caption enrichie : A road in a rural area, captured on January 1, 1916, shows fallen horses along the way after the battle.
+2025-06-11 10:02:50,579 - INFO - 
+Traitement de l'image : 2K2476_26_01
+2025-06-11 10:02:50,579 - INFO - Caption initiale : a train traveling down a mountainside
+2025-06-11 10:02:50,579 - INFO - Métadonnées utilisées :
+2025-06-11 10:02:50,579 - INFO -    - name: 2K2476_26_01.jpg
+2025-06-11 10:02:50,579 - INFO -    - origin: forbin
+2025-06-11 10:02:50,579 - INFO -    - num_page: 26.0
+2025-06-11 10:02:50,579 - INFO -    - num_photo: 1.0
+2025-06-11 10:02:50,579 - INFO -    - description: nan
+2025-06-11 10:02:50,579 - INFO -    - legende: SEIZING THE RAILWAYS IN THE CAMEROONS. 
+Fully 200 miles of Railways have been taken over by our troops in theCameroons. It was very strenuous work owing to many deep cuttings fringed by dence bush. Ten minutes after this photograph was taken a severe "scrap" took place.
+2025-06-11 10:02:50,579 - INFO -    - legende_2: nan
+2025-06-11 10:02:50,579 - INFO -    - type: nan
+2025-06-11 10:02:50,579 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:02:50,580 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 10:02:50,580 - INFO -    - date: nan
+2025-06-11 10:02:50,580 - INFO -    - conflit: nan
+2025-06-11 10:02:50,580 - INFO -    - sensible: nan
+2025-06-11 10:03:09,955 - INFO - Caption enrichie : A train traveling down a mountainside, with a severe "scrap" taking place ten minutes after this photograph was taken.
+2025-06-11 10:03:09,956 - INFO - 
+Traitement de l'image : pho_2K24789_34_01
+2025-06-11 10:03:09,956 - INFO - Caption initiale : a group of tents in a field
+2025-06-11 10:03:09,956 - INFO - Métadonnées utilisées :
+2025-06-11 10:03:09,956 - INFO -    - name: pho_2K24789_34_01.jpg
+2025-06-11 10:03:09,956 - INFO -    - origin: forbin
+2025-06-11 10:03:09,956 - INFO -    - num_page: 34.0
+2025-06-11 10:03:09,956 - INFO -    - num_photo: 1.0
+2025-06-11 10:03:09,956 - INFO -    - description: nan
+2025-06-11 10:03:09,956 - INFO -    - legende: après la visite du Zeppelin à Salonique
+2025-06-11 10:03:09,956 - INFO -    - legende_2: nan
+2025-06-11 10:03:09,956 - INFO -    - type: nan
+2025-06-11 10:03:09,956 - INFO -    - dimensions: 12x9
+2025-06-11 10:03:09,957 - INFO -    - xml: forbin/2K24789.xml
+2025-06-11 10:03:09,957 - INFO -    - date: nan
+2025-06-11 10:03:09,957 - INFO -    - conflit: nan
+2025-06-11 10:03:09,957 - INFO -    - sensible: nan
+2025-06-11 10:03:28,467 - INFO - Caption enrichie : After visiting the Zeppelin in Salonique, a group of tents can be seen in a field.
+2025-06-11 10:03:28,467 - INFO - 
+Traitement de l'image : pho_2K247157_09_01
+2025-06-11 10:03:28,467 - INFO - Caption initiale : a man in uniform speaking to a crowd
+2025-06-11 10:03:28,467 - INFO - Métadonnées utilisées :
+2025-06-11 10:03:28,467 - INFO -    - name: pho_2K247157_09_01.jpg
+2025-06-11 10:03:28,467 - INFO -    - origin: forbin
+2025-06-11 10:03:28,467 - INFO -    - num_page: 9.0
+2025-06-11 10:03:28,467 - INFO -    - num_photo: 1.0
+2025-06-11 10:03:28,467 - INFO -    - description: nan
+2025-06-11 10:03:28,467 - INFO -    - legende: La musique du 1e ?? ?? un ténor qui chante un air de la ??
+2025-06-11 10:03:28,467 - INFO -    - legende_2: nan
+2025-06-11 10:03:28,467 - INFO -    - type: nan
+2025-06-11 10:03:28,468 - INFO -    - dimensions: 14x10,5
+2025-06-11 10:03:28,468 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:03:28,468 - INFO -    - date: nan
+2025-06-11 10:03:28,468 - INFO -    - conflit: nan
+2025-06-11 10:03:28,468 - INFO -    - sensible: nan
+2025-06-11 10:03:40,667 - INFO - Caption enrichie : A man in uniform speaks to a crowd while singing a tenor air.
+2025-06-11 10:03:40,668 - INFO - 
+Traitement de l'image : pho_2K14873_12_01
+2025-06-11 10:03:40,668 - INFO - Caption initiale : a group of indian soldiers
+2025-06-11 10:03:40,668 - INFO - Métadonnées utilisées :
+2025-06-11 10:03:40,668 - INFO -    - name: pho_2K14873_12_01.jpg
+2025-06-11 10:03:40,668 - INFO -    - origin: forbin
+2025-06-11 10:03:40,668 - INFO -    - num_page: 12.0
+2025-06-11 10:03:40,668 - INFO -    - num_photo: 1.0
+2025-06-11 10:03:40,668 - INFO -    - description: nan
+2025-06-11 10:03:40,668 - INFO -    - legende: Typical Indian Troops
+2025-06-11 10:03:40,668 - INFO -    - legende_2: nan
+2025-06-11 10:03:40,668 - INFO -    - type: Carte postale
+2025-06-11 10:03:40,668 - INFO -    - dimensions: nan
+2025-06-11 10:03:40,668 - INFO -    - xml: forbin/2K14873.xml
+2025-06-11 10:03:40,668 - INFO -    - date: nan
+2025-06-11 10:03:40,668 - INFO -    - conflit: nan
+2025-06-11 10:03:40,668 - INFO -    - sensible: nan
+2025-06-11 10:03:54,267 - INFO - Caption enrichie : A group of Indian soldiers, typically dressed in uniform, are seen in the image.
+2025-06-11 10:03:54,268 - INFO - 
+Traitement de l'image : 2K2476_28_01
+2025-06-11 10:03:54,268 - INFO - Caption initiale : a group of men in uniforms
+2025-06-11 10:03:54,268 - INFO - Métadonnées utilisées :
+2025-06-11 10:03:54,268 - INFO -    - name: 2K2476_28_01.jpg
+2025-06-11 10:03:54,268 - INFO -    - origin: forbin
+2025-06-11 10:03:54,268 - INFO -    - num_page: 28.0
+2025-06-11 10:03:54,268 - INFO -    - num_photo: 1.0
+2025-06-11 10:03:54,268 - INFO -    - description: nan
+2025-06-11 10:03:54,268 - INFO -    - legende: NATIVES WHO HEPED TO WREST A COLONY FROM THE GERMANS.
+Nigerian troops landing at Calabar. They took a gallant part in the fighting of the Cameroons, and thus helped to deprive the Kaiser of a portion of his much-cherished African Empire.
+Photo shows. The native band. 
+2025-06-11 10:03:54,268 - INFO -    - legende_2: nan
+2025-06-11 10:03:54,268 - INFO -    - type: nan
+2025-06-11 10:03:54,268 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:03:54,268 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 10:03:54,268 - INFO -    - date: nan
+2025-06-11 10:03:54,268 - INFO -    - conflit: nan
+2025-06-11 10:03:54,268 - INFO -    - sensible: nan
+2025-06-11 10:04:15,958 - INFO - Caption enrichie : A group of Nigerian soldiers in uniforms helped to wrest a colony from the Germans in the Cameroons, depicted in the photo.
+2025-06-11 10:04:15,958 - INFO - 
+Traitement de l'image : pho_2K4716_04_01
+2025-06-11 10:04:15,958 - INFO - Caption initiale : a group of people walking down a cobblestone street
+2025-06-11 10:04:15,958 - INFO - Métadonnées utilisées :
+2025-06-11 10:04:15,958 - INFO -    - name: pho_2K4716_04_01.jpg
+2025-06-11 10:04:15,958 - INFO -    - origin: forbin
+2025-06-11 10:04:15,958 - INFO -    - num_page: 4.0
+2025-06-11 10:04:15,958 - INFO -    - num_photo: 1.0
+2025-06-11 10:04:15,958 - INFO -    - description: nan
+2025-06-11 10:04:15,959 - INFO -    - legende: Italians with prisoners
+2025-06-11 10:04:15,959 - INFO -    - legende_2: nan
+2025-06-11 10:04:15,959 - INFO -    - type: nan
+2025-06-11 10:04:15,959 - INFO -    - dimensions: nan
+2025-06-11 10:04:15,959 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 10:04:15,959 - INFO -    - date: nan
+2025-06-11 10:04:15,959 - INFO -    - conflit: nan
+2025-06-11 10:04:15,959 - INFO -    - sensible: nan
+2025-06-11 10:04:38,355 - INFO - Caption enrichie : A group of Italians with prisoners walks down a cobblestone street in a photo taken during the 1940s in Italy.
+2025-06-11 10:04:38,355 - INFO - 
+Traitement de l'image : pho_2K247157_34_01
+2025-06-11 10:04:38,355 - INFO - Caption initiale : a train of cattle
+2025-06-11 10:04:38,355 - INFO - Métadonnées utilisées :
+2025-06-11 10:04:38,355 - INFO -    - name: pho_2K247157_34_01.jpg
+2025-06-11 10:04:38,355 - INFO -    - origin: forbin
+2025-06-11 10:04:38,355 - INFO -    - num_page: 34.0
+2025-06-11 10:04:38,355 - INFO -    - num_photo: 1.0
+2025-06-11 10:04:38,355 - INFO -    - description: nan
+2025-06-11 10:04:38,355 - INFO -    - legende: PALESTINE OFFICIAL PHOTOGRAPHS.
+Taken by the official photographer on the journey to Damascus and in Damascus itself from September 29th  to October 3rd 1918.
+C.C.4 A hundred and one captured enemy guns, nearly all of which were taken on the road north east of Nablus. After the visitation of our airmen along the Balata -- Wadi Farah road no less than 87 guns and more than 800 vehicles were found abandoned in a space of under 5 miles. WATCH YOUR CREDIT
+PHOTO FROM WIDE WORLD PHOTOS
+183507 DIGGING DOWN THROUGH THE CENTURIES: U. OF PENNA. EXPEDITION TO BEISAN
+
+2025-06-11 10:04:38,355 - INFO -    - legende_2: nan
+2025-06-11 10:04:38,355 - INFO -    - type: nan
+2025-06-11 10:04:38,356 - INFO -    - dimensions: 20,5x15
+2025-06-11 10:04:38,356 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:04:38,356 - INFO -    - date: nan
+2025-06-11 10:04:38,356 - INFO -    - conflit: nan
+2025-06-11 10:04:38,356 - INFO -    - sensible: nan
+2025-06-11 10:05:15,707 - INFO - Caption enrichie : PALESTINE OFFICIAL PHOTOGRAPHS: A train of captured enemy guns was found abandoned on the road north east of Nablus during the September 29th to October 3rd 1918 journey
+2025-06-11 10:05:15,707 - INFO - 
+Traitement de l'image : pho_2K247157_30_01
+2025-06-11 10:05:15,707 - INFO - Caption initiale : a group of men outside a shanghai opium den
+2025-06-11 10:05:15,707 - INFO - Métadonnées utilisées :
+2025-06-11 10:05:15,707 - INFO -    - name: pho_2K247157_30_01.jpg
+2025-06-11 10:05:15,707 - INFO -    - origin: forbin
+2025-06-11 10:05:15,707 - INFO -    - num_page: 30.0
+2025-06-11 10:05:15,707 - INFO -    - num_photo: 1.0
+2025-06-11 10:05:15,707 - INFO -    - description: nan
+2025-06-11 10:05:15,707 - INFO -    - legende: The War
+2025-06-11 10:05:15,708 - INFO -    - legende_2:  Zouaves and Turcos in a billet in Northern France
+2025-06-11 10:05:15,708 - INFO -    - type: nan
+2025-06-11 10:05:15,708 - INFO -    - dimensions: nan
+2025-06-11 10:05:15,708 - INFO -    - xml: 21,5x16,5
+2025-06-11 10:05:15,708 - INFO -    - date: forbin/2K247157.xml
+2025-06-11 10:05:15,708 - INFO -    - conflit: nan
+2025-06-11 10:05:15,708 - INFO -    - sensible: nan
+2025-06-11 10:05:42,604 - INFO - Caption enrichie : In Northern France during World War II, a group of Zouaves and Turcos rest inside a billet while a group of men gather outside a Shanghai opium den.
+2025-06-11 10:05:42,604 - INFO - 
+Traitement de l'image : pho_2K24789_25_01
+2025-06-11 10:05:42,604 - INFO - Caption initiale : a group of men in tents
+2025-06-11 10:05:42,604 - INFO - Métadonnées utilisées :
+2025-06-11 10:05:42,604 - INFO -    - name: pho_2K24789_25_01.jpg
+2025-06-11 10:05:42,604 - INFO -    - origin: forbin
+2025-06-11 10:05:42,604 - INFO -    - num_page: 25.0
+2025-06-11 10:05:42,604 - INFO -    - num_photo: 1.0
+2025-06-11 10:05:42,604 - INFO -    - description: nan
+2025-06-11 10:05:42,604 - INFO -    - legende: Camp annamite 
+2025-06-11 10:05:42,604 - INFO -    - legende_2: nan
+2025-06-11 10:05:42,605 - INFO -    - type: nan
+2025-06-11 10:05:42,605 - INFO -    - dimensions: 13x9
+2025-06-11 10:05:42,605 - INFO -    - xml: forbin/2K24789.xml
+2025-06-11 10:05:42,605 - INFO -    - date: nan
+2025-06-11 10:05:42,605 - INFO -    - conflit: nan
+2025-06-11 10:05:42,605 - INFO -    - sensible: nan
+2025-06-11 10:05:55,288 - INFO - Caption enrichie : A group of men camping in tents can be seen in this image.
+2025-06-11 10:05:55,288 - INFO - 
+Traitement de l'image : pho_2K24793_35_01
+2025-06-11 10:05:55,288 - INFO - Caption initiale : a crowd gathered around a tower
+2025-06-11 10:05:55,288 - INFO - Métadonnées utilisées :
+2025-06-11 10:05:55,288 - INFO -    - name: pho_2K24793_35_01.jpg
+2025-06-11 10:05:55,289 - INFO -    - origin: forbin
+2025-06-11 10:05:55,289 - INFO -    - num_page: 35.0
+2025-06-11 10:05:55,289 - INFO -    - num_photo: 1.0
+2025-06-11 10:05:55,289 - INFO -    - description: nan
+2025-06-11 10:05:55,289 - INFO -    - legende: Forbin
+Un aviatik abattu par nos soldats et espion devant la Tour Blanche, Salonique
+2025-06-11 10:05:55,289 - INFO -    - legende_2: nan
+2025-06-11 10:05:55,289 - INFO -    - type: nan
+2025-06-11 10:05:55,289 - INFO -    - dimensions: nan
+2025-06-11 10:05:55,289 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 10:05:55,289 - INFO -    - date: nan
+2025-06-11 10:05:55,289 - INFO -    - conflit: nan
+2025-06-11 10:05:55,289 - INFO -    - sensible: nan
+2025-06-11 10:06:14,702 - INFO - Caption enrichie : "A crowd gathered around a tower as an aviator shot down an enemy plane in front of the Tower Blanche."
+2025-06-11 10:06:14,702 - INFO - 
+Traitement de l'image : pho_2K247157_90_01
+2025-06-11 10:06:14,702 - INFO - Caption initiale : a group of men in a street
+2025-06-11 10:06:14,702 - INFO - Métadonnées utilisées :
+2025-06-11 10:06:14,702 - INFO -    - name: pho_2K247157_90_01.jpg
+2025-06-11 10:06:14,702 - INFO -    - origin: forbin
+2025-06-11 10:06:14,702 - INFO -    - num_page: 90.0
+2025-06-11 10:06:14,702 - INFO -    - num_photo: 1.0
+2025-06-11 10:06:14,703 - INFO -    - description: nan
+2025-06-11 10:06:14,703 - INFO -    - legende: PALESTINE OFFICIAL PHOTOGRAPH
+Taken by the Official photographer on the journey to Damascus and in Damascus iteself from September 29th to October 3rd 1918.
+Photo shows: British and Indian troops in the narrow streets of Nazareth
+2025-06-11 10:06:14,703 - INFO -    - legende_2: nan
+2025-06-11 10:06:14,703 - INFO -    - type: nan
+2025-06-11 10:06:14,703 - INFO -    - dimensions: 25,5x20,5
+2025-06-11 10:06:14,703 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:06:14,703 - INFO -    - date: nan
+2025-06-11 10:06:14,703 - INFO -    - conflit: nan
+2025-06-11 10:06:14,703 - INFO -    - sensible: nan
+2025-06-11 10:06:47,518 - INFO - Caption enrichie : A group of men in a street, taken by the official photographer on the journey to Damascus and in Damascus itself from September 29th to October 3rd 1918.
+2025-06-11 10:06:47,519 - INFO - 
+Traitement de l'image : pho_2K247157_05_01
+2025-06-11 10:06:47,519 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 10:06:47,519 - INFO - Métadonnées utilisées :
+2025-06-11 10:06:47,519 - INFO -    - name: pho_2K247157_05_01.jpg
+2025-06-11 10:06:47,519 - INFO -    - origin: forbin
+2025-06-11 10:06:47,519 - INFO -    - num_page: 5.0
+2025-06-11 10:06:47,519 - INFO -    - num_photo: 1.0
+2025-06-11 10:06:47,519 - INFO -    - description: nan
+2025-06-11 10:06:47,519 - INFO -    - legende: THE WAR. IN THE FRENCHFIRING LINES. Turcos cleaning the boots of a War Correspondent, after their trip to the firing line.
+
+doing a friendly action
+2025-06-11 10:06:47,521 - INFO -    - legende_2: nan
+2025-06-11 10:06:47,521 - INFO -    - type: nan
+2025-06-11 10:06:47,521 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:06:47,521 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:06:47,521 - INFO -    - date: nan
+2025-06-11 10:06:47,521 - INFO -    - conflit: nan
+2025-06-11 10:06:47,521 - INFO -    - sensible: nan
+2025-06-11 10:07:03,295 - INFO - Caption enrichie : A group of soldiers in uniform doing a friendly action while cleaning their boots in the French firing lines.
+2025-06-11 10:07:03,296 - INFO - 
+Traitement de l'image : pho_2K247157_80_01
+2025-06-11 10:07:03,296 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 10:07:03,296 - INFO - Métadonnées utilisées :
+2025-06-11 10:07:03,296 - INFO -    - name: pho_2K247157_80_01.jpg
+2025-06-11 10:07:03,296 - INFO -    - origin: forbin
+2025-06-11 10:07:03,296 - INFO -    - num_page: 80.0
+2025-06-11 10:07:03,296 - INFO -    - num_photo: 1.0
+2025-06-11 10:07:03,296 - INFO -    - description: nan
+2025-06-11 10:07:03,296 - INFO -    - legende: PHOTOGRAPHS TAKEN BY THE OFFICIAL PHOTOGRAPHER ON THE ROAD TO BEYROUT AND TRIPOLI, AND IN BEYROUT AND TRIPOLI. 
+The first British Guard outside the Municiple Buildings at Beyrout
+2025-06-11 10:07:03,296 - INFO -    - legende_2: nan
+2025-06-11 10:07:03,296 - INFO -    - type: nan
+2025-06-11 10:07:03,296 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:07:03,296 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:07:03,296 - INFO -    - date: nan
+2025-06-11 10:07:03,296 - INFO -    - conflit: nan
+2025-06-11 10:07:03,296 - INFO -    - sensible: nan
+2025-06-11 10:07:22,740 - INFO - Caption enrichie : A group of British Guards in uniform taken by the official photographer on the road to Beirut and Tripoli.
+2025-06-11 10:07:22,740 - INFO - 
+Traitement de l'image : pho_2K2476_11_01
+2025-06-11 10:07:22,741 - INFO - Caption initiale : a ruined building in a desert
+2025-06-11 10:07:22,741 - INFO - Métadonnées utilisées :
+2025-06-11 10:07:22,741 - INFO -    - name: pho_2K2476_11_01.jpg
+2025-06-11 10:07:22,741 - INFO -    - origin: forbin
+2025-06-11 10:07:22,741 - INFO -    - num_page: 11.0
+2025-06-11 10:07:22,741 - INFO -    - num_photo: 1.0
+2025-06-11 10:07:22,741 - INFO -    - description: nan
+2025-06-11 10:07:22,741 - INFO -    - legende: The Franco-British Victory in Cameroon
+Breach made through the wall of the German fortin at Kusseri by a French gun. On front, a German trench
+
+Fobrin
+2025-06-11 10:07:22,741 - INFO -    - legende_2: nan
+2025-06-11 10:07:22,741 - INFO -    - type: nan
+2025-06-11 10:07:22,741 - INFO -    - dimensions: 18x13
+2025-06-11 10:07:22,741 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 10:07:22,741 - INFO -    - date: nan
+2025-06-11 10:07:22,741 - INFO -    - conflit: nan
+2025-06-11 10:07:22,741 - INFO -    - sensible: nan
+2025-06-11 10:07:42,951 - INFO - Caption enrichie : A ruined building in a desert, possibly resulting from a French gun breach through a German fortin at Kusseri.
+2025-06-11 10:07:42,951 - INFO - 
+Traitement de l'image : np_surlevif_19160101_03_02
+2025-06-11 10:07:42,952 - INFO - Caption initiale : a group of soldiers in the mountains
+2025-06-11 10:07:42,952 - INFO - Métadonnées utilisées :
+2025-06-11 10:07:42,952 - INFO -    - name: np_surlevif_19160101_03_02.jpg
+2025-06-11 10:07:42,952 - INFO -    - origin: sur le vif
+2025-06-11 10:07:42,952 - INFO -    - num_page: 3.0
+2025-06-11 10:07:42,952 - INFO -    - num_photo: 2.0
+2025-06-11 10:07:42,952 - INFO -    - description: nan
+2025-06-11 10:07:42,952 - INFO -    - legende: Nos soldats viennent de chasser les Bulgares d'un sommet stratégique. Ils s'y fortifient hâtivement et acceuillent notre photographe d'un bon sourire jovial
+2025-06-11 10:07:42,952 - INFO -    - legende_2: nan
+2025-06-11 10:07:42,952 - INFO -    - type: nan
+2025-06-11 10:07:42,952 - INFO -    - dimensions: nan
+2025-06-11 10:07:42,952 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:07:42,952 - INFO -    - date: 19160101
+2025-06-11 10:07:42,952 - INFO -    - conflit: nan
+2025-06-11 10:07:42,952 - INFO -    - sensible: nan
+2025-06-11 10:08:09,467 - INFO - Caption enrichie : A group of soldiers hastily fortified a strategic summit and welcomed our photographer with a jovial smile on January 1, 1916.
+2025-06-11 10:08:09,467 - INFO - 
+Traitement de l'image : pho_2K4716_03_01
+2025-06-11 10:08:09,467 - INFO - Caption initiale : a group of people waiting to board a ship
+2025-06-11 10:08:09,467 - INFO - Métadonnées utilisées :
+2025-06-11 10:08:09,468 - INFO -    - name: pho_2K4716_03_01.jpg
+2025-06-11 10:08:09,468 - INFO -    - origin: forbin
+2025-06-11 10:08:09,468 - INFO -    - num_page: 3.0
+2025-06-11 10:08:09,468 - INFO -    - num_photo: 1.0
+2025-06-11 10:08:09,468 - INFO -    - description: nan
+2025-06-11 10:08:09,468 - INFO -    - legende: Italian refugees arrive to Syracuse
+2025-06-11 10:08:09,468 - INFO -    - legende_2: nan
+2025-06-11 10:08:09,468 - INFO -    - type: nan
+2025-06-11 10:08:09,468 - INFO -    - dimensions: nan
+2025-06-11 10:08:09,468 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 10:08:09,468 - INFO -    - date: nan
+2025-06-11 10:08:09,468 - INFO -    - conflit: nan
+2025-06-11 10:08:09,468 - INFO -    - sensible: nan
+2025-06-11 10:08:23,023 - INFO - Caption enrichie : A group of Italian refugees wait to board a ship in Syracuse.
+2025-06-11 10:08:23,024 - INFO - 
+Traitement de l'image : np_surlevif_19151204_06_02
+2025-06-11 10:08:23,024 - INFO - Caption initiale : a trench in the somme
+2025-06-11 10:08:23,024 - INFO - Métadonnées utilisées :
+2025-06-11 10:08:23,024 - INFO -    - name: np_surlevif_19151204_06_02.jpg
+2025-06-11 10:08:23,024 - INFO -    - origin: sur le vif
+2025-06-11 10:08:23,024 - INFO -    - num_page: 6.0
+2025-06-11 10:08:23,024 - INFO -    - num_photo: 2.0
+2025-06-11 10:08:23,024 - INFO -    - description: nan
+2025-06-11 10:08:23,024 - INFO -    - legende: Les ravages de notre artillerie sont effroyables. On peut en juger par l'aspect de cette tranchée qui n'a plus ni forme ni tracé
+2025-06-11 10:08:23,024 - INFO -    - legende_2: nan
+2025-06-11 10:08:23,025 - INFO -    - type: nan
+2025-06-11 10:08:23,025 - INFO -    - dimensions: nan
+2025-06-11 10:08:23,025 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 10:08:23,025 - INFO -    - date: 19151204
+2025-06-11 10:08:23,025 - INFO -    - conflit: nan
+2025-06-11 10:08:23,025 - INFO -    - sensible: nan
+2025-06-11 10:08:51,108 - INFO - Caption enrichie : On can see the devastating effects of our artillery in the image of a trench in the Somme, taken on December 4th, 1915.
+2025-06-11 10:08:51,108 - INFO - 
+Traitement de l'image : pho_2K247178_45_01
+2025-06-11 10:08:51,108 - INFO - Caption initiale : a donkey and a car in a desert
+2025-06-11 10:08:51,108 - INFO - Métadonnées utilisées :
+2025-06-11 10:08:51,108 - INFO -    - name: pho_2K247178_45_01.jpg
+2025-06-11 10:08:51,108 - INFO -    - origin: forbin
+2025-06-11 10:08:51,108 - INFO -    - num_page: 45.0
+2025-06-11 10:08:51,109 - INFO -    - num_photo: 1.0
+2025-06-11 10:08:51,109 - INFO -    - description: nan
+2025-06-11 10:08:51,109 - INFO -    - legende: Sahara
+Forbin
+2025-06-11 10:08:51,109 - INFO -    - legende_2: nan
+2025-06-11 10:08:51,109 - INFO -    - type: nan
+2025-06-11 10:08:51,109 - INFO -    - dimensions: 13,2x8,5
+2025-06-11 10:08:51,109 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 10:08:51,109 - INFO -    - date: nan
+2025-06-11 10:08:51,109 - INFO -    - conflit: nan
+2025-06-11 10:08:51,109 - INFO -    - sensible: nan
+2025-06-11 10:09:02,798 - INFO - Caption enrichie : Forbin in a desert with a donkey and a car.
+2025-06-11 10:09:02,799 - INFO - 
+Traitement de l'image : pho_2K4716_01_01
+2025-06-11 10:09:02,799 - INFO - Caption initiale : a young girl in a slum in san francisco
+2025-06-11 10:09:02,799 - INFO - Métadonnées utilisées :
+2025-06-11 10:09:02,799 - INFO -    - name: pho_2K4716_01_01.jpg
+2025-06-11 10:09:02,799 - INFO -    - origin: forbin
+2025-06-11 10:09:02,800 - INFO -    - num_page: 1.0
+2025-06-11 10:09:02,800 - INFO -    - num_photo: 1.0
+2025-06-11 10:09:02,800 - INFO -    - description: nan
+2025-06-11 10:09:02,800 - INFO -    - legende: A little maltese refugee
+2025-06-11 10:09:02,800 - INFO -    - legende_2: nan
+2025-06-11 10:09:02,800 - INFO -    - type: nan
+2025-06-11 10:09:02,800 - INFO -    - dimensions: nan
+2025-06-11 10:09:02,800 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 10:09:02,800 - INFO -    - date: nan
+2025-06-11 10:09:02,800 - INFO -    - conflit: nan
+2025-06-11 10:09:02,800 - INFO -    - sensible: nan
+2025-06-11 10:09:18,346 - INFO - Caption enrichie : A young girl in a slum in San Francisco, a little Maltese refugee.
+2025-06-11 10:09:18,346 - INFO - 
+Traitement de l'image : pho_2K2475_44_01
+2025-06-11 10:09:18,346 - INFO - Caption initiale : a man with a cannon
+2025-06-11 10:09:18,346 - INFO - Métadonnées utilisées :
+2025-06-11 10:09:18,346 - INFO -    - name: pho_2K2475_44_01.jpg
+2025-06-11 10:09:18,346 - INFO -    - origin: forbin
+2025-06-11 10:09:18,346 - INFO -    - num_page: 44.0
+2025-06-11 10:09:18,346 - INFO -    - num_photo: 1.0
+2025-06-11 10:09:18,347 - INFO -    - description: nan
+2025-06-11 10:09:18,347 - INFO -    - legende: EXPELLING THE HUN FROM HIS LAST AFRICAN LAIR
+The new dispatch from German East Africa denotes that the campaign is still going favourable for us, and appreciable casualties have been inflicted on the enemy by aeroplane bombs. The photograph was taken just as the first British train was passing over it. Our Photo Shows, A big gun in action.
+2025-06-11 10:09:18,347 - INFO -    - legende_2: nan
+2025-06-11 10:09:18,347 - INFO -    - type: nan
+2025-06-11 10:09:18,347 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:09:18,347 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:09:18,347 - INFO -    - date: nan
+2025-06-11 10:09:18,347 - INFO -    - conflit: nan
+2025-06-11 10:09:18,347 - INFO -    - sensible: nan
+2025-06-11 10:09:44,439 - INFO - Caption enrichie : A man with a cannon, captured from his last African lair, is seen in action in a photograph taken just as the first British train passed over it.
+2025-06-11 10:09:44,440 - INFO - 
+Traitement de l'image : pho_2K2473_16_01
+2025-06-11 10:09:44,440 - INFO - Caption initiale : a man in a field of bananas
+2025-06-11 10:09:44,440 - INFO - Métadonnées utilisées :
+2025-06-11 10:09:44,440 - INFO -    - name: pho_2K2473_16_01.jpg
+2025-06-11 10:09:44,440 - INFO -    - origin: forbin
+2025-06-11 10:09:44,440 - INFO -    - num_page: 16.0
+2025-06-11 10:09:44,440 - INFO -    - num_photo: 1.0
+2025-06-11 10:09:44,440 - INFO -    - description: nan
+2025-06-11 10:09:44,441 - INFO -    - legende: Forbin
+Le jardin d'un port
+2025-06-11 10:09:44,441 - INFO -    - legende_2: nan
+2025-06-11 10:09:44,441 - INFO -    - type: nan
+2025-06-11 10:09:44,441 - INFO -    - dimensions: nan
+2025-06-11 10:09:44,441 - INFO -    - xml: forbin/2K2473.xml
+2025-06-11 10:09:44,441 - INFO -    - date: nan
+2025-06-11 10:09:44,441 - INFO -    - conflit: nan
+2025-06-11 10:09:44,441 - INFO -    - sensible: nan
+2025-06-11 10:10:01,933 - INFO - Caption enrichie : "A man standing in a field of bananas, as seen in a photo taken at an unknown location."
+2025-06-11 10:10:01,933 - INFO - 
+Traitement de l'image : np_surlevif_19151204_10_03
+2025-06-11 10:10:01,934 - INFO - Caption initiale : soldiers in trenches
+2025-06-11 10:10:01,934 - INFO - Métadonnées utilisées :
+2025-06-11 10:10:01,934 - INFO -    - name: np_surlevif_19151204_10_03.jpg
+2025-06-11 10:10:01,934 - INFO -    - origin: sur le vif
+2025-06-11 10:10:01,934 - INFO -    - num_page: 10.0
+2025-06-11 10:10:01,934 - INFO -    - num_photo: 3.0
+2025-06-11 10:10:01,934 - INFO -    - description: nan
+2025-06-11 10:10:01,934 - INFO -    - legende: Au cours de la bataille, les prisonniers commencent à arriver par les boyaux, croisan en route les hommes de renfort
+2025-06-11 10:10:01,934 - INFO -    - legende_2: nan
+2025-06-11 10:10:01,934 - INFO -    - type: nan
+2025-06-11 10:10:01,934 - INFO -    - dimensions: nan
+2025-06-11 10:10:01,934 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 10:10:01,934 - INFO -    - date: 19151204
+2025-06-11 10:10:01,934 - INFO -    - conflit: nan
+2025-06-11 10:10:01,934 - INFO -    - sensible: nan
+2025-06-11 10:10:21,925 - INFO - Caption enrichie : During the battle, prisoners were arriving through the tunnels and crossing paths with reinforcements, while soldiers sat in trenches.
+2025-06-11 10:10:21,926 - INFO - 
+Traitement de l'image : pho_2K24793_04_02
+2025-06-11 10:10:21,926 - INFO - Caption initiale : a crowd of people gathered in front of a church
+2025-06-11 10:10:21,926 - INFO - Métadonnées utilisées :
+2025-06-11 10:10:21,926 - INFO -    - name: pho_2K24793_04_02.jpg
+2025-06-11 10:10:21,926 - INFO -    - origin: forbin
+2025-06-11 10:10:21,926 - INFO -    - num_page: 4.0
+2025-06-11 10:10:21,926 - INFO -    - num_photo: 2.0
+2025-06-11 10:10:21,926 - INFO -    - description: nan
+2025-06-11 10:10:21,926 - INFO -    - legende: Soldats hélléniques et jeunes Grecques suivent avec intérêt les préparatifs des aviateurs français
+2025-06-11 10:10:21,926 - INFO -    - legende_2: nan
+2025-06-11 10:10:21,926 - INFO -    - type: nan
+2025-06-11 10:10:21,926 - INFO -    - dimensions: nan
+2025-06-11 10:10:21,926 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 10:10:21,926 - INFO -    - date: nan
+2025-06-11 10:10:21,926 - INFO -    - conflit: nan
+2025-06-11 10:10:21,926 - INFO -    - sensible: nan
+2025-06-11 10:10:45,020 - INFO - Caption enrichie : A crowd of people gathered in front of a church as Greek soldiers and young Greeks watched the French aviators' preparations with interest.
+2025-06-11 10:10:45,020 - INFO - 
+Traitement de l'image : pho_2K247157_20_01
+2025-06-11 10:10:45,020 - INFO - Caption initiale : a group of men in uniforms marching in a parade
+2025-06-11 10:10:45,020 - INFO - Métadonnées utilisées :
+2025-06-11 10:10:45,020 - INFO -    - name: pho_2K247157_20_01.jpg
+2025-06-11 10:10:45,021 - INFO -    - origin: forbin
+2025-06-11 10:10:45,021 - INFO -    - num_page: 20.0
+2025-06-11 10:10:45,021 - INFO -    - num_photo: 1.0
+2025-06-11 10:10:45,021 - INFO -    - description: nan
+2025-06-11 10:10:45,021 - INFO -    - legende: The flag of a Turco regiment (embarking or ??)
+2025-06-11 10:10:45,021 - INFO -    - legende_2: nan
+2025-06-11 10:10:45,021 - INFO -    - type: nan
+2025-06-11 10:10:45,021 - INFO -    - dimensions: 15,5x11,5
+2025-06-11 10:10:45,021 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:10:45,021 - INFO -    - date: nan
+2025-06-11 10:10:45,021 - INFO -    - conflit: nan
+2025-06-11 10:10:45,021 - INFO -    - sensible: nan
+2025-06-11 10:11:04,667 - INFO - Caption enrichie : A group of men in uniforms marching in a parade, holding the flag of a Turco regiment.
+2025-06-11 10:11:04,668 - INFO - 
+Traitement de l'image : pho_2K24780_26_01
+2025-06-11 10:11:04,668 - INFO - Caption initiale : a fire at the san francisco fire department
+2025-06-11 10:11:04,668 - INFO - Métadonnées utilisées :
+2025-06-11 10:11:04,668 - INFO -    - name: pho_2K24780_26_01.jpg
+2025-06-11 10:11:04,668 - INFO -    - origin: forbin
+2025-06-11 10:11:04,668 - INFO -    - num_page: 26.0
+2025-06-11 10:11:04,668 - INFO -    - num_photo: 1.0
+2025-06-11 10:11:04,668 - INFO -    - description: nan
+2025-06-11 10:11:04,668 - INFO -    - legende: Official photograph taken on the British Western Front in France
+The effect of an incendiary shell. Civilians aving their property near he line
+2025-06-11 10:11:04,668 - INFO -    - legende_2: nan
+2025-06-11 10:11:04,669 - INFO -    - type: nan
+2025-06-11 10:11:04,669 - INFO -    - dimensions: nan
+2025-06-11 10:11:04,669 - INFO -    - xml: forbin/2K24780.xml
+2025-06-11 10:11:04,669 - INFO -    - date: nan
+2025-06-11 10:11:04,669 - INFO -    - conflit: nan
+2025-06-11 10:11:04,669 - INFO -    - sensible: nan
+2025-06-11 10:11:17,988 - INFO - Caption enrichie : An incendiary shell caused a fire at the San Francisco Fire Department.
+2025-06-11 10:11:17,988 - INFO - 
+Traitement de l'image : np_surlevif_19160101_02_01
+2025-06-11 10:11:17,988 - INFO - Caption initiale : a man driving a car with a mask on
+2025-06-11 10:11:17,988 - INFO - Métadonnées utilisées :
+2025-06-11 10:11:17,988 - INFO -    - name: np_surlevif_19160101_02_01.jpg
+2025-06-11 10:11:17,988 - INFO -    - origin: sur le vif
+2025-06-11 10:11:17,989 - INFO -    - num_page: 2.0
+2025-06-11 10:11:17,989 - INFO -    - num_photo: 1.0
+2025-06-11 10:11:17,989 - INFO -    - description: nan
+2025-06-11 10:11:17,989 - INFO -    - legende: Automobilistes d'une ambulance de service de santé, munis de casques protecteurs contre les gaz asphyxiants
+2025-06-11 10:11:17,989 - INFO -    - legende_2: nan
+2025-06-11 10:11:17,989 - INFO -    - type: nan
+2025-06-11 10:11:17,989 - INFO -    - dimensions: nan
+2025-06-11 10:11:17,989 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:11:17,989 - INFO -    - date: 19160101
+2025-06-11 10:11:17,989 - INFO -    - conflit: nan
+2025-06-11 10:11:17,989 - INFO -    - sensible: nan
+2025-06-11 10:11:42,535 - INFO - Caption enrichie : A man driving a car with a mask on, wearing a protective helmet, in a healthcare ambulance service, dated 1916.
+2025-06-11 10:11:42,536 - INFO - 
+Traitement de l'image : pho_2K24793_45_01
+2025-06-11 10:11:42,536 - INFO - Caption initiale : a crowd of people in venice
+2025-06-11 10:11:42,536 - INFO - Métadonnées utilisées :
+2025-06-11 10:11:42,536 - INFO -    - name: pho_2K24793_45_01.jpg
+2025-06-11 10:11:42,536 - INFO -    - origin: forbin
+2025-06-11 10:11:42,536 - INFO -    - num_page: 45.0
+2025-06-11 10:11:42,536 - INFO -    - num_photo: 1.0
+2025-06-11 10:11:42,536 - INFO -    - description: nan
+2025-06-11 10:11:42,536 - INFO -    - legende: Salonica
+The third German aeroplane captured in Macedonia by the French within 3 weeks.
+Forbin
+2025-06-11 10:11:42,536 - INFO -    - legende_2: nan
+2025-06-11 10:11:42,536 - INFO -    - type: nan
+2025-06-11 10:11:42,536 - INFO -    - dimensions: nan
+2025-06-11 10:11:42,536 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 10:11:42,536 - INFO -    - date: nan
+2025-06-11 10:11:42,536 - INFO -    - conflit: nan
+2025-06-11 10:11:42,536 - INFO -    - sensible: nan
+2025-06-11 10:12:05,216 - INFO - Caption enrichie : In Venice, a crowd of people gathered around the German aeroplane captured by the French in Macedonia just three weeks prior.
+2025-06-11 10:12:05,216 - INFO - 
+Traitement de l'image : np_surlevif_19160101_06_02
+2025-06-11 10:12:05,216 - INFO - Caption initiale : a trench dug by the french army
+2025-06-11 10:12:05,216 - INFO - Métadonnées utilisées :
+2025-06-11 10:12:05,216 - INFO -    - name: np_surlevif_19160101_06_02.jpg
+2025-06-11 10:12:05,216 - INFO -    - origin: sur le vif
+2025-06-11 10:12:05,216 - INFO -    - num_page: 6.0
+2025-06-11 10:12:05,216 - INFO -    - num_photo: 2.0
+2025-06-11 10:12:05,217 - INFO -    - description: nan
+2025-06-11 10:12:05,217 - INFO -    - legende: Catapultes lance-bombes grâce auxquelles avec un peu d'exercice et d'adresse, on envoie les projectiles dans les tranchées boches sans obusier
+2025-06-11 10:12:05,217 - INFO -    - legende_2: nan
+2025-06-11 10:12:05,217 - INFO -    - type: nan
+2025-06-11 10:12:05,217 - INFO -    - dimensions: nan
+2025-06-11 10:12:05,217 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:12:05,217 - INFO -    - date: 19160101
+2025-06-11 10:12:05,217 - INFO -    - conflit: nan
+2025-06-11 10:12:05,217 - INFO -    - sensible: nan
+2025-06-11 10:12:36,371 - INFO - Caption enrichie : "A trench dug by the French army during World War I in 1916, which helped to launch catapults and send bombs into German trenches with practice and accuracy."
+2025-06-11 10:12:36,371 - INFO - 
+Traitement de l'image : pho_2K2475_56_01
+2025-06-11 10:12:36,372 - INFO - Caption initiale : a train with people on it
+2025-06-11 10:12:36,372 - INFO - Métadonnées utilisées :
+2025-06-11 10:12:36,372 - INFO -    - name: pho_2K2475_56_01.jpg
+2025-06-11 10:12:36,372 - INFO -    - origin: forbin
+2025-06-11 10:12:36,372 - INFO -    - num_page: 56.0
+2025-06-11 10:12:36,372 - INFO -    - num_photo: 1.0
+2025-06-11 10:12:36,372 - INFO -    - description: nan
+2025-06-11 10:12:36,372 - INFO -    - legende: EXPELLING THE HUN FROM HIS LAST AFRICAN LAIR
+The new dispatch from German East Africa denotes that the campaign is still going favourable for us, and appreciable casualties have been inflicted on the enemy by aeroplane bombs.
+Our Photo Shows, A rest during a long and dusty journey in a troop train.
+2025-06-11 10:12:36,372 - INFO -    - legende_2: nan
+2025-06-11 10:12:36,372 - INFO -    - type: nan
+2025-06-11 10:12:36,372 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:12:36,372 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:12:36,372 - INFO -    - date: nan
+2025-06-11 10:12:36,372 - INFO -    - conflit: nan
+2025-06-11 10:12:36,372 - INFO -    - sensible: nan
+2025-06-11 10:12:49,440 - INFO - Caption enrichie : "A rest during a long and dusty journey in a troop train."
+2025-06-11 10:12:49,440 - INFO - 
+Traitement de l'image : np_surlevif_19151204_06_06
+2025-06-11 10:12:49,440 - INFO - Caption initiale : a field of munitions
+2025-06-11 10:12:49,440 - INFO - Métadonnées utilisées :
+2025-06-11 10:12:49,440 - INFO -    - name: np_surlevif_19151204_06_06.jpg
+2025-06-11 10:12:49,440 - INFO -    - origin: sur le vif
+2025-06-11 10:12:49,440 - INFO -    - num_page: 6.0
+2025-06-11 10:12:49,440 - INFO -    - num_photo: 6.0
+2025-06-11 10:12:49,441 - INFO -    - description: nan
+2025-06-11 10:12:49,441 - INFO -    - legende: Dans les tranchées allemandes dont nous nous sommes emparés en Champagne on a trouvé un grand nombre d'obus asphyxiants
+2025-06-11 10:12:49,441 - INFO -    - legende_2: nan
+2025-06-11 10:12:49,441 - INFO -    - type: nan
+2025-06-11 10:12:49,441 - INFO -    - dimensions: nan
+2025-06-11 10:12:49,441 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 10:12:49,441 - INFO -    - date: 19151204
+2025-06-11 10:12:49,441 - INFO -    - conflit: nan
+2025-06-11 10:12:49,441 - INFO -    - sensible: nan
+2025-06-11 10:13:27,245 - INFO - Caption enrichie : During World War I, in the trenches we liberated in Champagne, we found a large number of asphyxiating shells amidst the field of munitions dated 04 December 1915.
+2025-06-11 10:13:27,246 - INFO - 
+Traitement de l'image : pho_2K2476_21_01
+2025-06-11 10:13:27,246 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 10:13:27,246 - INFO - Métadonnées utilisées :
+2025-06-11 10:13:27,246 - INFO -    - name: pho_2K2476_21_01.jpg
+2025-06-11 10:13:27,246 - INFO -    - origin: forbin
+2025-06-11 10:13:27,246 - INFO -    - num_page: 21.0
+2025-06-11 10:13:27,247 - INFO -    - num_photo: 1.0
+2025-06-11 10:13:27,247 - INFO -    - description: nan
+2025-06-11 10:13:27,247 - INFO -    - legende: FIGHTING FOR THE EMPIRE. 
+Native soldiers firing on the enemy with rifles and a machine gun at Garua (Cameroons)
+
+Troupes coloniales
+
+17 novembre 1915
+Les poilus noirs
+
+Chez Forbin.
+2025-06-11 10:13:27,247 - INFO -    - legende_2: nan
+2025-06-11 10:13:27,247 - INFO -    - type: nan
+2025-06-11 10:13:27,247 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:13:27,247 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 10:13:27,247 - INFO -    - date: nan
+2025-06-11 10:13:27,247 - INFO -    - conflit: nan
+2025-06-11 10:13:27,247 - INFO -    - sensible: nan
+2025-06-11 10:13:52,041 - INFO - Caption enrichie : A group of soldiers in uniform, firing rifles and a machine gun, fought for the empire in Garua in November 1915.
+2025-06-11 10:13:52,042 - INFO - 
+Traitement de l'image : pho_2K2475_16_01
+2025-06-11 10:13:52,042 - INFO - Caption initiale : a large crane in the desert
+2025-06-11 10:13:52,042 - INFO - Métadonnées utilisées :
+2025-06-11 10:13:52,042 - INFO -    - name: pho_2K2475_16_01.jpg
+2025-06-11 10:13:52,042 - INFO -    - origin: forbin
+2025-06-11 10:13:52,042 - INFO -    - num_page: 16.0
+2025-06-11 10:13:52,042 - INFO -    - num_photo: 1.0
+2025-06-11 10:13:52,042 - INFO -    - description: nan
+2025-06-11 10:13:52,042 - INFO -    - legende: ELECTRIC LIGHT IN A DESERT: HOW A RAILWAY IS BEING BUILT: An ingenious apparatus is in use in order to enable the ?ing are building a rail railway in Africa to work by night as well as by day; It consists of electric lights attached to a truck, which runs alond to the line and illuminates the area where the new section is being built; Photo shows The powerful light for night work. They are on the pole projecting from the ?.    
+2025-06-11 10:13:52,044 - INFO -    - legende_2: nan
+2025-06-11 10:13:52,044 - INFO -    - type: nan
+2025-06-11 10:13:52,044 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:13:52,044 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:13:52,044 - INFO -    - date: nan
+2025-06-11 10:13:52,044 - INFO -    - conflit: nan
+2025-06-11 10:13:52,044 - INFO -    - sensible: nan
+2025-06-11 10:14:19,658 - INFO - Caption enrichie : A large crane is being used in the desert to build a railway by day and night, with electric lights attached to a truck projecting from the poles.
+2025-06-11 10:14:19,658 - INFO - 
+Traitement de l'image : pho_2K24789_32_01
+2025-06-11 10:14:19,659 - INFO - Caption initiale : a group of men removing rubble from a building
+2025-06-11 10:14:19,659 - INFO - Métadonnées utilisées :
+2025-06-11 10:14:19,659 - INFO -    - name: pho_2K24789_32_01.jpg
+2025-06-11 10:14:19,659 - INFO -    - origin: forbin
+2025-06-11 10:14:19,659 - INFO -    - num_page: 32.0
+2025-06-11 10:14:19,659 - INFO -    - num_photo: 1.0
+2025-06-11 10:14:19,659 - INFO -    - description: nan
+2025-06-11 10:14:19,659 - INFO -    - legende: Après la visite d'un Zeppelin Salonique 
+One of the docks destroyed by Zeppelin bombs at Salonica. It belonged to a Greek concern (Banque de Salonique)
+2025-06-11 10:14:19,659 - INFO -    - legende_2: nan
+2025-06-11 10:14:19,659 - INFO -    - type: nan
+2025-06-11 10:14:19,659 - INFO -    - dimensions: 12x9
+2025-06-11 10:14:19,659 - INFO -    - xml: forbin/2K24789.xml
+2025-06-11 10:14:19,659 - INFO -    - date: nan
+2025-06-11 10:14:19,659 - INFO -    - conflit: nan
+2025-06-11 10:14:19,659 - INFO -    - sensible: nan
+2025-06-11 10:14:45,624 - INFO - Caption enrichie : After visiting a Zeppelin Salonique, a group of men removed rubble from a destroyed building in Salonica that belonged to a Greek bank.
+2025-06-11 10:14:45,625 - INFO - 
+Traitement de l'image : pho_2K2475_47_01
+2025-06-11 10:14:45,625 - INFO - Caption initiale : a horse and carriage traveling down a dirt road
+2025-06-11 10:14:45,625 - INFO - Métadonnées utilisées :
+2025-06-11 10:14:45,625 - INFO -    - name: pho_2K2475_47_01.jpg
+2025-06-11 10:14:45,625 - INFO -    - origin: forbin
+2025-06-11 10:14:45,625 - INFO -    - num_page: 47.0
+2025-06-11 10:14:45,625 - INFO -    - num_photo: 1.0
+2025-06-11 10:14:45,625 - INFO -    - description: nan
+2025-06-11 10:14:45,625 - INFO -    - legende: THE CAMPAIGN IN GERMAN EAST AFRICA
+Our photo shows REDCROSS RICKCHAS ON THE ROAD.
+2025-06-11 10:14:45,625 - INFO -    - legende_2: nan
+2025-06-11 10:14:45,625 - INFO -    - type: nan
+2025-06-11 10:14:45,625 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:14:45,625 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:14:45,625 - INFO -    - date: nan
+2025-06-11 10:14:45,625 - INFO -    - conflit: nan
+2025-06-11 10:14:45,625 - INFO -    - sensible: nan
+2025-06-11 10:15:01,962 - INFO - Caption enrichie : Red Cross RickChas riding a horse and carriage down a dirt road in German East Africa.
+2025-06-11 10:15:01,962 - INFO - 
+Traitement de l'image : pho_2K247157_02_01
+2025-06-11 10:15:01,962 - INFO - Caption initiale : a group of men in uniform holding a flag
+2025-06-11 10:15:01,962 - INFO - Métadonnées utilisées :
+2025-06-11 10:15:01,962 - INFO -    - name: pho_2K247157_02_01.jpg
+2025-06-11 10:15:01,962 - INFO -    - origin: forbin
+2025-06-11 10:15:01,963 - INFO -    - num_page: 2.0
+2025-06-11 10:15:01,963 - INFO -    - num_photo: 1.0
+2025-06-11 10:15:01,963 - INFO -    - description: nan
+2025-06-11 10:15:01,963 - INFO -    - legende: Tirailleurs tunisiens
+Un fanion de compagnie
+2025-06-11 10:15:01,963 - INFO -    - legende_2: nan
+2025-06-11 10:15:01,963 - INFO -    - type: nan
+2025-06-11 10:15:01,963 - INFO -    - dimensions: 16x11,5
+2025-06-11 10:15:01,963 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:15:01,963 - INFO -    - date: nan
+2025-06-11 10:15:01,963 - INFO -    - conflit: nan
+2025-06-11 10:15:01,963 - INFO -    - sensible: nan
+2025-06-11 10:15:13,191 - INFO - Caption enrichie : A group of Tunisian soldiers in uniform holding a flag.
+2025-06-11 10:15:13,191 - INFO - 
+Traitement de l'image : pho_2K247157_48_01
+2025-06-11 10:15:13,192 - INFO - Caption initiale : a view of the town of st johns
+2025-06-11 10:15:13,192 - INFO - Métadonnées utilisées :
+2025-06-11 10:15:13,192 - INFO -    - name: pho_2K247157_48_01.jpg
+2025-06-11 10:15:13,192 - INFO -    - origin: forbin
+2025-06-11 10:15:13,192 - INFO -    - num_page: 48.0
+2025-06-11 10:15:13,192 - INFO -    - num_photo: 1.0
+2025-06-11 10:15:13,192 - INFO -    - description: nan
+2025-06-11 10:15:13,192 - INFO -    - legende: EGYPTIAN OFFICIAL PHOTOGRAPH. A tractor park near the nablus road. Near this spot, the Duke of Connaught, distributed a number of rewards to those who had distinguished themselves during our advance north of Jerusalem
+2025-06-11 10:15:13,192 - INFO -    - legende_2: nan
+2025-06-11 10:15:13,192 - INFO -    - type: nan
+2025-06-11 10:15:13,192 - INFO -    - dimensions: 20,5x15
+2025-06-11 10:15:13,192 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:15:13,192 - INFO -    - date: nan
+2025-06-11 10:15:13,192 - INFO -    - conflit: nan
+2025-06-11 10:15:13,192 - INFO -    - sensible: nan
+2025-06-11 10:15:53,035 - INFO - Caption enrichie : An Egyptian official photo captures a view of the town of St. Johns, with a tractor park near the Nablus road in the background. The Duke of Connaught distributed rewards to those who had distinguished themselves during our advance north
+2025-06-11 10:15:53,036 - INFO - 
+Traitement de l'image : pho_2K2479_05_01
+2025-06-11 10:15:53,036 - INFO - Caption initiale : a procession of a group of men in horse drawn carriages
+2025-06-11 10:15:53,036 - INFO - Métadonnées utilisées :
+2025-06-11 10:15:53,036 - INFO -    - name: pho_2K2479_05_01.jpg
+2025-06-11 10:15:53,036 - INFO -    - origin: forbin
+2025-06-11 10:15:53,036 - INFO -    - num_page: 5.0
+2025-06-11 10:15:53,036 - INFO -    - num_photo: 1.0
+2025-06-11 10:15:53,036 - INFO -    - description: nan
+2025-06-11 10:15:53,036 - INFO -    - legende: A battery marchins part at the review at Khartoum on the anniversary of the Khediv(is)
+2025-06-11 10:15:53,036 - INFO -    - legende_2: COPYRIGHT
+GRAPHIC PHOTO UNION,
+TALLIS STREET, EC.
+2025-06-11 10:15:53,036 - INFO -    - type: nan
+2025-06-11 10:15:53,036 - INFO -    - dimensions: 10,5x6,5
+2025-06-11 10:15:53,036 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 10:15:53,036 - INFO -    - date: nan
+2025-06-11 10:15:53,037 - INFO -    - conflit: nan
+2025-06-11 10:15:53,037 - INFO -    - sensible: nan
+2025-06-11 10:16:17,459 - INFO - Caption enrichie : A group of men in horse-drawn carriages marched at a review in Khartoum on the anniversary of the Khediv.
+2025-06-11 10:16:17,460 - INFO - 
+Traitement de l'image : pho_2K2475_13_01
+2025-06-11 10:16:17,460 - INFO - Caption initiale : a house that was destroyed by a tornado
+2025-06-11 10:16:17,460 - INFO - Métadonnées utilisées :
+2025-06-11 10:16:17,460 - INFO -    - name: pho_2K2475_13_01.jpg
+2025-06-11 10:16:17,460 - INFO -    - origin: forbin
+2025-06-11 10:16:17,460 - INFO -    - num_page: 13.0
+2025-06-11 10:16:17,460 - INFO -    - num_photo: 1.0
+2025-06-11 10:16:17,461 - INFO -    - description: nan
+2025-06-11 10:16:17,461 - INFO -    - legende: UNIQUE PHOTOGRAPHS OF THE EAST AFRICAN CAMPAIGN.
+In November 1914 we bombarded Tanga, one of the principal German East African Ports and effected a landing.
+This summer General Smuts Army entered Tanga from the land side and now occupy the Town.
+These Photographs which were taken while the Germans were in occupation were afterwards found in a box by a young British officer.
+Photo shows. The effect of our bombardment.
+
+Forbin
+2025-06-11 10:16:17,461 - INFO -    - legende_2: nan
+2025-06-11 10:16:17,461 - INFO -    - type: nan
+2025-06-11 10:16:17,461 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:16:17,461 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:16:17,461 - INFO -    - date: nan
+2025-06-11 10:16:17,461 - INFO -    - conflit: nan
+2025-06-11 10:16:17,461 - INFO -    - sensible: nan
+2025-06-11 10:16:44,808 - INFO - Caption enrichie : "This unique photograph captures the destruction of a house by a tornado in Tanga, East Africa, during the German occupation in November 1914."
+2025-06-11 10:16:44,808 - INFO - 
+Traitement de l'image : pho_2K4716_08_01
+2025-06-11 10:16:44,808 - INFO - Caption initiale : a group of people in a village in greece
+2025-06-11 10:16:44,808 - INFO - Métadonnées utilisées :
+2025-06-11 10:16:44,809 - INFO -    - name: pho_2K4716_08_01.jpg
+2025-06-11 10:16:44,809 - INFO -    - origin: forbin
+2025-06-11 10:16:44,809 - INFO -    - num_page: 8.0
+2025-06-11 10:16:44,809 - INFO -    - num_photo: 1.0
+2025-06-11 10:16:44,809 - INFO -    - description: nan
+2025-06-11 10:16:44,809 - INFO -    - legende: British consul of Sfax with Maltese refugees
+2025-06-11 10:16:44,809 - INFO -    - legende_2: nan
+2025-06-11 10:16:44,809 - INFO -    - type: nan
+2025-06-11 10:16:44,809 - INFO -    - dimensions: nan
+2025-06-11 10:16:44,809 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 10:16:44,809 - INFO -    - date: nan
+2025-06-11 10:16:44,809 - INFO -    - conflit: nan
+2025-06-11 10:16:44,809 - INFO -    - sensible: nan
+2025-06-11 10:17:08,165 - INFO - Caption enrichie : "In Sfax, the British consul meets with Maltese refugees while in a Greek village, a group of people gather together."
+2025-06-11 10:17:08,166 - INFO - 
+Traitement de l'image : pho_2K4716_13_01
+2025-06-11 10:17:08,166 - INFO - Caption initiale : a group of soldiers digging a trench
+2025-06-11 10:17:08,166 - INFO - Métadonnées utilisées :
+2025-06-11 10:17:08,166 - INFO -    - name: pho_2K4716_13_01.jpg
+2025-06-11 10:17:08,166 - INFO -    - origin: forbin
+2025-06-11 10:17:08,166 - INFO -    - num_page: 13.0
+2025-06-11 10:17:08,166 - INFO -    - num_photo: 1.0
+2025-06-11 10:17:08,166 - INFO -    - description: nan
+2025-06-11 10:17:08,166 - INFO -    - legende: Irish line of defence in the desert
+2025-06-11 10:17:08,166 - INFO -    - legende_2: nan
+2025-06-11 10:17:08,166 - INFO -    - type: nan
+2025-06-11 10:17:08,166 - INFO -    - dimensions: nan
+2025-06-11 10:17:08,166 - INFO -    - xml: forbin/2K4716.xml
+2025-06-11 10:17:08,166 - INFO -    - date: nan
+2025-06-11 10:17:08,166 - INFO -    - conflit: nan
+2025-06-11 10:17:08,167 - INFO -    - sensible: nan
+2025-06-11 10:17:19,148 - INFO - Caption enrichie : A group of Irish soldiers dig a trench in the desert.
+2025-06-11 10:17:19,149 - INFO - 
+Traitement de l'image : pho_2K247157_15_01
+2025-06-11 10:17:19,149 - INFO - Caption initiale : a man in a russian uniform
+2025-06-11 10:17:19,149 - INFO - Métadonnées utilisées :
+2025-06-11 10:17:19,149 - INFO -    - name: pho_2K247157_15_01.jpg
+2025-06-11 10:17:19,149 - INFO -    - origin: forbin
+2025-06-11 10:17:19,149 - INFO -    - num_page: 15.0
+2025-06-11 10:17:19,149 - INFO -    - num_photo: 1.0
+2025-06-11 10:17:19,149 - INFO -    - description: nan
+2025-06-11 10:17:19,149 - INFO -    - legende: A member of La (Mercheria??) de Paris or Paris municipal Band now on London
+2025-06-11 10:17:19,149 - INFO -    - legende_2: nan
+2025-06-11 10:17:19,149 - INFO -    - type: nan
+2025-06-11 10:17:19,149 - INFO -    - dimensions: 21,5x17
+2025-06-11 10:17:19,149 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:17:19,149 - INFO -    - date: nan
+2025-06-11 10:17:19,149 - INFO -    - conflit: nan
+2025-06-11 10:17:19,149 - INFO -    - sensible: nan
+2025-06-11 10:17:35,448 - INFO - Caption enrichie : A man in a Russian uniform, a member of La Mercheria, is now on London.
+2025-06-11 10:17:35,449 - INFO - 
+Traitement de l'image : pho_2K247157_14_01
+2025-06-11 10:17:35,449 - INFO - Caption initiale : a group of men laying down with their guns
+2025-06-11 10:17:35,449 - INFO - Métadonnées utilisées :
+2025-06-11 10:17:35,449 - INFO -    - name: pho_2K247157_14_01.jpg
+2025-06-11 10:17:35,449 - INFO -    - origin: forbin
+2025-06-11 10:17:35,449 - INFO -    - num_page: 14.0
+2025-06-11 10:17:35,449 - INFO -    - num_photo: 1.0
+2025-06-11 10:17:35,449 - INFO -    - description: nan
+2025-06-11 10:17:35,449 - INFO -    - legende: Turcos coming from Sahara and embarking at Alger
+2025-06-11 10:17:35,449 - INFO -    - legende_2: nan
+2025-06-11 10:17:35,449 - INFO -    - type: nan
+2025-06-11 10:17:35,450 - INFO -    - dimensions: 14,5x12,5
+2025-06-11 10:17:35,450 - INFO -    - xml: forbin/2K247157.xml
+2025-06-11 10:17:35,450 - INFO -    - date: nan
+2025-06-11 10:17:35,450 - INFO -    - conflit: nan
+2025-06-11 10:17:35,450 - INFO -    - sensible: nan
+2025-06-11 10:17:51,417 - INFO - Caption enrichie : A group of Turcos from Sahara are embarking at Alger with their guns.
+2025-06-11 10:17:51,418 - INFO - 
+Traitement de l'image : np_surlevif_19151204_03_02
+2025-06-11 10:17:51,418 - INFO - Caption initiale : a boat in the middle of the ocean
+2025-06-11 10:17:51,418 - INFO - Métadonnées utilisées :
+2025-06-11 10:17:51,418 - INFO -    - name: np_surlevif_19151204_03_02.jpg
+2025-06-11 10:17:51,418 - INFO -    - origin: sur le vif
+2025-06-11 10:17:51,418 - INFO -    - num_page: 3.0
+2025-06-11 10:17:51,418 - INFO -    - num_photo: 2.0
+2025-06-11 10:17:51,418 - INFO -    - description: nan
+2025-06-11 10:17:51,418 - INFO -    - legende: Navire turc abandonné par son équipage. Le sous-marin s'est éloigné après avoir jeté une bombe incendiaire à fond de cale.
+2025-06-11 10:17:51,418 - INFO -    - legende_2: nan
+2025-06-11 10:17:51,418 - INFO -    - type: nan
+2025-06-11 10:17:51,418 - INFO -    - dimensions: nan
+2025-06-11 10:17:51,418 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 10:17:51,419 - INFO -    - date: 19151204
+2025-06-11 10:17:51,419 - INFO -    - conflit: nan
+2025-06-11 10:17:51,419 - INFO -    - sensible: nan
+2025-06-11 10:18:10,718 - INFO - Caption enrichie : The abandoned Turkish boat in the middle of the ocean, as seen in this photograph from December 1915.
+2025-06-11 10:18:10,719 - INFO - 
+Traitement de l'image : pho_2K47160_01_02
+2025-06-11 10:18:10,719 - INFO - Caption initiale : a woman in a hat and a man in a suit
+2025-06-11 10:18:10,719 - INFO - Métadonnées utilisées :
+2025-06-11 10:18:10,719 - INFO -    - name: pho_2K47160_01_02.jpg
+2025-06-11 10:18:10,719 - INFO -    - origin: forbin
+2025-06-11 10:18:10,719 - INFO -    - num_page: 1.0
+2025-06-11 10:18:10,719 - INFO -    - num_photo: 2.0
+2025-06-11 10:18:10,719 - INFO -    - description: nan
+2025-06-11 10:18:10,719 - INFO -    - legende: Justice italienne : des cadavres pour les chacals
+2025-06-11 10:18:10,719 - INFO -    - legende_2: nan
+2025-06-11 10:18:10,719 - INFO -    - type: nan
+2025-06-11 10:18:10,719 - INFO -    - dimensions: nan
+2025-06-11 10:18:10,719 - INFO -    - xml: forbin/2K147160.xml
+2025-06-11 10:18:10,719 - INFO -    - date: nan
+2025-06-11 10:18:10,719 - INFO -    - conflit: nan
+2025-06-11 10:18:10,719 - INFO -    - sensible: nan
+2025-06-11 10:18:35,619 - INFO - Caption enrichie : A woman in a hat and a man in a suit, sitting on a bench in front of a dead body, are seen in this Italian justice image.
+2025-06-11 10:18:35,620 - INFO - 
+Traitement de l'image : pho_2K2479_07_01
+2025-06-11 10:18:35,620 - INFO - Caption initiale : a group of men in a parade
+2025-06-11 10:18:35,620 - INFO - Métadonnées utilisées :
+2025-06-11 10:18:35,620 - INFO -    - name: pho_2K2479_07_01.jpg
+2025-06-11 10:18:35,620 - INFO -    - origin: forbin
+2025-06-11 10:18:35,620 - INFO -    - num_page: 7.0
+2025-06-11 10:18:35,620 - INFO -    - num_photo: 1.0
+2025-06-11 10:18:35,620 - INFO -    - description: nan
+2025-06-11 10:18:35,620 - INFO -    - legende: The frontier band playing at the Egyptian army military Tournament at Khartoum
+2025-06-11 10:18:35,620 - INFO -    - legende_2: nan
+2025-06-11 10:18:35,621 - INFO -    - type: nan
+2025-06-11 10:18:35,621 - INFO -    - dimensions: 10,5x6,5
+2025-06-11 10:18:35,621 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 10:18:35,621 - INFO -    - date: nan
+2025-06-11 10:18:35,621 - INFO -    - conflit: nan
+2025-06-11 10:18:35,621 - INFO -    - sensible: nan
+2025-06-11 10:18:53,327 - INFO - Caption enrichie : A group of men in a parade playing for the Egyptian army military Tournament at Khartoum.
+2025-06-11 10:18:53,328 - INFO - 
+Traitement de l'image : np_surlevif_19160101_07_05
+2025-06-11 10:18:53,328 - INFO - Caption initiale : a train traveling on the san juan river
+2025-06-11 10:18:53,328 - INFO - Métadonnées utilisées :
+2025-06-11 10:18:53,328 - INFO -    - name: np_surlevif_19160101_07_05.jpg
+2025-06-11 10:18:53,328 - INFO -    - origin: sur le vif
+2025-06-11 10:18:53,328 - INFO -    - num_page: 7.0
+2025-06-11 10:18:53,328 - INFO -    - num_photo: 5.0
+2025-06-11 10:18:53,328 - INFO -    - description: nan
+2025-06-11 10:18:53,328 - INFO -    - legende: Grâce à ces petites voies, les nouvelles positions sont rapidement mises en communication avec l'arri!ère, et reçoivent assuitôt tout ce qui leur est nécessaire
+2025-06-11 10:18:53,328 - INFO -    - legende_2: nan
+2025-06-11 10:18:53,328 - INFO -    - type: nan
+2025-06-11 10:18:53,328 - INFO -    - dimensions: nan
+2025-06-11 10:18:53,328 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:18:53,329 - INFO -    - date: 19160101
+2025-06-11 10:18:53,329 - INFO -    - conflit: nan
+2025-06-11 10:18:53,329 - INFO -    - sensible: nan
+2025-06-11 10:19:09,583 - INFO - Caption enrichie : A train traveling on the San Juan River, dated 01 January 1916.
+2025-06-11 10:19:09,584 - INFO - 
+Traitement de l'image : pho_2K24788_83_01
+2025-06-11 10:19:09,584 - INFO - Caption initiale : ruins of the city of salerno
+2025-06-11 10:19:09,584 - INFO - Métadonnées utilisées :
+2025-06-11 10:19:09,584 - INFO -    - name: pho_2K24788_83_01.jpg
+2025-06-11 10:19:09,584 - INFO -    - origin: forbin
+2025-06-11 10:19:09,584 - INFO -    - num_page: 83.0
+2025-06-11 10:19:09,584 - INFO -    - num_photo: 1.0
+2025-06-11 10:19:09,584 - INFO -    - description: nan
+2025-06-11 10:19:09,584 - INFO -    - legende: Serrès
+2025-06-11 10:19:09,584 - INFO -    - legende_2: nan
+2025-06-11 10:19:09,584 - INFO -    - type: nan
+2025-06-11 10:19:09,584 - INFO -    - dimensions: nan
+2025-06-11 10:19:09,584 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 10:19:09,584 - INFO -    - date: nan
+2025-06-11 10:19:09,584 - INFO -    - conflit: nan
+2025-06-11 10:19:09,585 - INFO -    - sensible: nan
+2025-06-11 10:19:23,414 - INFO - Caption enrichie : The ruins of the city of Salerno, located in Serrès.
+2025-06-11 10:19:23,415 - INFO - 
+Traitement de l'image : pho_2K2475_06_01
+2025-06-11 10:19:23,415 - INFO - Caption initiale : a group of men riding horses through the jungle
+2025-06-11 10:19:23,415 - INFO - Métadonnées utilisées :
+2025-06-11 10:19:23,415 - INFO -    - name: pho_2K2475_06_01.jpg
+2025-06-11 10:19:23,415 - INFO -    - origin: forbin
+2025-06-11 10:19:23,415 - INFO -    - num_page: 6.0
+2025-06-11 10:19:23,415 - INFO -    - num_photo: 1.0
+2025-06-11 10:19:23,415 - INFO -    - description: nan
+2025-06-11 10:19:23,415 - INFO -    - legende: SUCCESSES IN GERMAN EAST AFRICA.
+A War Office communique gives good news from the German East Africa. Dakava has been ovvupied in the coastal area column are moving on Dar-es-Salam, the capital in co-operation with several ships of the Royal Navy.
+Photo shows, Troops watering their jorses while crossing a river.
+2025-06-11 10:19:23,415 - INFO -    - legende_2: nan
+2025-06-11 10:19:23,415 - INFO -    - type: nan
+2025-06-11 10:19:23,415 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:19:23,415 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:19:23,415 - INFO -    - date: nan
+2025-06-11 10:19:23,415 - INFO -    - conflit: nan
+2025-06-11 10:19:23,415 - INFO -    - sensible: nan
+2025-06-11 10:20:01,628 - INFO - Caption enrichie : In the coastal area, the German East Africa campaign has seen success, as communicated in a War Office communique, with reports of the occupation of Dakava and the movement of column towards Dar-es-Salam, in cooperation with Royal Navy
+2025-06-11 10:20:01,628 - INFO - 
+Traitement de l'image : pho_2K24795_06_01
+2025-06-11 10:20:01,628 - INFO - Caption initiale : a group of men working on a bridge
+2025-06-11 10:20:01,628 - INFO - Métadonnées utilisées :
+2025-06-11 10:20:01,628 - INFO -    - name: pho_2K24795_06_01.jpg
+2025-06-11 10:20:01,628 - INFO -    - origin: forbin
+2025-06-11 10:20:01,628 - INFO -    - num_page: 6.0
+2025-06-11 10:20:01,628 - INFO -    - num_photo: 1.0
+2025-06-11 10:20:01,628 - INFO -    - description: nan
+2025-06-11 10:20:01,628 - INFO -    - legende: Forbin
+2025-06-11 10:20:01,628 - INFO -    - legende_2: nan
+2025-06-11 10:20:01,629 - INFO -    - type: nan
+2025-06-11 10:20:01,629 - INFO -    - dimensions: nan
+2025-06-11 10:20:01,629 - INFO -    - xml: forbin/2K24795.xml
+2025-06-11 10:20:01,629 - INFO -    - date: nan
+2025-06-11 10:20:01,629 - INFO -    - conflit: nan
+2025-06-11 10:20:01,629 - INFO -    - sensible: nan
+2025-06-11 10:20:19,975 - INFO - Caption enrichie : A group of men working on a bridge, as seen in the image with the alt-text "Forbin".
+2025-06-11 10:20:19,976 - INFO - 
+Traitement de l'image : pho_2K24790_21_01
+2025-06-11 10:20:19,976 - INFO - Caption initiale : a group of people in a street
+2025-06-11 10:20:19,976 - INFO - Métadonnées utilisées :
+2025-06-11 10:20:19,976 - INFO -    - name: pho_2K24790_21_01.jpg
+2025-06-11 10:20:19,976 - INFO -    - origin: forbin
+2025-06-11 10:20:19,976 - INFO -    - num_page: 21.0
+2025-06-11 10:20:19,976 - INFO -    - num_photo: 1.0
+2025-06-11 10:20:19,976 - INFO -    - description: nan
+2025-06-11 10:20:19,976 - INFO -    - legende: A Street in Corfu. Serbian officers. 
+2025-06-11 10:20:19,976 - INFO -    - legende_2: nan
+2025-06-11 10:20:19,976 - INFO -    - type: nan
+2025-06-11 10:20:19,976 - INFO -    - dimensions: 18x13
+2025-06-11 10:20:19,976 - INFO -    - xml: forbin/2K24790.xml
+2025-06-11 10:20:19,976 - INFO -    - date: nan
+2025-06-11 10:20:19,976 - INFO -    - conflit: nan
+2025-06-11 10:20:19,976 - INFO -    - sensible: nan
+2025-06-11 10:20:31,570 - INFO - Caption enrichie : A group of Serbian officers walked down a street in Corfu.
+2025-06-11 10:20:31,570 - INFO - 
+Traitement de l'image : pho_2K24788_20_01
+2025-06-11 10:20:31,571 - INFO - Caption initiale : a group of men in a tepee
+2025-06-11 10:20:31,571 - INFO - Métadonnées utilisées :
+2025-06-11 10:20:31,571 - INFO -    - name: pho_2K24788_20_01.jpg
+2025-06-11 10:20:31,571 - INFO -    - origin: forbin
+2025-06-11 10:20:31,571 - INFO -    - num_page: 20.0
+2025-06-11 10:20:31,571 - INFO -    - num_photo: 1.0
+2025-06-11 10:20:31,571 - INFO -    - description: nan
+2025-06-11 10:20:31,571 - INFO -    - legende: En Macédoine
+2025-06-11 10:20:31,571 - INFO -    - legende_2: ...
+PHOTOGRAPHIES pour 
+EXPORTATION
+2025-06-11 10:20:31,571 - INFO -    - type: nan
+2025-06-11 10:20:31,571 - INFO -    - dimensions: 12x9,5
+2025-06-11 10:20:31,571 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 10:20:31,571 - INFO -    - date: nan
+2025-06-11 10:20:31,571 - INFO -    - conflit: nan
+2025-06-11 10:20:31,571 - INFO -    - sensible: nan
+2025-06-11 10:20:46,174 - INFO - Caption enrichie : A group of men in a tepee in Macédoine for exportation.
+2025-06-11 10:20:46,175 - INFO - 
+Traitement de l'image : np_surlevif_19151204_10_04
+2025-06-11 10:20:46,175 - INFO - Caption initiale : a trench in the somme
+2025-06-11 10:20:46,175 - INFO - Métadonnées utilisées :
+2025-06-11 10:20:46,175 - INFO -    - name: np_surlevif_19151204_10_04.jpg
+2025-06-11 10:20:46,175 - INFO -    - origin: sur le vif
+2025-06-11 10:20:46,175 - INFO -    - num_page: 10.0
+2025-06-11 10:20:46,175 - INFO -    - num_photo: 4.0
+2025-06-11 10:20:46,175 - INFO -    - description: nan
+2025-06-11 10:20:46,175 - INFO -    - legende: Près de la ferme N…, en Champagne, le champ de bataille était littéralement couvert de cadavres ennemis
+2025-06-11 10:20:46,177 - INFO -    - legende_2: nan
+2025-06-11 10:20:46,177 - INFO -    - type: nan
+2025-06-11 10:20:46,177 - INFO -    - dimensions: nan
+2025-06-11 10:20:46,177 - INFO -    - xml: surlevif/19151204.xml
+2025-06-11 10:20:46,177 - INFO -    - date: 19151204
+2025-06-11 10:20:46,177 - INFO -    - conflit: nan
+2025-06-11 10:20:46,177 - INFO -    - sensible: nan
+2025-06-11 10:21:07,969 - INFO - Caption enrichie : A trench in the Somme, depicted in an image dated December 1915, was covered in enemy corpses.
+2025-06-11 10:21:07,970 - INFO - 
+Traitement de l'image : pho_2K24788_05_01
+2025-06-11 10:21:07,970 - INFO - Caption initiale : a group of men walking down a dirt road
+2025-06-11 10:21:07,970 - INFO - Métadonnées utilisées :
+2025-06-11 10:21:07,970 - INFO -    - name: pho_2K24788_05_01.jpg
+2025-06-11 10:21:07,970 - INFO -    - origin: forbin
+2025-06-11 10:21:07,970 - INFO -    - num_page: 5.0
+2025-06-11 10:21:07,970 - INFO -    - num_photo: 1.0
+2025-06-11 10:21:07,970 - INFO -    - description: nan
+2025-06-11 10:21:07,970 - INFO -    - legende: Dom
+Vue du camp français, à Moudros (Dardanelles)
+2025-06-11 10:21:07,971 - INFO -    - legende_2: nan
+2025-06-11 10:21:07,971 - INFO -    - type: nan
+2025-06-11 10:21:07,971 - INFO -    - dimensions: 18,5x9,5
+2025-06-11 10:21:07,971 - INFO -    - xml: forbin/2K24788.xml
+2025-06-11 10:21:07,971 - INFO -    - date: nan
+2025-06-11 10:21:07,971 - INFO -    - conflit: nan
+2025-06-11 10:21:07,971 - INFO -    - sensible: nan
+2025-06-11 10:21:28,915 - INFO - Caption enrichie : A group of men walking down a dirt road in Moudros (Dardanelles), as seen in the French camp.
+2025-06-11 10:21:28,915 - INFO - 
+Traitement de l'image : pho_2K2476_25_01
+2025-06-11 10:21:28,915 - INFO - Caption initiale : a ferry boat carrying passengers
+2025-06-11 10:21:28,916 - INFO - Métadonnées utilisées :
+2025-06-11 10:21:28,916 - INFO -    - name: pho_2K2476_25_01.jpg
+2025-06-11 10:21:28,916 - INFO -    - origin: forbin
+2025-06-11 10:21:28,916 - INFO -    - num_page: 25.0
+2025-06-11 10:21:28,916 - INFO -    - num_photo: 1.0
+2025-06-11 10:21:28,916 - INFO -    - description: nan
+2025-06-11 10:21:28,916 - INFO -    - legende: NATIVES WHO HEPED TO WREST A COLONY FROM THE GERMANS.
+Nigerian troops landing at Calabar. They took a gallant part in the fighting of the Cameroons, and thus helped to deprive the Kaiser of a portion of his much-cherished African Empire.
+2025-06-11 10:21:28,916 - INFO -    - legende_2: nan
+2025-06-11 10:21:28,916 - INFO -    - type: nan
+2025-06-11 10:21:28,916 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:21:28,916 - INFO -    - xml: forbin/2K2476.xml
+2025-06-11 10:21:28,916 - INFO -    - date: nan
+2025-06-11 10:21:28,916 - INFO -    - conflit: nan
+2025-06-11 10:21:28,916 - INFO -    - sensible: nan
+2025-06-11 10:22:07,865 - INFO - Caption enrichie : Nigerian troops arrived at Calabar and played a heroic role in the battle for the Cameroons, contributing to the defeat of the Kaiser and the end of his African Empire, which was depicted in a ferry boat carrying passengers.
+2025-06-11 10:22:07,865 - INFO - 
+Traitement de l'image : pho_2K24790_17_01
+2025-06-11 10:22:07,866 - INFO - Caption initiale : a man standing next to a statue
+2025-06-11 10:22:07,866 - INFO - Métadonnées utilisées :
+2025-06-11 10:22:07,866 - INFO -    - name: pho_2K24790_17_01.jpg
+2025-06-11 10:22:07,866 - INFO -    - origin: forbin
+2025-06-11 10:22:07,866 - INFO -    - num_page: 17.0
+2025-06-11 10:22:07,866 - INFO -    - num_photo: 1.0
+2025-06-11 10:22:07,866 - INFO -    - description: nan
+2025-06-11 10:22:07,866 - INFO -    - legende: A  
+2025-06-11 10:22:07,866 - INFO -    - legende_2: nan
+2025-06-11 10:22:07,866 - INFO -    - type: nan
+2025-06-11 10:22:07,866 - INFO -    - dimensions: 12x9
+2025-06-11 10:22:07,866 - INFO -    - xml: forbin/2K24790.xml
+2025-06-11 10:22:07,866 - INFO -    - date: nan
+2025-06-11 10:22:07,866 - INFO -    - conflit: nan
+2025-06-11 10:22:07,866 - INFO -    - sensible: nan
+2025-06-11 10:22:14,936 - INFO - Caption enrichie : A man standing next to a statue.
+2025-06-11 10:22:14,936 - INFO - 
+Traitement de l'image : np_surlevif_19160101_05_01
+2025-06-11 10:22:14,936 - INFO - Caption initiale : a group of soldiers in uniform
+2025-06-11 10:22:14,936 - INFO - Métadonnées utilisées :
+2025-06-11 10:22:14,937 - INFO -    - name: np_surlevif_19160101_05_01.jpg
+2025-06-11 10:22:14,937 - INFO -    - origin: sur le vif
+2025-06-11 10:22:14,937 - INFO -    - num_page: 5.0
+2025-06-11 10:22:14,937 - INFO -    - num_photo: 1.0
+2025-06-11 10:22:14,937 - INFO -    - description: nan
+2025-06-11 10:22:14,937 - INFO -    - legende: Pour défendte l'accès d'un route, rien ne vaut une mitrailleuse bein située, bien approvisionnée de cartouches et servie par des gars bien déterminés
+2025-06-11 10:22:14,937 - INFO -    - legende_2: nan
+2025-06-11 10:22:14,937 - INFO -    - type: nan
+2025-06-11 10:22:14,937 - INFO -    - dimensions: nan
+2025-06-11 10:22:14,937 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:22:14,937 - INFO -    - date: 19160101
+2025-06-11 10:22:14,937 - INFO -    - conflit: nan
+2025-06-11 10:22:14,937 - INFO -    - sensible: nan
+2025-06-11 10:22:38,933 - INFO - Caption enrichie : In 1916, a group of determined soldiers in uniform armed with a well-stocked machine gun defended access to a route.
+2025-06-11 10:22:38,934 - INFO - 
+Traitement de l'image : pho_2K2479_19_01
+2025-06-11 10:22:38,934 - INFO - Caption initiale : a man in a traditional afghan uniform
+2025-06-11 10:22:38,934 - INFO - Métadonnées utilisées :
+2025-06-11 10:22:38,934 - INFO -    - name: pho_2K2479_19_01.jpg
+2025-06-11 10:22:38,934 - INFO -    - origin: forbin
+2025-06-11 10:22:38,934 - INFO -    - num_page: 19.0
+2025-06-11 10:22:38,934 - INFO -    - num_photo: 1.0
+2025-06-11 10:22:38,934 - INFO -    - description: nan
+2025-06-11 10:22:38,935 - INFO -    - legende: Parade
+2025-06-11 10:22:38,935 - INFO -    - legende_2: COPYRIGHT
+GRAPHIC PHOTO UNION,
+TALLIS STREET, EC.
+2025-06-11 10:22:38,935 - INFO -    - type: nan
+2025-06-11 10:22:38,935 - INFO -    - dimensions: 14,5x9
+2025-06-11 10:22:38,935 - INFO -    - xml: forbin/2K2479.xml
+2025-06-11 10:22:38,935 - INFO -    - date: nan
+2025-06-11 10:22:38,935 - INFO -    - conflit: nan
+2025-06-11 10:22:38,935 - INFO -    - sensible: nan
+2025-06-11 10:23:00,241 - INFO - Caption enrichie : A man in a traditional Afghani uniform parades down Tallis Street in London, copyrighted by the Graphic Photo Union.
+2025-06-11 10:23:00,241 - INFO - 
+Traitement de l'image : pho_2K24791_16_01
+2025-06-11 10:23:00,241 - INFO - Caption initiale : a group of men on horses
+2025-06-11 10:23:00,241 - INFO - Métadonnées utilisées :
+2025-06-11 10:23:00,241 - INFO -    - name: pho_2K24791_16_01.jpg
+2025-06-11 10:23:00,242 - INFO -    - origin: forbin
+2025-06-11 10:23:00,242 - INFO -    - num_page: 16.0
+2025-06-11 10:23:00,242 - INFO -    - num_photo: 1.0
+2025-06-11 10:23:00,242 - INFO -    - description: nan
+2025-06-11 10:23:00,242 - INFO -    - legende: Marran
+Le Roi Pierre cause avec les soldats d'un avant-poste
+
+Forbin
+
+2025-06-11 10:23:00,242 - INFO -    - legende_2: nan
+2025-06-11 10:23:00,242 - INFO -    - type: nan
+2025-06-11 10:23:00,242 - INFO -    - dimensions: 18x13
+2025-06-11 10:23:00,242 - INFO -    - xml: forbin/2K24791.xml
+2025-06-11 10:23:00,242 - INFO -    - date: nan
+2025-06-11 10:23:00,242 - INFO -    - conflit: nan
+2025-06-11 10:23:00,242 - INFO -    - sensible: nan
+2025-06-11 10:23:23,453 - INFO - Caption enrichie : A group of men on horses, identified as Marran, are seen in the image of King Pierre leading his soldiers in an avant-poste.
+2025-06-11 10:23:23,453 - INFO - 
+Traitement de l'image : pho_2K24793_45_02
+2025-06-11 10:23:23,453 - INFO - Caption initiale : a crowd of people gathered in a street
+2025-06-11 10:23:23,453 - INFO - Métadonnées utilisées :
+2025-06-11 10:23:23,454 - INFO -    - name: pho_2K24793_45_02.jpg
+2025-06-11 10:23:23,454 - INFO -    - origin: forbin
+2025-06-11 10:23:23,454 - INFO -    - num_page: 45.0
+2025-06-11 10:23:23,454 - INFO -    - num_photo: 2.0
+2025-06-11 10:23:23,454 - INFO -    - description: nan
+2025-06-11 10:23:23,454 - INFO -    - legende: Salonica
+The third German aeroplane captured in Macedonia by the French within 3 weeks.
+Forbin
+2025-06-11 10:23:23,454 - INFO -    - legende_2: nan
+2025-06-11 10:23:23,454 - INFO -    - type: nan
+2025-06-11 10:23:23,454 - INFO -    - dimensions: nan
+2025-06-11 10:23:23,454 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 10:23:23,454 - INFO -    - date: nan
+2025-06-11 10:23:23,455 - INFO -    - conflit: nan
+2025-06-11 10:23:23,455 - INFO -    - sensible: nan
+2025-06-11 10:23:45,700 - INFO - Caption enrichie : A crowd of people gathered in a street in Salonica, where the third German aeroplane was captured by the French within three weeks.
+2025-06-11 10:23:45,700 - INFO - 
+Traitement de l'image : pho_2K2475_62_01
+2025-06-11 10:23:45,701 - INFO - Caption initiale : a small plane in the water
+2025-06-11 10:23:45,701 - INFO - Métadonnées utilisées :
+2025-06-11 10:23:45,701 - INFO -    - name: pho_2K2475_62_01.jpg
+2025-06-11 10:23:45,701 - INFO -    - origin: forbin
+2025-06-11 10:23:45,701 - INFO -    - num_page: 62.0
+2025-06-11 10:23:45,701 - INFO -    - num_photo: 1.0
+2025-06-11 10:23:45,701 - INFO -    - description: nan
+2025-06-11 10:23:45,701 - INFO -    - legende: WATERPLANES TAKE PART IN A NAVAL FIGHT IN AN AFRICAN JUNGLE.
+When the British monitors Severn and Mersey battered the Konigsberg into a total wreck, waterplanes were used to watch the effect of the shell-fire, as the German cruiser has taken refuge uo the Rufiji River and was cunningly hidden in a thick jungle.
+Photo shows one of the waterplanes "taxi-ing" on its return from a flight over the bombarded ship.
+
+N°266 - p. 5 - n°1
+16 /2 x 10
+2025-06-11 10:23:45,701 - INFO -    - legende_2: nan
+2025-06-11 10:23:45,701 - INFO -    - type: nan
+2025-06-11 10:23:45,701 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:23:45,701 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:23:45,701 - INFO -    - date: nan
+2025-06-11 10:23:45,701 - INFO -    - conflit: nan
+2025-06-11 10:23:45,701 - INFO -    - sensible: nan
+2025-06-11 10:24:04,067 - INFO - Caption enrichie : The waterplane in the photo is a small plane that took part in a naval fight in an African jungle.
+2025-06-11 10:24:04,067 - INFO - 
+Traitement de l'image : pho_2K24793_01_02
+2025-06-11 10:24:04,067 - INFO - Caption initiale : a crashed plane on a train
+2025-06-11 10:24:04,067 - INFO - Métadonnées utilisées :
+2025-06-11 10:24:04,068 - INFO -    - name: pho_2K24793_01_02.jpg
+2025-06-11 10:24:04,068 - INFO -    - origin: forbin
+2025-06-11 10:24:04,068 - INFO -    - num_page: 1.0
+2025-06-11 10:24:04,068 - INFO -    - num_photo: 2.0
+2025-06-11 10:24:04,068 - INFO -    - description: nan
+2025-06-11 10:24:04,068 - INFO -    - legende: Capture d'un Amarite - Salonique
+almost brand new, captured by the French N of Salonica waiting for its transportation to the town. It is the third German aeroplane captured in Salonica camp in a month
+2025-06-11 10:24:04,068 - INFO -    - legende_2: nan
+2025-06-11 10:24:04,068 - INFO -    - type: nan
+2025-06-11 10:24:04,068 - INFO -    - dimensions: nan
+2025-06-11 10:24:04,068 - INFO -    - xml: forbin/2K24793.xml
+2025-06-11 10:24:04,068 - INFO -    - date: nan
+2025-06-11 10:24:04,068 - INFO -    - conflit: nan
+2025-06-11 10:24:04,068 - INFO -    - sensible: nan
+2025-06-11 10:24:39,101 - INFO - Caption enrichie : A nearly intact Amarite captured by the French N of Salonica in August 1917, awaiting transportation to a town, lies crashed on a train in a picture taken during the First World War.
+2025-06-11 10:24:39,101 - INFO - 
+Traitement de l'image : np_surlevif_19160101_09_01
+2025-06-11 10:24:39,101 - INFO - Caption initiale : a man putting a barrel of whiskey into a barrel
+2025-06-11 10:24:39,101 - INFO - Métadonnées utilisées :
+2025-06-11 10:24:39,101 - INFO -    - name: np_surlevif_19160101_09_01.jpg
+2025-06-11 10:24:39,101 - INFO -    - origin: sur le vif
+2025-06-11 10:24:39,101 - INFO -    - num_page: 9.0
+2025-06-11 10:24:39,102 - INFO -    - num_photo: 1.0
+2025-06-11 10:24:39,102 - INFO -    - description: nan
+2025-06-11 10:24:39,102 - INFO -    - legende: Pour prévenir les attentats, les détectivent examinent minutieusement le contenu de toutes les caisses ou barils (en l'espèce des tonneaux d'huile) avant leur embarquement sur des navires affrétés pour l'Europe
+2025-06-11 10:24:39,102 - INFO -    - legende_2: nan
+2025-06-11 10:24:39,102 - INFO -    - type: nan
+2025-06-11 10:24:39,102 - INFO -    - dimensions: nan
+2025-06-11 10:24:39,102 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:24:39,102 - INFO -    - date: 19160101
+2025-06-11 10:24:39,102 - INFO -    - conflit: nan
+2025-06-11 10:24:39,102 - INFO -    - sensible: nan
+2025-06-11 10:25:09,613 - INFO - Caption enrichie : In January 1916, to prevent attacks, detectives meticulously examined the contents of all barrels (specifically oil drums) before loading them onto ships heading to Europe.
+2025-06-11 10:25:09,614 - INFO - 
+Traitement de l'image : pho_2K247178_19_01
+2025-06-11 10:25:09,614 - INFO - Caption initiale : a man and woman eating at a table
+2025-06-11 10:25:09,614 - INFO - Métadonnées utilisées :
+2025-06-11 10:25:09,614 - INFO -    - name: pho_2K247178_19_01.jpg
+2025-06-11 10:25:09,614 - INFO -    - origin: forbin
+2025-06-11 10:25:09,614 - INFO -    - num_page: 19.0
+2025-06-11 10:25:09,614 - INFO -    - num_photo: 1.0
+2025-06-11 10:25:09,614 - INFO -    - description: nan
+2025-06-11 10:25:09,614 - INFO -    - legende: Lioness Hunt, Kapiti Plains
+Lord Delamere fortifies himself with good York at 6 a.m.
+Kacer en haut et à gauche 
+en médaille
+2025-06-11 10:25:09,614 - INFO -    - legende_2: nan
+2025-06-11 10:25:09,615 - INFO -    - type: nan
+2025-06-11 10:25:09,615 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:25:09,615 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 10:25:09,615 - INFO -    - date: nan
+2025-06-11 10:25:09,615 - INFO -    - conflit: nan
+2025-06-11 10:25:09,615 - INFO -    - sensible: nan
+2025-06-11 10:25:25,124 - INFO - Caption enrichie : A man and woman enjoying breakfast at a table on a morning in Kapiti Plains.
+2025-06-11 10:25:25,125 - INFO - 
+Traitement de l'image : np_surlevif_19160101_02_04
+2025-06-11 10:25:25,125 - INFO - Caption initiale : a group of men in uniforms
+2025-06-11 10:25:25,125 - INFO - Métadonnées utilisées :
+2025-06-11 10:25:25,125 - INFO -    - name: np_surlevif_19160101_02_04.jpg
+2025-06-11 10:25:25,125 - INFO -    - origin: sur le vif
+2025-06-11 10:25:25,125 - INFO -    - num_page: 2.0
+2025-06-11 10:25:25,125 - INFO -    - num_photo: 4.0
+2025-06-11 10:25:25,125 - INFO -    - description: nan
+2025-06-11 10:25:25,125 - INFO -    - legende: A l'issue d'une émouvante cérémonie, le digne chef de ces braves, l'amiral Ronarc'h, s'entretient avec un de ses officiers
+2025-06-11 10:25:25,125 - INFO -    - legende_2: nan
+2025-06-11 10:25:25,125 - INFO -    - type: nan
+2025-06-11 10:25:25,126 - INFO -    - dimensions: nan
+2025-06-11 10:25:25,126 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:25:25,126 - INFO -    - date: 19160101
+2025-06-11 10:25:25,126 - INFO -    - conflit: nan
+2025-06-11 10:25:25,126 - INFO -    - sensible: nan
+2025-06-11 10:26:02,549 - INFO - Caption enrichie : On January 1, 1916, at an emotional ceremony, Admiral Ronarc'h, a dignified leader of brave men, talks with one of his officers, surrounded by a group of men in uniforms.
+2025-06-11 10:26:02,550 - INFO - 
+Traitement de l'image : pho_2K24711_09_01
+2025-06-11 10:26:02,550 - INFO - Caption initiale : a man and a boy in a zoo
+2025-06-11 10:26:02,550 - INFO - Métadonnées utilisées :
+2025-06-11 10:26:02,550 - INFO -    - name: pho_2K24711_09_01.jpg
+2025-06-11 10:26:02,550 - INFO -    - origin: forbin
+2025-06-11 10:26:02,550 - INFO -    - num_page: 9.0
+2025-06-11 10:26:02,550 - INFO -    - num_photo: 1.0
+2025-06-11 10:26:02,550 - INFO -    - description: nan
+2025-06-11 10:26:02,550 - INFO -    - legende: Capt Courténay d’Esterre with the wild Dancing Bushman which he brought from S. Africa
+Forbin
+2025-06-11 10:26:02,550 - INFO -    - legende_2: nan
+2025-06-11 10:26:02,550 - INFO -    - type: nan
+2025-06-11 10:26:02,550 - INFO -    - dimensions: nan
+2025-06-11 10:26:02,550 - INFO -    - xml: forbin/2K24711.xml
+2025-06-11 10:26:02,550 - INFO -    - date: nan
+2025-06-11 10:26:02,550 - INFO -    - conflit: nan
+2025-06-11 10:26:02,550 - INFO -    - sensible: nan
+2025-06-11 10:26:27,155 - INFO - Caption enrichie : In 1863, French colonialist Pierre Forbin exhibited a wild Dancing Bushman he brought from South Africa at the London Zoo.
+2025-06-11 10:26:27,156 - INFO - 
+Traitement de l'image : pho_2K2475_11_01
+2025-06-11 10:26:27,156 - INFO - Caption initiale : a group of boats on the river
+2025-06-11 10:26:27,156 - INFO - Métadonnées utilisées :
+2025-06-11 10:26:27,156 - INFO -    - name: pho_2K2475_11_01.jpg
+2025-06-11 10:26:27,156 - INFO -    - origin: forbin
+2025-06-11 10:26:27,156 - INFO -    - num_page: 11.0
+2025-06-11 10:26:27,156 - INFO -    - num_photo: 1.0
+2025-06-11 10:26:27,156 - INFO -    - description: nan
+2025-06-11 10:26:27,157 - INFO -    - legende: INDIAN TROOPS READY TO EMBARK ON THE NATIVE BOATS FOR THE PURSUIT OF ENEMY FORCES ON THE PAGANI RIVER.
+EAST AFRICA.
+2025-06-11 10:26:27,157 - INFO -    - legende_2: nan
+2025-06-11 10:26:27,157 - INFO -    - type: nan
+2025-06-11 10:26:27,157 - INFO -    - dimensions: 21,5x16,5
+2025-06-11 10:26:27,157 - INFO -    - xml: forbin/2K2475.xml
+2025-06-11 10:26:27,157 - INFO -    - date: nan
+2025-06-11 10:26:27,157 - INFO -    - conflit: nan
+2025-06-11 10:26:27,157 - INFO -    - sensible: nan
+2025-06-11 10:26:53,267 - INFO - Caption enrichie : In East Africa, a group of boats on the river are ready for the Indian troops to embark for the pursuit of enemy forces on the Pagani River.
+2025-06-11 10:26:53,268 - INFO - 
+Traitement de l'image : pho_2K247178_05_01
+2025-06-11 10:26:53,268 - INFO - Caption initiale : a group of men in a village
+2025-06-11 10:26:53,268 - INFO - Métadonnées utilisées :
+2025-06-11 10:26:53,268 - INFO -    - name: pho_2K247178_05_01.jpg
+2025-06-11 10:26:53,268 - INFO -    - origin: forbin
+2025-06-11 10:26:53,268 - INFO -    - num_page: 5.0
+2025-06-11 10:26:53,268 - INFO -    - num_photo: 1.0
+2025-06-11 10:26:53,268 - INFO -    - description: nan
+2025-06-11 10:26:53,268 - INFO -    - legende: Porters & Askaris ready for treking
+2025-06-11 10:26:53,269 - INFO -    - legende_2: nan
+2025-06-11 10:26:53,269 - INFO -    - type: nan
+2025-06-11 10:26:53,269 - INFO -    - dimensions: 14x12,8
+2025-06-11 10:26:53,269 - INFO -    - xml: forbin/2K247178.xml
+2025-06-11 10:26:53,269 - INFO -    - date: nan
+2025-06-11 10:26:53,269 - INFO -    - conflit: nan
+2025-06-11 10:26:53,269 - INFO -    - sensible: nan
+2025-06-11 10:27:09,696 - INFO - Caption enrichie : A group of porters and Askaris are seen ready for trekking in a village.
+2025-06-11 10:27:09,697 - INFO - 
+Traitement de l'image : np_surlevif_19160101_10_05
+2025-06-11 10:27:09,697 - INFO - Caption initiale : a view of the ruins of the old town of st eustache
+2025-06-11 10:27:09,697 - INFO - Métadonnées utilisées :
+2025-06-11 10:27:09,697 - INFO -    - name: np_surlevif_19160101_10_05.jpg
+2025-06-11 10:27:09,697 - INFO -    - origin: sur le vif
+2025-06-11 10:27:09,697 - INFO -    - num_page: 10.0
+2025-06-11 10:27:09,697 - INFO -    - num_photo: 5.0
+2025-06-11 10:27:09,697 - INFO -    - description: nan
+2025-06-11 10:27:09,697 - INFO -    - legende: Ce qui reste en cette fin d'automne de la petite ville de Massiges
+2025-06-11 10:27:09,697 - INFO -    - legende_2: nan
+2025-06-11 10:27:09,697 - INFO -    - type: nan
+2025-06-11 10:27:09,697 - INFO -    - dimensions: nan
+2025-06-11 10:27:09,697 - INFO -    - xml: surlevif/19160101.xml
+2025-06-11 10:27:09,697 - INFO -    - date: 19160101
+2025-06-11 10:27:09,697 - INFO -    - conflit: nan
+2025-06-11 10:27:09,697 - INFO -    - sensible: nan

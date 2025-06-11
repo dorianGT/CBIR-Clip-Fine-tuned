@@ -115,85 +115,89 @@ def recall_at_k(index, embeddings, paths, groups, k=5):
     """
     Calcule le Recall@K sur des groupes d'images similaires (near duplicates).
 
-    Le recall mesure si au moins un élément du même groupe que l'image requête
-    est retrouvé parmi les K plus proches voisins.
+    Le Recall@K mesure la proportion d'éléments pertinents (du même groupe que l'image requête)
+    retrouvés parmi les K plus proches voisins.
+
+    Formule :
+        Recall@K = (Nombre d'éléments pertinents dans les K plus proches voisins) / (Nombre total d'éléments pertinents)
 
     Args:
-        index: Index Faiss utilisé pour la recherche des plus proches voisins.
-        embeddings (np.ndarray): Tableau des vecteurs d'embedding.
+        index: Index FAISS utilisé pour la recherche des plus proches voisins.
+        embeddings (np.ndarray): Tableau des vecteurs d'embedding (taille N x D).
         paths (List[str]): Liste des chemins d'images correspondant aux embeddings.
         groups (List[List[str]]): Groupes d'images similaires (ground truth).
         k (int): Nombre de voisins à considérer (top-k).
 
     Returns:
-        float: Moyenne du Recall@K sur toutes les requêtes.
+        float: Moyenne du Recall@K sur toutes les requêtes valides.
     """
     path_to_index = {path: i for i, path in enumerate(paths)}
-    total = 0
-    hits = 0
+    path_to_group = {path: group for group in groups for path in group}
+
+    total_recall = 0.0
+    count = 0
 
     for group in groups:
-        group_set = set(group)
         for query_path in group:
             if query_path not in path_to_index:
                 continue
             query_idx = path_to_index[query_path]
+            relevant_items = set(path_to_group[query_path]) - {query_path}
 
-            # Recherche des K+1 plus proches voisins (inclut l'élément lui-même)
             _, I = index.search(np.array([embeddings[query_idx]]).astype(np.float32), k + 1)
             retrieved_paths = [paths[i] for i in I[0] if paths[i] != query_path]
 
-            # Vérifie si au moins un résultat est pertinent
-            hit = any(p in group_set for p in retrieved_paths)
-            hits += int(hit)
-            total += 1
+            retrieved_relevant = sum(1 for p in retrieved_paths if p in relevant_items)
+            total_possible = len(relevant_items)
 
-    return hits / total if total > 0 else 0.0
+            if total_possible > 0:
+                total_recall += retrieved_relevant / total_possible
+                count += 1
 
+    return total_recall / count if count > 0 else 0.0
 
 def precision_at_k(index, embeddings, paths, groups, k=5):
     """
     Calcule la Precision@K sur les groupes d'images similaires.
 
-    La précision mesure la proportion des K résultats qui sont réellement dans le
-    même groupe que l'image requête.
+    La Precision@K mesure la proportion des K éléments retournés qui sont réellement
+    pertinents (du même groupe que l'image requête).
+
+    Formule :
+        Precision@K = (Nombre d'éléments pertinents dans les K plus proches voisins) / K
 
     Args:
-        index: Index Faiss utilisé pour la recherche.
+        index: Index FAISS utilisé pour la recherche.
         embeddings (np.ndarray): Vecteurs d'embedding.
-        paths (List[str]): Chemins associés aux embeddings.
-        groups (List[List[str]]): Groupes d'images similaires.
+        paths (List[str]): Chemins d'images associés aux embeddings.
+        groups (List[List[str]]): Groupes d'images similaires (ground truth).
         k (int): Nombre de voisins considérés.
 
     Returns:
-        float: Moyenne de la précision à k.
+        float: Moyenne de la précision à K sur toutes les requêtes valides.
     """
     path_to_index = {path: i for i, path in enumerate(paths)}
     path_to_group = {path: group for group in groups for path in group}
 
-    total = 0
-    precision_sum = 0.0
+    total_precision = 0.0
+    count = 0
 
     for group in groups:
         for query_path in group:
             if query_path not in path_to_index:
                 continue
             query_idx = path_to_index[query_path]
-            query_group = set(path_to_group[query_path])
+            relevant_items = set(path_to_group[query_path]) - {query_path}
 
             _, I = index.search(np.array([embeddings[query_idx]]).astype(np.float32), k + 1)
-            retrieved_paths = [paths[i] for i in I[0] if paths[i] != query_path]
+            retrieved_paths = [paths[i] for i in I[0] if paths[i] != query_path][:k]
 
-            if not retrieved_paths:
-                continue
+            retrieved_relevant = sum(1 for p in retrieved_paths if p in relevant_items)
+            total_precision += retrieved_relevant / k
+            count += 1
 
-            # Nombre de bons résultats parmi les K
-            relevant_count = sum(1 for p in retrieved_paths if p in query_group)
-            precision = relevant_count / len(retrieved_paths)
-            precision_sum += precision
-            total += 1
+    return total_precision / count if count > 0 else 0.0
 
-    return precision_sum / total if total > 0 else 0.0
 
 
 def mean_average_precision(index, embeddings, paths, groups, k=10):
@@ -245,49 +249,28 @@ def mean_average_precision(index, embeddings, paths, groups, k=10):
 
 def f1_score_at_k(index, embeddings, paths, groups, k=5):
     """
-    Calcule le F1-score à K, qui combine la précision et le rappel (Recall@K).
+    Calcule le F1-Score@K, moyenne harmonique entre la Precision@K et le Recall@K.
+
+    Formule :
+        F1@K = 2 * (Precision@K * Recall@K) / (Precision@K + Recall@K)
 
     Args:
-        index: Index Faiss utilisé pour la recherche.
+        index: Index FAISS utilisé pour la recherche.
         embeddings (np.ndarray): Vecteurs d'embedding.
-        paths (List[str]): Chemins associés aux embeddings.
-        groups (List[List[str]]): Groupes d'images similaires.
+        paths (List[str]): Chemins d'images associés aux embeddings.
+        groups (List[List[str]]): Groupes d'images similaires (ground truth).
         k (int): Nombre de voisins considérés.
 
     Returns:
-        float: Moyenne des F1-scores sur toutes les requêtes.
+        float: Moyenne du F1@K sur toutes les requêtes valides.
     """
-    path_to_index = {path: i for i, path in enumerate(paths)}
-    path_to_group = {path: group for group in groups for path in group}
-    f1_scores = []
+    precision = precision_at_k(index, embeddings, paths, groups, k)
+    recall = recall_at_k(index, embeddings, paths, groups, k)
 
-    for group in groups:
-        for query_path in group:
-            if query_path not in path_to_index:
-                continue
+    if precision + recall == 0:
+        return 0.0
 
-            query_idx = path_to_index[query_path]
-            query_group = set(path_to_group[query_path]) - {query_path}
-
-            _, I = index.search(np.array([embeddings[query_idx]]).astype(np.float32), k + 1)
-            retrieved_paths = [paths[i] for i in I[0] if paths[i] != query_path]
-
-            if not retrieved_paths:
-                continue
-
-            true_positives = sum(1 for p in retrieved_paths if p in query_group)
-            precision = true_positives / len(retrieved_paths)
-            recall = true_positives / len(query_group) if len(query_group) > 0 else 0.0
-
-            # Calcul du F1-score
-            if precision + recall > 0:
-                f1 = 2 * (precision * recall) / (precision + recall)
-            else:
-                f1 = 0.0
-
-            f1_scores.append(f1)
-
-    return sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
+    return 2 * (precision * recall) / (precision + recall)
 
 def evaluate_with_distance_threshold(index, embeddings, paths, groups, k=10, threshold_type="mean"):
     """

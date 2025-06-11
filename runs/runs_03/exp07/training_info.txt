@@ -1,0 +1,9 @@
+Load Method: clip
+Fine-tuning: True
+Epochs: 20
+Batch Size: 256
+Patience: 5
+Learning Rate: 5e-05
+Use Image Projector: True
+Use Text Projector: True
+tout de defreeze

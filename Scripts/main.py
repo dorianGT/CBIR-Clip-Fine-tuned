@@ -24,7 +24,10 @@ def set_seed(seed=2):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-def main(model_folder, image_folder, load_method, do_finetune=True, gen_emb = True, epochs=20, batch_size=64, patience=3, learning_rate=1e-4, seed = 2):
+def main(model_folder, image_folder, load_method,
+          do_finetune=True, gen_emb = True, epochs=20,
+          batch_size=64, patience=3, learning_rate=1e-4, seed = 2,
+          use_image_projector=True, use_text_projector=True):
     """
     Fonction principale du pipeline : chargement du modèle, fine-tuning (optionnel),
     génération d'embeddings, création de l'index FAISS et évaluation.
@@ -39,6 +42,8 @@ def main(model_folder, image_folder, load_method, do_finetune=True, gen_emb = Tr
         patience (int): Patience pour l'early stopping.
         learning_rate (float): Taux d'apprentissage.
         seed (int): Seed pour reproductibilité.
+        use_image_projector (bool): Indique si un projecteur image est ajouté au model.
+        use_text_projector (bool): Indique si un projecteur texte est ajouté au model.
     """
     set_seed(seed)
 
@@ -63,7 +68,8 @@ def main(model_folder, image_folder, load_method, do_finetune=True, gen_emb = Tr
         fine_tune(
             model_folder, model, preprocess, device,seed,image_folder,
             epochs=epochs, batch_size=batch_size, patience=patience,
-            learning_rate=learning_rate, use_lora=use_lora
+            learning_rate=learning_rate, use_lora=use_lora,
+            use_image_projector=use_image_projector, use_text_projector=use_text_projector
         )
         print("[2/6] Fine-tuning terminé.")
 
@@ -74,7 +80,7 @@ def main(model_folder, image_folder, load_method, do_finetune=True, gen_emb = Tr
             model, preprocess, device = load_fine_tuned_model(model_folder)
         print("[3/6] Modèle fine-tuné rechargé.")
 
-    if generate_embeddings :
+    if gen_emb :
         print("[4/6] Génération des embeddings...")
         generate_embeddings(model_folder, image_folder, model, preprocess, device)
         print("[4/6] Embeddings générés avec succès.")
@@ -87,6 +93,9 @@ def main(model_folder, image_folder, load_method, do_finetune=True, gen_emb = Tr
     evaluate(model_folder)
     print("[6/6] Évaluation terminée.")
 
+    if gen_emb == False and do_finetune == False :
+        return
+    
     info_path = os.path.join(model_folder, "training_info.txt")
     with open(info_path, "w") as f:
         f.write(f"Load Method: {load_method}\n")
@@ -96,6 +105,8 @@ def main(model_folder, image_folder, load_method, do_finetune=True, gen_emb = Tr
             f.write(f"Batch Size: {batch_size}\n")
             f.write(f"Patience: {patience}\n")
             f.write(f"Learning Rate: {learning_rate}\n")
+            f.write(f"Use Image Projector: {use_image_projector}\n")
+            f.write(f"Use Text Projector: {use_text_projector}\n")
     print(f"Informations sauvegardées dans '{info_path}'")
 
 if __name__ == "__main__":
@@ -111,6 +122,8 @@ if __name__ == "__main__":
     parser.add_argument("--patience", type=int, default=3, help="Patience pour l'early stopping")
     parser.add_argument("--learning_rate", type=float, default=1e-4, help="Taux d'apprentissage pour l'optimiseur")
     parser.add_argument("--seed", type=int, default=2, help="Seed pour reproductibilité")
-    
+    parser.add_argument("--use_image_projector", action="store_true", help="Active le projecteur image (MLP)")
+    parser.add_argument("--use_text_projector", action="store_true", help="Active le projecteur texte (MLP)")
+
     args = parser.parse_args()
-    main(args.model_folder, args.image_folder, args.load_method, args.do_finetune, args.generate_embeddings, args.epochs, args.batch_size, args.patience, args.learning_rate, args.seed)
+    main(args.model_folder, args.image_folder, args.load_method, args.do_finetune, args.generate_embeddings, args.epochs, args.batch_size, args.patience, args.learning_rate, args.seed, args.use_image_projector, args.use_text_projector)

@@ -50,13 +50,14 @@ def remove_accents(input_str):
     """
     return unicodedata.normalize('NFKD', input_str).encode('ASCII', 'ignore').decode('ASCII')
 
-def correct_filenames(groups, image_folder):
+def correct_filenames(groups, image_folder, description_dict):
     """
     Corrige les noms de fichiers dans les groupes en fonction des fichiers réellement présents.
 
     Args:
         groups (list): Groupes d'images à corriger.
         image_folder (str): Dossier contenant les images.
+        description_dict (dict): Dictionnaire des descriptions.
 
     Returns:
         list: Groupes avec noms de fichiers corrigés (avec extension).
@@ -72,12 +73,18 @@ def correct_filenames(groups, image_folder):
         corrected = []
         for name in group:
             if name in available_files:
-                corrected.append(available_files[name])
+                if name in description_dict:
+                    corrected.append(available_files[name])
+                else:
+                    print(f"no caption for file: '{name}'")
             elif remove_accents(name) in available_files_no_accents:
                 corrected_name = available_files_no_accents[remove_accents(name)]
-                print(f"Corrected '{name}' -> '{corrected_name}'")
-                corrected.append(corrected_name)
-                corrected_count += 1
+                if corrected_name in description_dict:
+                    print(f"Corrected '{name}' -> '{corrected_name}'")
+                    corrected.append(corrected_name)
+                    corrected_count += 1
+                else:
+                    print(f"no caption for file: '{name}'")         
             else:
                 print(f"Missing file for '{name}'")
                 missing_count += 1
@@ -89,27 +96,43 @@ def correct_filenames(groups, image_folder):
 
     return corrected_groups
 
-def get_singletons(groups, image_folder):
+def get_singletons(groups, image_folder, description_dict, move_unused=True):
     """
     Trouve les images qui ne sont dans aucun groupe.
+    Si elles ne sont pas dans le dictionnaire de descriptions, les déplace dans un dossier 'not_used'.
 
     Args:
         groups (list): Groupes d'images.
         image_folder (str): Dossier contenant les images.
+        description_dict (dict): Dictionnaire des descriptions.
+        move_unused (bool): Si True, déplace les images inutilisées vers un dossier "not_used".
 
     Returns:
-        list: Liste des images valides (ouvrables) non incluses dans les groupes.
+        list: Liste des images valides (avec caption) non incluses dans les groupes.
     """
-    all_images = set(os.listdir(image_folder))
-    grouped_images = set(img for group in groups for img in group)
+    all_images = set(f for f in os.listdir(image_folder)
+                 if os.path.isfile(os.path.join(image_folder, f)))
 
+    grouped_images = set(img for group in groups for img in group)
     singletons = all_images - grouped_images
     valid_singletons = []
 
+    not_used_dir = os.path.join(image_folder, "not_used")
+    if move_unused and not os.path.exists(not_used_dir):
+        os.makedirs(not_used_dir)
+
     for img in singletons:
-        valid_singletons.append(img)
+        base_name = os.path.splitext(img)[0]
+        if base_name in description_dict:
+            valid_singletons.append(img)
+        elif move_unused:
+            src = os.path.join(image_folder, img)
+            dst = os.path.join(not_used_dir, img)
+            print(f"Déplacement de {img} vers 'not_used'")
+            os.rename(src, dst)
 
     return valid_singletons
+
 
 def get_caption(image_name, description_dict):
     """
@@ -127,6 +150,37 @@ def get_caption(image_name, description_dict):
         return description_dict[base_name]
     else:
         return None
+
+def print_stats(groups, train, val, output_file):
+    """
+    Affiche des statistiques sur les groupes d'images et les jeux d'entraînement/validation.
+
+    Args:
+        groups (list): Liste des groupes d'images.
+        train (list): Liste des images pour l'entraînement.
+        val (list): Liste des images pour la validation.
+        output_file (str): Nom du fichier de sortie.
+    """
+    group_sizes = [len(group) for group in groups]
+    total_images_in_groups = sum(group_sizes)
+    num_groups = len(groups)
+    min_size = min(group_sizes) if group_sizes else 0
+    max_size = max(group_sizes) if group_sizes else 0
+    mean_size = total_images_in_groups / num_groups if num_groups > 0 else 0
+
+    print("\nStatistiques des groupes :")
+    print(f" - Nombre de groupes          : {num_groups}")
+    print(f" - Nombre total d'images      : {total_images_in_groups}")
+    print(f" - Taille min d'un groupe     : {min_size}")
+    print(f" - Taille max d'un groupe     : {max_size}")
+    print(f" - Taille moyenne d'un groupe : {mean_size:.2f}")
+
+    print("\nStatistiques des jeux de données :")
+    print(f" - Images dans train : {len(train)}")
+    print(f" - Images dans val   : {len(val)}")
+
+    print(f"\nSauvegardé dans : {output_file}")
+
 
 def save_groundtruth_json(groups, train, val, output_file, description_dict):
     """
@@ -163,8 +217,18 @@ def save_groundtruth_json(groups, train, val, output_file, description_dict):
         else:
             val_missing += 1
 
+    groups_with_captions = []
+    for group in groups:
+        group_info = []
+        for img in group:
+            group_info.append({
+                "image": img,
+                "caption": get_caption(img, description_dict)
+            })
+        groups_with_captions.append(group_info)
+
     data = {
-        "groups": groups,
+        "groups": groups_with_captions,
         "train": new_train,
         "train_texts": train_texts,
         "val": new_val,
@@ -174,15 +238,8 @@ def save_groundtruth_json(groups, train, val, output_file, description_dict):
     with open(output_file, "w") as f:
         json.dump(data, f, indent=4)
 
-    print("\n📊 Statistiques de sauvegarde :")
-    print(f" - Nombre de groupes : {len(groups)}")
-    print(f" - Images dans train (avant filtre) : {len(train)}")
-    print(f" - Images conservées dans train (avec caption) : {len(new_train)}")
-    print(f" - Images sans caption dans train : {train_missing}")
-    print(f" - Images dans val (avant filtre) : {len(val)}")
-    print(f" - Images conservées dans val (avec caption) : {len(new_val)}")
-    print(f" - Images sans caption dans val : {val_missing}")
-    print(f"\n💾 Sauvegardé dans : {output_file}")
+    print_stats(groups, new_train, new_val, output_file)
+
 
 def load_groundtruth_json(json_file):
     """
@@ -246,10 +303,10 @@ def main():
     description_dict = load_descriptions(args.csv_descriptions_file)
 
     # Charger et corriger les groupes
-    original_groups = correct_filenames(load_groundtruth(args.excel_file), args.image_folder)
+    original_groups = correct_filenames(load_groundtruth(args.excel_file), args.image_folder, description_dict)
 
     # Obtenir les singletons (images non présentes dans les groupes)
-    singletons = get_singletons(original_groups, args.image_folder)
+    singletons = get_singletons(original_groups, args.image_folder, description_dict)
 
     # Diviser les singletons en train/val
     train_singletons, val_singletons = train_test_split(singletons, test_size=args.test_size, random_state=args.seed)
