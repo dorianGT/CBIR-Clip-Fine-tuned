@@ -96,18 +96,19 @@ def main(model_folder, image_folder, load_method,
     if gen_emb == False and do_finetune == False :
         return
     
-    info_path = os.path.join(model_folder, "training_info.txt")
-    with open(info_path, "w") as f:
-        f.write(f"Load Method: {load_method}\n")
-        f.write(f"Fine-tuning: {do_finetune}\n")
-        if do_finetune:
-            f.write(f"Epochs: {epochs}\n")
-            f.write(f"Batch Size: {batch_size}\n")
-            f.write(f"Patience: {patience}\n")
-            f.write(f"Learning Rate: {learning_rate}\n")
-            f.write(f"Use Image Projector: {use_image_projector}\n")
-            f.write(f"Use Text Projector: {use_text_projector}\n")
-    print(f"Informations sauvegardées dans '{info_path}'")
+    if(fine_tune):
+        info_path = os.path.join(model_folder, "training_info.txt")
+        with open(info_path, "w") as f:
+            f.write(f"Load Method: {load_method}\n")
+            f.write(f"Fine-tuning: {do_finetune}\n")
+            if do_finetune:
+                f.write(f"Epochs: {epochs}\n")
+                f.write(f"Batch Size: {batch_size}\n")
+                f.write(f"Patience: {patience}\n")
+                f.write(f"Learning Rate: {learning_rate}\n")
+                f.write(f"Use Image Projector: {use_image_projector}\n")
+                f.write(f"Use Text Projector: {use_text_projector}\n")
+        print(f"Informations sauvegardées dans '{info_path}'")
 
 if __name__ == "__main__":
     # Parsing des arguments de la ligne de commande

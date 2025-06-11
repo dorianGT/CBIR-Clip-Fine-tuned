@@ -4,6 +4,7 @@ import torch
 from tqdm import tqdm
 from PIL import Image, UnidentifiedImageError
 from parse_groundtruth import load_groundtruth_json
+import clip
 
 def get_image_paths(folder):
     """
@@ -81,7 +82,12 @@ def encode(model, preprocess, device, image_paths, train, train_texts, val, val_
                 caption = get_caption_for_image(image_name, train, train_texts, val, val_texts, groups)
                 with torch.no_grad():
                     embedding_image = model.encode_image(img)
-                    embedding_text = model.encode_text(model.tokenize(caption).to(device))
+                    if model.__module__.startswith("clip"):
+                        text_tokens = clip.tokenize(caption).to(device)
+                    else:
+                        # open_clip case
+                        text_tokens = model.tokenize(caption).to(device)
+                    embedding_text = model.encode_text(text_tokens)
 
                 embeddings_image.append(embedding_image.cpu().numpy())
                 embeddings_text.append(embedding_text.cpu().numpy())
@@ -91,6 +97,7 @@ def encode(model, preprocess, device, image_paths, train, train_texts, val, val_
             print(f"Skipped: {path}")
 
     return np.vstack(embeddings_image), np.vstack(embeddings_text), valid_paths
+
 
 def save_embeddings(model_folder, embeddings_image, embeddings_text,embeddings_combined, paths):
     """

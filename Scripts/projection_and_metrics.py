@@ -109,7 +109,258 @@ def save_colored_projection(embeddings, paths, groups, save_path, method="tsne")
     plt.savefig(save_path)
     plt.close()
 
-### METRICS ###
+### METRICS NO FAISS ###
+
+def compute_top_k_neighbors(embeddings: np.ndarray, k: int, query_idx: int):
+    query_embedding = embeddings[query_idx]
+    # Calcul des distances euclidiennes à tous les autres vecteurs
+    distances = np.linalg.norm(embeddings - query_embedding, axis=1)
+    # On exclut l'élément lui-même
+    distances[query_idx] = np.inf
+    # On récupère les indices des k plus proches voisins
+    return np.argsort(distances)[:k]
+
+
+def recall_at_k_no_faiss(embeddings, paths, groups, k=5):
+    """
+    Calcule le Recall@K sur des groupes d'images similaires (near duplicates).
+
+    Le Recall@K mesure la proportion d'éléments pertinents (du même groupe que l'image requête)
+    retrouvés parmi les K plus proches voisins.
+
+    Formule :
+        Recall@K = (Nombre d'éléments pertinents dans les K plus proches voisins) / (Nombre total d'éléments pertinents)
+
+    Args:
+        embeddings (np.ndarray): Tableau des vecteurs d'embedding (taille N x D).
+        paths (List[str]): Liste des chemins d'images correspondant aux embeddings.
+        groups (List[List[str]]): Groupes d'images similaires (ground truth).
+        k (int): Nombre de voisins à considérer (top-k).
+
+    Returns:
+        float: Moyenne du Recall@K sur toutes les requêtes valides.
+    """
+    path_to_index = {path: i for i, path in enumerate(paths)}
+    path_to_group = {path: group for group in groups for path in group}
+
+    total_recall = 0.0
+    count = 0
+
+    for group in groups:
+        for query_path in group:
+            if query_path not in path_to_index:
+                continue
+            query_idx = path_to_index[query_path]
+            relevant_items = set(path_to_group[query_path]) - {query_path}
+
+            neighbor_indices = compute_top_k_neighbors(embeddings, k + 1, query_idx)
+            retrieved_paths = [paths[i] for i in neighbor_indices if paths[i] != query_path][:k]
+
+            retrieved_relevant = sum(1 for p in retrieved_paths if p in relevant_items)
+            total_possible = len(relevant_items)
+
+            if total_possible > 0:
+                total_recall += retrieved_relevant / total_possible
+                count += 1
+
+    return total_recall / count if count > 0 else 0.0
+
+
+def precision_at_k_no_faiss(embeddings, paths, groups, k=5):
+    """
+    Calcule la Precision@K sur les groupes d'images similaires.
+
+    La Precision@K mesure la proportion des K éléments retournés qui sont réellement
+    pertinents (du même groupe que l'image requête).
+
+    Formule :
+        Precision@K = (Nombre d'éléments pertinents dans les K plus proches voisins) / K
+
+    Args:
+        embeddings (np.ndarray): Vecteurs d'embedding.
+        paths (List[str]): Chemins d'images associés aux embeddings.
+        groups (List[List[str]]): Groupes d'images similaires (ground truth).
+        k (int): Nombre de voisins considérés.
+
+    Returns:
+        float: Moyenne de la précision à K sur toutes les requêtes valides.
+    """
+    path_to_index = {path: i for i, path in enumerate(paths)}
+    path_to_group = {path: group for group in groups for path in group}
+
+    total_precision = 0.0
+    count = 0
+
+    for group in groups:
+        for query_path in group:
+            if query_path not in path_to_index:
+                continue
+            query_idx = path_to_index[query_path]
+            relevant_items = set(path_to_group[query_path]) - {query_path}
+
+            neighbor_indices = compute_top_k_neighbors(embeddings, k + 1, query_idx)
+            retrieved_paths = [paths[i] for i in neighbor_indices if paths[i] != query_path][:k]
+
+            retrieved_relevant = sum(1 for p in retrieved_paths if p in relevant_items)
+            total_precision += retrieved_relevant / k
+            count += 1
+
+    return total_precision / count if count > 0 else 0.0
+
+
+def mean_average_precision_no_faiss(embeddings, paths, groups, k=10):
+    """
+    Calcule le Mean Average Precision (mAP) pour des groupes d'images similaires.
+
+    Le mAP tient compte de la position des bons résultats parmi les K premiers.
+
+    Args:
+        embeddings (np.ndarray): Vecteurs d'embedding.
+        paths (List[str]): Chemins associés aux embeddings.
+        groups (List[List[str]]): Groupes d'images similaires.
+        k (int): Nombre de voisins considérés.
+
+    Returns:
+        float: Moyenne des précisions moyennes (mAP) sur toutes les requêtes.
+    """
+    path_to_index = {path: i for i, path in enumerate(paths)}
+    path_to_group = {path: group for group in groups for path in group}
+    average_precisions = []
+
+    for group in groups:
+        for query_path in group:
+            if query_path not in path_to_index:
+                continue
+            query_idx = path_to_index[query_path]
+            relevant_items = set(path_to_group[query_path]) - {query_path}
+
+            neighbor_indices = compute_top_k_neighbors(embeddings, k + 1, query_idx)
+            retrieved_paths = [paths[i] for i in neighbor_indices if paths[i] != query_path][:k]
+
+            relevant_hits = 0
+            precision_sum = 0.0
+
+            for rank, retrieved_path in enumerate(retrieved_paths, start=1):
+                if retrieved_path in relevant_items:
+                    relevant_hits += 1
+                    precision_sum += relevant_hits / rank
+
+            if relevant_hits > 0:
+                average_precisions.append(precision_sum / len(relevant_items))
+            else:
+                average_precisions.append(0.0)
+
+    return sum(average_precisions) / len(average_precisions) if average_precisions else 0.0
+
+
+def f1_score_at_k_no_faiss(embeddings, paths, groups, k=5):
+    """
+    Calcule le F1-Score@K, moyenne harmonique entre la Precision@K et le Recall@K.
+
+    Formule :
+        F1@K = 2 * (Precision@K * Recall@K) / (Precision@K + Recall@K)
+
+    Args:
+        embeddings (np.ndarray): Vecteurs d'embedding.
+        paths (List[str]): Chemins d'images associés aux embeddings.
+        groups (List[List[str]]): Groupes d'images similaires (ground truth).
+        k (int): Nombre de voisins considérés.
+
+    Returns:
+        float: Moyenne du F1@K sur toutes les requêtes valides.
+    """
+    precision = precision_at_k_no_faiss(embeddings, paths, groups, k)
+    recall = recall_at_k_no_faiss(embeddings, paths, groups, k)
+
+    if precision + recall == 0:
+        return 0.0
+
+    return 2 * (precision * recall) / (precision + recall)
+
+def evaluate_with_distance_no_faiss(embeddings, paths, groups, k=10, threshold_type="mean"):
+    """
+    Évalue la performance du système de recherche d'images par similarité en utilisant un seuil sur la distance,
+    sans FAISS (utilise uniquement numpy pour les calculs).
+
+    Args:
+        embeddings (np.ndarray): Embeddings des images (shape: [N, D]).
+        paths (List[str]): Chemins des images correspondant aux embeddings.
+        groups (List[List[Dict]]): Groupes d'images similaires (ground truth) sous forme [{image, caption}, ...].
+        k (int): Nombre de voisins à rechercher pour chaque image (k+1 en réalité car on ignore l'image elle-même).
+        threshold_type (str): Méthode pour calculer le seuil de distance. Options : "mean", "median", "percentile_25".
+
+    Returns:
+        threshold (float): Seuil utilisé pour filtrer les voisins.
+        precision (float): Précision globale (TP / (TP + FP)).
+        recall (float): Rappel global (TP / (TP + FN)).
+        f1 (float): Score F1 global.
+    """
+    
+    groups_image_names = [[img['image'] if isinstance(img, dict) else img for img in group] for group in groups]
+    path_to_index = {path: i for i, path in enumerate(paths)}
+    path_to_group = {path: group for group in groups_image_names for path in group}
+
+    # Collecter les distances pour calculer le seuil global
+    all_distances = []
+
+    for i in range(len(embeddings)):
+        query_embedding = embeddings[i]
+        distances = np.linalg.norm(embeddings - query_embedding, axis=1)
+        distances[i] = np.inf  # ignore self-distance
+        all_distances.extend(distances[np.isfinite(distances)])
+
+    all_distances = np.array(all_distances)
+
+    # Calcul du seuil
+    if threshold_type == "mean":
+        threshold = np.mean(all_distances)
+    elif threshold_type == "median":
+        threshold = np.median(all_distances)
+    elif threshold_type == "percentile_25":
+        threshold = np.percentile(all_distances, 25)
+    else:
+        raise ValueError(f"Unsupported threshold_type: {threshold_type}")
+    
+    TP = 0
+    FP = 0
+    FN = 0
+
+    for group in groups_image_names:
+        for query_path in group:
+            if query_path not in path_to_index:
+                continue
+
+            query_idx = path_to_index[query_path]
+            query_embedding = embeddings[query_idx]
+            query_group = set(group) - {query_path}
+
+            distances = np.linalg.norm(embeddings - query_embedding, axis=1)
+            distances[query_idx] = np.inf
+
+            neighbor_indices = np.argsort(distances)[:k]
+            retrieved_paths = [
+                paths[i]
+                for i in neighbor_indices
+                if distances[i] < threshold and paths[i] != query_path
+            ]
+            retrieved_set = set(retrieved_paths)
+
+            tp = len(retrieved_set & query_group)
+            fp = len(retrieved_set - query_group)
+            fn = len(query_group - retrieved_set)
+
+            TP += tp
+            FP += fp
+            FN += fn
+
+    precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
+    recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0.0
+
+    return float(threshold), float(precision), float(recall), float(f1)
+
+
+### METRICS FAISS ###
 
 def recall_at_k(index, embeddings, paths, groups, k=5):
     """
