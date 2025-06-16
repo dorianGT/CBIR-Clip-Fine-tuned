@@ -157,7 +157,7 @@ Cela permet de générer des **légendes plus riches, informatives et contextuel
 
 ### Pipeline utilisé
 
-![Pipeline veclip](images/pipeline_veclip.png)
+<img src="images/pipeline_veclip.png" alt="Pipeline veclip" height="400"/>
 
 ## Fine-tuning de **CLIP**
 
@@ -221,9 +221,9 @@ Ces visualisations permettent d’analyser :
 
 ### Résultats
 
-![Resultats](images/resultats1.png)
+![Resultats1](images/resultats1.PNG)
 
-![Resultats](images/resultats2.png)
+![Resultats2](images/resultats2.PNG)
 
 ## Conclusion
 
