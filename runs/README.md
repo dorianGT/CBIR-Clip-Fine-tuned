@@ -16,12 +16,16 @@ Ce dossier contient les différentes expériences de fine-tuning réalisées.
 | **exp02**    | **Fine-tuning complet** sans projecteurs. Tout le modèle est dégélé.                           |
 | **exp03**    | **Fine-tuning partiel** : seule **la dernière couche** est dégélée. Pas de projecteurs.        |
 | **exp04**    | **Fine-tuning avec LoRA**. Tout le modèle est dégélé, mais uniquement des adaptations LoRA sont apprises. Pas de projecteurs. |
+| **Fine Tuning Partiel**    | **Fine-tuning partiel**. Expérimentations plus poussé (hyperparametre, VeCLIP...). |
 
-## Paramètres communs aux expériences
+## Paramètres
 
 - Dataset : `HighVision_Corpus_Groundtruth`
 - Méthode de chargement : `clip` (ou `clip+lora` pour exp04)
 - epochs : 20
-- batch_size : 64
+- batch_size : 64 - 256
 - patience : 5 (early stopping)
-- learning_rate : 0.0001
+- learning_rate : 0.00001 - 0.0001
+- Optimiseur : AdamW
+- Scheduler : ReduceLROnPlateau (patience=2)
+- Température (loss) : 0.07

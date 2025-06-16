@@ -285,11 +285,37 @@ def load_descriptions(csv_file):
 
     return description_dict
 
+def load_veclip_captions(json_file):
+    """
+    Charge les captions enrichies depuis un fichier JSON généré par VeCLIP.
+
+    Args:
+        json_file (str): Chemin vers le fichier JSON VeCLIP.
+
+    Returns:
+        dict: Dictionnaire {nom_image_sans_extension: enriched_caption}.
+    """
+    with open(json_file, "r") as f:
+        data = json.load(f)
+
+    description_dict = {}
+    for key, value in data.items():
+        enriched_caption = value.get("enriched_caption", None)
+        if enriched_caption:
+            description_dict[key] = enriched_caption
+
+    return description_dict
+
+
 def main():
     parser = argparse.ArgumentParser(description="Génère un fichier JSON de ground truth à partir d'un Excel de groupes et d'un CSV de descriptions.")
     parser.add_argument("--image_folder", type=str, required=True, help="Chemin vers le dossier contenant les images.")
     parser.add_argument("--excel_file", type=str, required=True, help="Chemin vers le fichier Excel contenant les groupes d'images similaires.")
     parser.add_argument("--csv_descriptions_file", type=str, required=True, help="Chemin vers le fichier CSV contenant les descriptions des images.")
+    parser.add_argument("--use_veclip_caption", action="store_true",
+                    help="Si activé, utilise les captions enrichies de VECLIP depuis un fichier JSON.")
+    parser.add_argument("--veclip_json_file", type=str, default=None,
+                    help="Chemin vers le fichier JSON contenant les captions enrichies (obligatoire si --use_veclip_caption est activé).")
     parser.add_argument("--output_json", type=str, default="ground_truth.json", help="Nom du fichier de sortie JSON.")
     parser.add_argument("--test_size", type=float, default=0.2, help="Proportion des singletons à utiliser pour la validation.")
     parser.add_argument("--seed", type=int, default=2, help="Seed pour la reproductibilité du split.")
@@ -300,7 +326,12 @@ def main():
     set_seed(args.seed)
 
     # Charger les descriptions
-    description_dict = load_descriptions(args.csv_descriptions_file)
+    if args.use_veclip_caption:
+        if not args.veclip_json_file:
+            raise ValueError("Le fichier JSON VECLIP est requis si --use_veclip_caption est activé.")
+        description_dict = load_veclip_captions(args.veclip_json_file)
+    else:
+        description_dict = load_descriptions(args.csv_descriptions_file)
 
     # Charger et corriger les groupes
     original_groups = correct_filenames(load_groundtruth(args.excel_file), args.image_folder, description_dict)

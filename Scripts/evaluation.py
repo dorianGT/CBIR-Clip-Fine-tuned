@@ -166,7 +166,7 @@ def eval_with_faiss(model_folder,embeddings_name,faiss_name,groups,label):
 
     return results
 
-def evaluate(model_folder):
+def evaluate(model_folder,ground_truth_path):
     """
     Évalue globalement les performances du modèle (image, texte, combinaison).
 
@@ -178,7 +178,8 @@ def evaluate(model_folder):
 
     Args:
         model_folder (str): Chemin vers le dossier contenant les fichiers embeddings, index FAISS et le sous-dossier `evaluation/`.
-
+        ground_truth_path (str) : Chemin fichier contenant la vérité terrain.
+        
     Returns:
         dict: Résultats complets contenant trois sous-ensembles :
             - "results_image": Résultats pour embeddings image.
@@ -187,7 +188,7 @@ def evaluate(model_folder):
     """
     os.makedirs(os.path.join(model_folder, "evaluation"), exist_ok=True)
     
-    groups, _, _, _, _  = load_groundtruth_json("ground_truth.json")
+    groups, _, _, _, _  = load_groundtruth_json(ground_truth_path)
     groups = get_groups_image_only(groups)
 
     results_image = eval_with_faiss(model_folder,"embeddings_image.npz","faiss_image.index",groups,"image")

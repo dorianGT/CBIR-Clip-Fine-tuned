@@ -24,7 +24,7 @@ def set_seed(seed=2):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-def main(model_folder, image_folder, load_method,
+def main(model_folder, image_folder,ground_truth_path, load_method,
           do_finetune=True, gen_emb = True, epochs=20,
           batch_size=64, patience=3, learning_rate=1e-4, seed = 2,
           use_image_projector=True, use_text_projector=True):
@@ -35,6 +35,7 @@ def main(model_folder, image_folder, load_method,
     Args:
         model_folder (str): Dossier de sauvegarde/chargement du modèle.
         load_method (str): Méthode de chargement du modèle parmi ["clip", "clip+lora", "finetuned", "finetuned+lora"].
+        ground_truth_path (str) : Chemin fichier contenant la vérité terrain.
         do_finetune (bool): Indique s'il faut faire le fine-tuning ou non.
         gen_emb (bool): Indique s'l faut générer les embeddings ou non.
         epochs (int): Nombre d'époques pour l'entraînement.
@@ -90,7 +91,7 @@ def main(model_folder, image_folder, load_method,
         print("[5/6] Index FAISS créé.")
 
     print("[6/6] Évaluation du modèle...")
-    evaluate(model_folder)
+    evaluate(model_folder,ground_truth_path)
     print("[6/6] Évaluation terminée.")
 
     if gen_emb == False and do_finetune == False :
@@ -115,6 +116,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fine-tune, embed, index and evaluate a model.")
     parser.add_argument("--model_folder", type=str, required=True, help="Chemin du dossier du modèle")
     parser.add_argument("--image_folder", type=str, required=True, help="Chemin du dossier contenant les images")
+    parser.add_argument("--groundtruth_file", type=str, required=False, default="ground_truth.json", help="Chemin vers le fichier CSV contenant le groundtruth pour l'évaluation")
     parser.add_argument("--load_method", type=str, choices=["clip", "clip+lora", "finetuned", "finetuned+lora"], required=True, help="Méthode de chargement du modèle")
     parser.add_argument("--do_finetune", type=lambda x: (str(x).lower() == 'true'), default=True, help="Faire le fine-tuning (True/False)")
     parser.add_argument("--generate_embeddings", type=lambda x: (str(x).lower() == 'true'), default=True, help="Générer les embeddings (True/False)")
@@ -127,4 +129,4 @@ if __name__ == "__main__":
     parser.add_argument("--use_text_projector", action="store_true", help="Active le projecteur texte (MLP)")
 
     args = parser.parse_args()
-    main(args.model_folder, args.image_folder, args.load_method, args.do_finetune, args.generate_embeddings, args.epochs, args.batch_size, args.patience, args.learning_rate, args.seed, args.use_image_projector, args.use_text_projector)
+    main(args.model_folder, args.image_folder,args.groundtruth_file, args.load_method, args.do_finetune, args.generate_embeddings, args.epochs, args.batch_size, args.patience, args.learning_rate, args.seed, args.use_image_projector, args.use_text_projector)

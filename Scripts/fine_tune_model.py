@@ -6,6 +6,8 @@ import os
 import torch
 
 from torchvision import transforms
+from torchvision.transforms import Compose, RandomResizedCrop, RandomHorizontalFlip, ColorJitter, RandomGrayscale, GaussianBlur, ToTensor, Normalize
+from torchvision.transforms.functional import InterpolationMode
 
 import random
 import numpy as np
@@ -102,6 +104,8 @@ def progressively_unfreeze(model_clip, current_epoch, schedule):
         else:
             break
 
+    print(f"[Epoch {current_epoch}] Unfreezing {nb_layers_to_unfreeze} layer(s)")
+
     # Appliquer aux blocs visuels
     total_blocks = len(model_clip.visual.transformer.resblocks)
     for i in range(total_blocks - nb_layers_to_unfreeze, total_blocks):
@@ -144,14 +148,14 @@ def fine_tune_clip(model_folder, model: CLIPWithProjector, train_dataset, val_da
     train_losses = []
     val_losses = []
 
-    # unfreeze_schedule = {
-    #     5: 1,   # à l'époque 5, on débloque 1 couche
-    #     8: 3,   # à partir de l'époque 3, 3 couches débloquées
-    #     11: 6    # à partir de l'époque 5, 6 couches débloquées
-    # }
+    unfreeze_schedule = {
+        0: 1,   # à l'époque 5, on débloque 1 couche
+        8: 2,   # à partir de l'époque 8, 2 couches débloquées
+        11: 3    # à partir de l'époque 11, 3 couches débloquées
+    }
 
     for epoch in range(epochs):
-        # progressively_unfreeze(model.clip_model, epoch, unfreeze_schedule)
+        progressively_unfreeze(model.clip_model, epoch, unfreeze_schedule)
 
         model.train()
         total_train_loss = 0.0
@@ -276,15 +280,26 @@ def fine_tune(model_folder, model_clip, preprocess, device, seed, image_folder, 
     model.to(device)
 
     # Transforms pour les datasets
-    transform = transforms.Compose([
+    transform_val = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.48145466, 0.4578275, 0.40821073],
                              std=[0.26862954, 0.26130258, 0.27577711]),
     ])
 
+    transform = Compose([
+        RandomResizedCrop(224, scale=(0.8, 1.0), interpolation=InterpolationMode.BICUBIC),
+        RandomHorizontalFlip(p=0.5),
+        ColorJitter(0.4, 0.4, 0.4, 0.1),
+        RandomGrayscale(p=0.2),
+        GaussianBlur(kernel_size=3),
+        ToTensor(),
+        Normalize(mean=[0.48145466, 0.4578275, 0.40821073],
+                std=[0.26862954, 0.26130258, 0.27577711]),
+    ])
+
     train_dataset = ImageTextDataset(image_folder, train, train_texts, transform)
-    val_dataset = ImageTextDataset(image_folder, val, val_texts, transform)
+    val_dataset = ImageTextDataset(image_folder, val, val_texts, transform_val)
 
     # Fine-tuning du modèle
     fine_tune_clip(model_folder=model_folder,
