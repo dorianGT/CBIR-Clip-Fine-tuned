@@ -329,13 +329,73 @@ Ces visualisations permettent d’analyser :
 * La séparation entre clusters d’images similaires.
 * L’impact du fine-tuning sur la structure des embeddings.
 
-### Résultats
+### Résultats Généraux
+
+Le tableau ci-dessus présente les performances des différentes variantes du pipeline pour la recherche d’images similaires. On évalue plusieurs configurations : avec ou sans FAISS, avec différents types d’embeddings (image, texte, combinés), et sous diverses méthodes d'entraînement (projecteurs, fine-tuning partiel, LoRA, fine-tuning total).
 
 ![Resultats2](images/resultats2.PNG)
 
+
+#### Analyse des résultats
+
+* **Modèle CLIP de base** :
+  Le modèle pré-entraîné (CLIP ViT-B/32) offre déjà des résultats tout à fait corrects, en particulier lorsqu’on utilise les embeddings d’image. Les résultats obtenus sans FAISS sont très proches de ceux obtenus avec FAISS en termes de métriques @k, mais légèrement meilleurs pour les métriques à seuil (Recall, Precision, F1).
+
+* **Utilisation de FAISS** :
+  L’indexation avec FAISS permet de **réduire considérablement le temps d’inférence**, passant de **75 secondes à seulement 1,15 seconde en moyenne**, sans perte significative de performance sur les métriques, au contraire, le plus souvent les résultats sur les  **métriques à seuil** sont meilleurs.
+
+* **Embeddings image vs texte vs combiné** :
+  Les embeddings d’image donnent systématiquement les meilleurs résultats. À l’inverse, les embeddings texte seuls ne suffisent pas pour une recherche performante, que ce soit avec ou sans FAISS. Les combinaisons image + texte n’apportent pas d'amélioration significative et peuvent parfois dégrader les performances.
+
+* **Fine-tuning total** :
+  Cette approche dégrade fortement les performances, quelle que soit la configuration. Cela peut s’expliquer par une suradaptation causé par le dataset peut-être trop petit.
+
+* **Méthode LoRA** :
+  L’utilisation de LoRA permet d’améliorer légèrement les résultats sur les **métriques à seuil**, mais elle a peu d’impact sur les performances de type Recall\@10, Precision\@10, etc.
+
+* **Ajout de projecteurs (MLP)** :
+  L’ajout de projecteurs en tête du modèle améliore sensiblement les résultats. Cette stratégie permet d’adapter les embeddings aux spécificités du jeu de données sans toucher au coeur du modèle CLIP.
+
+* **Fine-tuning partiel** :
+  Cette méthode donne les **meilleurs résultats globaux**, notamment sur les métriques à seuil. Elle permet d’adapter finement une partie des poids du modèle CLIP à la tâche cible, tout en conservant les représentations puissantes apprises durant le pré-entraînement. Cela permet un bon compromis entre spécialisation et généralisation, sans recourir à des structures supplémentaires comme les projecteurs.
+
+### Résultats Précis : Fine-tuning partiel
+
+Nous avons décidé d'explorer plus en profondeur la stratégie de *fine-tuning partiel*, car elle offre les **meilleurs résultats globaux**, en particulier sur les métriques à seuil (F1, Recall, etc.). Contrairement à d'autres méthodes comme l'ajout de projecteurs, elle ne modifie pas l'architecture du modèle CLIP, mais ajuste une partie de ses poids pour mieux s'adapter à notre tâche.
+
+Le tableau ci-dessus présente les différentes variantes explorées :
+
 ![Resultats1](images/resultats1.PNG)
 
+* **Partiel 1** sert de point de référence, avec un petit batch size (64), un dégel d'une seule couche et des transformations minimales (resize, normalisation).
+* En **Partiel 2**, l’augmentation du batch size à 256 améliore significativement les résultats, montrant une meilleure stabilité de l’entraînement.
+* **Partiel 3 et 4** montrent qu’introduire de la *data augmentation* (RandomResizedCrop, ColorJitter, Blur) et une réduction du learning rate à 1e-5 permet encore d’améliorer les scores.
+* En **Partiel 5**, le dégel de 3 couches diminue légèrement les performances (surapprentissage surement).
+* En **Partiel 6**, le *dégel progressif* de 3 couches (progressive unfreeze) rattrape cette baisse et permet d'obtenir les **meilleurs scores globaux**, tout en évitant le surapprentissage.
+* Enfin, **Partiel 6 - VeCLIP**, où l’on utilise les captions enrichies générées par VeCLIP, n’apporte pas d'amélioration significative, probablement en raison du peu de métadonnées disponibles dans notre dataset.
+
+En conclusion, le fine-tuning partiel — en particulier avec un *dégel progressif* — s’impose comme la stratégie la plus efficace pour notre tâche, sans nécessiter de modifications structurelles comme l’ajout de projecteurs.
+
 ## Conclusion
+
+Ce projet a démontré l’efficacité de l’adaptation du modèle **CLIP** pour la détection de *near-duplicates* à l'aide d'un fine tuning alignement image/captiion. En combinant des stratégies de **fine-tuning ciblé**, une **amélioration sémantique des captions** via **VeCLIP**, et des techniques d’**indexation rapide** comme **FAISS**, nous avons pu construire un pipeline robuste et performant pour la recherche d’images similaires.
+
+L’analyse des résultats met en évidence plusieurs points clés :
+
+* Le modèle **CLIP pré-entraîné** est déjà interessant pour cette tâche, en particulier via les embeddings visuels.
+* L’**enrichissement des descriptions textuelles** améliore la qualité des embeddings mais reste limité dans ce projet à cause des faibles quantité de métadonnées disponibles.
+* Le **fine-tuning partiel** s’avère être la stratégie la plus efficace, surpassant les approches plus lourdes comme le fine-tuning total ou l’ajout de projecteurs (mais prometteur en combinaison avec LoRa).
+* L’intégration de **FAISS** permet une accélération importante des recherches sans compromettre la qualité des résultats.
+
+En somme, cette approche montre qu’un ajustement modéré d’un modèle pré-entraîné, combiné à une amélioration intelligente des données, suffit à obtenir des performances solides, même dans un contexte aussi complexe que celui des archives historiques. Ce pipeline pourrait être facilement adapté à d’autres corpus patrimoniaux ou visuels.
+
+Des perspectives d'amélioration incluent :
+
+* L’exploration de **modèles plus récents** ou spécialisés.
+* L’**intégration d’informations spatio-temporelles** plus fines dans les embeddings.
+* La création d’un outil interactif de recherche visuelle basé sur ce pipeline.
+
+Ce projet constitue donc une première étape prometteuse vers des outils de valorisation automatique et intelligente du patrimoine visuel.
 
 ## Auteur
 
