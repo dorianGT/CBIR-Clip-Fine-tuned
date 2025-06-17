@@ -70,7 +70,8 @@ def main(model_folder, image_folder,ground_truth_path, load_method,
             model_folder, model, preprocess, device,seed,image_folder,
             epochs=epochs, batch_size=batch_size, patience=patience,
             learning_rate=learning_rate, use_lora=use_lora,
-            use_image_projector=use_image_projector, use_text_projector=use_text_projector
+            use_image_projector=use_image_projector, use_text_projector=use_text_projector,
+            ground_truth_file=ground_truth_path
         )
         print("[2/6] Fine-tuning terminé.")
 
@@ -83,7 +84,7 @@ def main(model_folder, image_folder,ground_truth_path, load_method,
 
     if gen_emb :
         print("[4/6] Génération des embeddings...")
-        generate_embeddings(model_folder, image_folder, model, preprocess, device)
+        generate_embeddings(model_folder, image_folder,ground_truth_path, model, preprocess, device)
         print("[4/6] Embeddings générés avec succès.")
 
         print("[5/6] Création de l'index FAISS...")

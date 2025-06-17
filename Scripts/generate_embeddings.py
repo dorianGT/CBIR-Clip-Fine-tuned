@@ -114,13 +114,14 @@ def save_embeddings(model_folder, embeddings_image, embeddings_text,embeddings_c
     np.savez(os.path.join(model_folder, "embeddings_text.npz"), embeddings=embeddings_text, paths=np.array(paths, dtype="object"))
     np.savez(os.path.join(model_folder, "embeddings_combined.npz"), embeddings=embeddings_combined, paths=np.array(paths, dtype="object"))
 
-def generate_embeddings(model_folder, image_folder, model, preprocess, device):
+def generate_embeddings(model_folder, image_folder,ground_truth_path, model, preprocess, device):
     """
     Génère et sauvegarde les embeddings d'un ensemble d'images et de leurs captions associées.
 
     Args:
         model_folder (str): Dossier où sauvegarder les fichiers d'embeddings.
         image_folder (str): Dossier contenant les images à encoder.
+        ground_truth_path (str) : Chemin fichier contenant la vérité terrain.
         model (torch.nn.Module): Modèle utilisé pour encoder les images et les textes.
         preprocess (Callable): Fonction de prétraitement des images.
         device (str): Appareil à utiliser ("cuda" ou "cpu").
@@ -129,7 +130,7 @@ def generate_embeddings(model_folder, image_folder, model, preprocess, device):
         - Sauvegarde les fichiers embeddings_image.npz, embeddings_text.npz et embeddings_combined.npz dans model_folder.
         - Affiche le nombre total d'embeddings sauvegardés.
     """
-    groups, train, train_texts, val, val_texts = load_groundtruth_json("ground_truth.json")
+    groups, train, train_texts, val, val_texts = load_groundtruth_json(ground_truth_path)
     image_paths = get_image_paths(image_folder)
     embeddings_image,embeddings_text, valid_paths = encode(model, preprocess, device, image_paths, train, train_texts, val, val_texts, groups)
     
