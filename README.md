@@ -1,4 +1,4 @@
-# CBIR par CLIP Fine-tuné pour la Détection de Near-Duplicates dans les Archives Historiques
+# Détection de Near-Duplicates dans une Base d’Images Historiques avec CLIP
 
 Projet de détection de *near-duplicates* dans une base d’images historiques à l’aide de CLIP fine-tuné.
 
@@ -42,37 +42,145 @@ pip install -r requirements.txt
 - Chemins d'accès adaptés aux fichiers sur votre machine.
 - Les dépendances Python installées (voir section Installation).
 
+Important : Les données de base ne sont pas fournies dans ce dépôt Git, car la base de données utilisée ne m'appartient pas (contactez Mr. Camille KURTZ si besoin).
+
 ### Exécution étape par étape
 
-1. **Nettoyage du dossier d’images**
+#### 0. Placez vous dans le dossier des scripts
 
 ```
-python dataset_cleaning.py --image_folder "historicaldataset/"
+cd Scripts
 ````
 
-2. **Génération du fichier regrouppant les informations (dvision train/val/test, associaton captions...) à partir de la vérité terrain**
+#### 1. Nettoyage du dossier d’images
+
+Le script `dataset_cleaning.py` détecte les images corrompues dans un dossier et les déplace automatiquement dans un sous-dossier à part (`corrupted/`).
+
+##### Syntaxe de base
+
+```
+python dataset_cleaning.py --image_folder <chemin>
+```
+
+##### Paramètres
+
+| Paramètre        | Obligatoire | Description                                                 |
+| ---------------- | ----------- | ----------------------------------------------------------- |
+| `--image_folder` | Oui       | Chemin vers le **dossier contenant les images** à analyser. |
+
+##### Exemple
+
+```
+python dataset_cleaning.py --image_folder historicaldataset/
+```
+
+Ce script créera un dossier `historicaldataset/corrupted/` contenant toutes les images illisibles ou corrompues détectées.
+
+#### 2. Génération des captions enrichies avec VeCLIP
+
+Le script `generate_enrich_captions.py` enrichit automatiquement les captions existantes à l’aide de métadonnées et d’un modèle de langage local (comme Mistral), puis enregistre les résultats dans un fichier JSON.
+
+##### Syntaxe de base
+
+```
+python generate_enrich_captions.py --captions <chemin> --metadata <chemin> [--output <chemin>]
+```
+
+##### Paramètres
+
+| Paramètre    | Obligatoire | Description                                                                                                        |
+| ------------ | ----------- | ------------------------------------------------------------------------------------------------------------------ |
+| `--captions` | Oui       | Chemin vers le fichier CSV contenant les **captions existantes** (une ligne par image).                            |
+| `--metadata` | Oui       | Chemin vers le fichier CSV contenant les **métadonnées des images** (ex : lieu, date, thème, etc.).                |
+| `--output`   | Non       | Chemin du fichier **JSON de sortie** qui contiendra les captions enrichies. Par défaut : `enriched_captions.json`. |
+
+##### Exemple
+
+```
+python generate_enrich_captions.py ^
+  --captions captions.csv ^
+  --metadata metadata.csv ^
+  --output enriched_captions.json
+```
+
+#### 3. Génération du fichier de vérité terrain structuré
+
+Le script `parse_groundtruth.py` regroupe les informations issues de la vérité terrain (annotations Excel), des descriptions, et éventuellement des captions enrichies VeCLIP. Il produit un fichier JSON contenant la division `train/val/test`, les correspondances entre images, leurs légendes, etc.
+
+##### Syntaxe de base
+
+```
+python parse_groundtruth.py --image_folder <chemin> --excel_file <chemin> --csv_descriptions_file <chemin> [options]
+```
+
+##### Paramètres
+
+| Paramètre                 | Obligatoire | Description                                                                                                    |
+| ------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
+| `--image_folder`          | Oui       | Chemin vers le **dossier contenant les images**.                                                               |
+| `--excel_file`            | Oui       | Chemin vers le fichier Excel contenant les **groupes d'images similaires** (vérité terrain).                   |
+| `--csv_descriptions_file` | Oui       | Chemin vers le fichier CSV contenant les **descriptions d’images** (captions).                                 |
+| `--use_veclip_caption`    | Non       | Si activé, remplace les captions classiques par les **captions enrichies de VeCLIP**.                          |
+| `--veclip_json_file`      | Non       | Chemin vers le fichier JSON contenant les **captions enrichies**, requis si `--use_veclip_caption` est activé. |
+| `--output_json`           | Non       | Chemin du **fichier JSON de sortie** (défaut : `ground_truth.json`).                                           |
+| `--test_size`             | Non       | Proportion de données à réserver pour le **jeu de test** parmi les singletons (défaut : `0.2`).                |
+| `--seed`                  | Non       | Seed pour garantir la reproductibilité du **split train/val/test**.                                |
+
+##### Exemple
 
 ```
 python parse_groundtruth.py ^
-  --image_folder "historicaldataset/" ^
-  --excel_file "lipade_images_similaires.xlsx" ^
-  --csv_descriptions_file "captions.csv"
+  --image_folder historicaldataset/ ^
+  --excel_file lipade_images_similaires.xlsx ^
+  --csv_descriptions_file captions.csv ^
+  --use_veclip_caption ^
+  --veclip_json_file veclip_json.json ^
+  --output_json ground_truth.json ^
+  --test_size 0.2 ^
+  --seed 2
 ```
 
-3. **Entraînement du modèle CLIP + génération des embeddings + recherche FAISS + évaluation**
+#### 4. Entraînement du modèle CLIP, génération des embeddings, indexation FAISS et évaluation
+
+Le script `main.py` exécute l’ensemble du pipeline de traitement : fine-tuning du modèle CLIP (ou chargement d’un modèle déjà entraîné), génération des embeddings, création d’un index de similarité FAISS, et évaluation avec la vérité terrain.
+
+##### Syntaxe de base
+
+```
+python main.py --model_folder <chemin> --image_folder <chemin> --load_method <méthode> [options]
+```
+
+##### Paramètres
+
+| Paramètre              | Obligatoire | Description                                                                                        |
+| ---------------------- | ----------- | -------------------------------------------------------------------------------------------------- |
+| `--model_folder`       | Oui       | Dossier où sauvegarder / charger le modèle (et ses fichiers associés).                             |
+| `--image_folder`       | Oui       | Dossier contenant les images à utiliser pour le fine-tuning et/ou la génération des embeddings.    |
+| `--load_method`        | Oui       | Méthode de chargement du modèle. Choix parmi : `clip`, `clip+lora`, `finetuned`, `finetuned+lora`. |
+| `--groundtruth_file`   | Non       | Chemin vers le fichier `ground_truth.json` pour l’évaluation (défaut : `ground_truth.json`).       |
+| `--do_finetune`        | Non       | Si présent, effectue le fine-tuning du modèle (défaut : activé).                                   |
+| `--generate_embeddings`| Non       | Si présent, génère les embeddings d’images (défaut : activé).                                      |
+| `--epochs`             | Non       | Nombre d’époques pour le fine-tuning (défaut : 20).                                                |
+| `--batch_size`         | Non       | Taille des batchs pour le fine-tuning (défaut : 64).                                               |
+| `--patience`           | Non       | Patience (early stopping) pendant le fine-tuning (défaut : 3).                                     |
+| `--learning_rate`      | Non       | Taux d’apprentissage pour le fine-tuning (défaut : 1e-4).                                          |
+| `--seed`               | Non       | Seed pour la reproductibilité (défaut : 2).                                            |
+| `--use_image_projector` | Non       | Si présent, active le projecteur d’images.                              |
+| `--use_text_projector`  | Non       | Si présent, active le projecteur de texte.                                                      |
+
+##### Exemple
 
 ```
 python main.py ^
-  --model_folder "runs_02/exp01" ^
-  --image_folder "historicaldataset/" ^
+  --model_folder runs/clip_finetuned/ ^
+  --image_folder historicaldataset/ ^
+  --groundtruth_file ground_truth.json ^
   --load_method clip ^
-  --do_finetune True ^
   --epochs 20 ^
-  --batch_size 64 ^
+  --batch_size 256 ^
   --patience 5 ^
-  --learning_rate 0.0001
+  --learning_rate 1e-5 ^
 ```
-
 ## Méthodologie
 
 ![Pipeline global](images/pipeline_global.png)
@@ -132,9 +240,11 @@ Le dataset utilisé est constitué d’**images d’archives historiques** issue
   * Source / collection d’origine
   * Tags additionnels dans certains cas (thème, personne, événement…)
 
-Voic quelques exemples de statistiques :
+Voic quelques statistiques :
 
 ![Dataset](images/dataset.png)
+
+Peu de métadonnées pertinentes sont disponibles.
 
 ## Amélioration des captions avec **VeCLIP**
 
@@ -221,9 +331,9 @@ Ces visualisations permettent d’analyser :
 
 ### Résultats
 
-![Resultats1](images/resultats1.PNG)
-
 ![Resultats2](images/resultats2.PNG)
+
+![Resultats1](images/resultats1.PNG)
 
 ## Conclusion
 
