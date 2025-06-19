@@ -374,7 +374,7 @@ Le tableau ci-dessus présente les différentes variantes explorées :
 * En **Partiel 6**, le *dégel progressif* de 3 couches (progressive unfreeze) rattrape cette baisse et permet d'obtenir les **meilleurs scores globaux**, tout en évitant le surapprentissage.
 * Enfin, **Partiel 6 - VeCLIP**, où l’on utilise les captions enrichies générées par VeCLIP, n’apporte pas d'amélioration significative, probablement en raison du peu de métadonnées disponibles dans notre dataset.
 
-En conclusion, le fine-tuning partiel — en particulier avec un *dégel progressif* — s’impose comme la stratégie la plus efficace pour notre tâche, sans nécessiter de modifications structurelles comme l’ajout de projecteurs.
+En conclusion, le fine-tuning partiel, en particulier avec un *dégel progressif*, s’impose comme la stratégie la plus efficace pour notre tâche, sans nécessiter de modifications structurelles comme l’ajout de projecteurs.
 
 ## Conclusion
 
